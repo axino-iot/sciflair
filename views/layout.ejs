@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="GPS Tracking System" />
+    <meta name="author" content="AAC" />
+    <title>Sciflair Ltd</title>
+    <!-- Favicon-->
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico" /> -->
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">    
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"> -->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <%- body %>
+
+    <script>
+
+        var section; // = document.querySelectorAll(".section");
+        var sections = {};
+        var i = 0;
+
+        window.onload = function (){
+          //scroll spy on sections
+          // section = document.querySelectorAll("section");
+          // Array.prototype.forEach.call(section, function(e) {
+          //   sections[e.id] = e.offsetTop;
+          // });
+
+
+          //menu toggeler
+          let el = document.getElementById('btn-menu-tgl');
+          if(el)
+          {
+            el.addEventListener('click', (e) =>{
+              let el2 = document.getElementById('navbarMenu');
+              el2.classList.toggle("collapse");
+              if(el2.classList.contains('collapse'))
+                el.setAttribute('aria-expanded', 'false');
+              else
+                el.setAttribute('aria-expanded', 'true');
+            });
+          }  
+        }
+
+
+
+        window.onscroll = function() {
+          //scrollspy  
+          // let sypos = document.documentElement.scrollTop || document.body.scrollTop;
+          // for (i in sections) {
+          //   if (sypos > sections[i] - 10) {
+          //     let el = document.getElementById('navbarMenu').querySelectorAll("a.nav-link");
+          //     el.forEach(itm =>{
+          //       itm.classList.remove('active');
+          //     });
+          //     document.querySelector('a[href*=' + i + ']').classList.add('active');
+          //   }
+          // }
+          //change header on scroll down
+          let el = document.getElementById('mainNav');
+          if(el)
+          {
+            let sypos = window.pageYOffset;
+            if(sypos > 100)
+            {
+              el.classList.add('navbar-scrolled');
+            }
+            else el.classList.remove('navbar-scrolled');
+          }
+        }
+
+      </script>
+  </body>
+</html>
