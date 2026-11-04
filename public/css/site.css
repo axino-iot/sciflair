@@ -88,6 +88,16 @@ p { margin: 0 0 1em; }
 .proof-value { font: 700 clamp(1.8rem, 3.6vw, 2.6rem)/1 var(--head); color: var(--orange); }
 .proof-label { color: var(--on-dark); font-size: .95rem; }
 
+/* Audience routes */
+.routes { background: var(--grey); padding: 40px 0; border-bottom: 1px solid #E1E5EA; }
+.routes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.route { display: flex; flex-direction: column; background: var(--white); border-radius: var(--radius); padding: 24px 26px; text-decoration: none; color: inherit; border-top: 4px solid var(--orange); box-shadow: 0 1px 3px rgba(30,40,54,.08); transition: transform .15s, box-shadow .15s; }
+.route:hover { color: inherit; transform: translateY(-3px); box-shadow: 0 10px 24px rgba(30,40,54,.12); }
+.route-who { font: 700 .75rem var(--head); text-transform: uppercase; letter-spacing: .1em; color: #7A7C80; margin-bottom: 8px; }
+.route-title { font-size: 1.3rem; margin-bottom: .4em; }
+.route p { font-size: .98rem; flex: 1; }
+.route .link { color: var(--orange-deep); }
+
 /* Sections */
 .section { padding: clamp(64px, 9vw, 104px) 0; }
 .section-grey { background: var(--grey); }
@@ -130,8 +140,8 @@ p { margin: 0 0 1em; }
 .tag-slate { background: var(--navy-band); color: #fff; }
 
 /* Steps */
-.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; counter-reset: s; }
-.step { padding: 0 28px 0 0; position: relative; }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; counter-reset: s; }
+.step { padding: 0 20px 0 0; position: relative; }
 .step::before { content: ""; position: absolute; top: 22px; left: 52px; right: 12px; height: 2px; background: var(--navy-line); }
 .step:last-child::before { display: none; }
 .step-num { display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border-radius: 50%; border: 2px solid var(--orange); color: var(--orange); font: 700 .95rem var(--head); margin-bottom: 18px; }
@@ -162,7 +172,7 @@ p { margin: 0 0 1em; }
 .contact-form { background: var(--navy-band); padding: 32px; border-radius: var(--radius); }
 .field { margin-bottom: 18px; }
 .field label { display: block; font: 600 .88rem var(--head); color: #fff; margin-bottom: 6px; }
-.field input, .field textarea { width: 100%; padding: 12px 14px; min-height: 48px; border: 1px solid var(--navy-line); border-radius: 4px; background: var(--navy); color: #fff; font: inherit; }
+.field input, .field textarea, .field select { width: 100%; padding: 12px 14px; min-height: 48px; border: 1px solid var(--navy-line); border-radius: 4px; background: var(--navy); color: #fff; font: inherit; }
 .field input:focus, .field textarea:focus { outline: 2px solid var(--orange); border-color: transparent; }
 .hp { position: absolute; left: -9999px; }
 .form-msg { padding: 12px 14px; border-radius: 4px; background: rgba(141,204,20,.15); color: #fff; }
@@ -187,7 +197,8 @@ p { margin: 0 0 1em; }
   .sector-tile, .sector-tile:nth-child(4), .sector-tile:nth-child(5) { grid-column: span 1; }
   .sector-tile--wide { grid-column: span 2 !important; }
   .project-grid { grid-template-columns: 1fr 1fr; }
-  .steps { grid-template-columns: 1fr 1fr; gap: 36px 24px; }
+  .steps { grid-template-columns: 1fr 1fr 1fr; gap: 36px 24px; }
+  .routes-grid { grid-template-columns: 1fr; }
   .step::before { display: none; }
   .founder { grid-template-columns: 220px 1fr; gap: 36px; }
   .contact { grid-template-columns: 1fr; gap: 36px; }
@@ -213,7 +224,8 @@ p { margin: 0 0 1em; }
   .proof-item { padding: 22px 0 22px 16px; }
   .proof-item:nth-child(odd) { border-left: 0; padding-left: 0; }
   .proof-item:nth-child(n+3) { border-top: 1px solid var(--navy-line); }
-  .sector-grid, .project-grid, .platform-grid, .steps { grid-template-columns: 1fr; }
+  .sector-grid, .project-grid, .platform-grid { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr 1fr; gap: 28px 18px; }
   .sector-tile--wide { grid-column: span 1 !important; }
   .founder { grid-template-columns: 1fr; text-align: left; }
   .founder-photo { max-width: 180px; }

@@ -33,6 +33,20 @@ function ph(label, cls) {
   </div>
 </section>
 
+<!-- 2b. Routes for each audience -->
+<section class="routes" aria-label="Work with SciFlair">
+  <div class="wrap routes-grid">
+    <% site.audiences.forEach(function (a) { %>
+      <a class="route" href="<%= a.href %>">
+        <span class="route-who"><%= a.who %></span>
+        <h2 class="route-title"><%= a.title %></h2>
+        <p><%= a.text %></p>
+        <span class="link"><%= a.cta %> <%- include('partials/icon', { name: 'arrow' }) %></span>
+      </a>
+    <% }) %>
+  </div>
+</section>
+
 <!-- 3. What we build -->
 <section class="section" id="what-we-build">
   <div class="wrap">
@@ -95,7 +109,8 @@ function ph(label, cls) {
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">How We Work</p>
-      <h2>The Whole Lifecycle, Under One Roof</h2>
+      <h2>The Whole System Life Cycle, Under One Roof</h2>
+      <p>We follow INCOSE systems engineering practice (ISO/IEC/IEEE 15288) and run projects in PRINCE2 management stages, so every stage ends at a decision gate where you review progress, risk and the business case before committing to the next.</p>
     </div>
     <ol class="steps">
       <% site.steps.forEach(function (st, i) { %>
@@ -151,6 +166,8 @@ function ph(label, cls) {
         <li><strong>2</strong> UWE PhDs supervised, graduated 2026</li>
         <li><strong>KTP</strong> partnership on cloud video analytics</li>
         <li><strong>Up to 17</strong> engineers in the team</li>
+        <li><strong>22</strong> engineers built up at XAD, funded by contract revenue</li>
+        <li><strong>£5M+</strong> follow-on contract won on the flagship programme</li>
       </ul>
       <a class="btn btn-dark" href="https://www.linkedin.com/company/sciflair-limited/"><%- include('partials/icon', { name: 'linkedin' }) %> Connect on LinkedIn</a>
     </div>
@@ -181,6 +198,15 @@ function ph(label, cls) {
       <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required /></div>
       <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required /></div>
       <div class="field"><label for="f-org">Organisation</label><input id="f-org" name="organisation" autocomplete="organization" /></div>
+      <div class="field"><label for="f-role">I'm getting in touch as</label>
+        <select id="f-role" name="role">
+          <option value="client">A client with a project</option>
+          <option value="investor">An investor or funder</option>
+          <option value="recruiter">A recruiter or employer</option>
+          <option value="partner">A partner or contractor</option>
+          <option value="research">A university or researcher</option>
+        </select>
+      </div>
       <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="5" required></textarea></div>
       <div class="hp" aria-hidden="true"><label for="f-web">Website</label><input id="f-web" name="website" tabindex="-1" autocomplete="off" /></div>
       <button class="btn btn-primary" type="submit">Send Message</button>

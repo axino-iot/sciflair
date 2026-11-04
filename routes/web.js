@@ -25,7 +25,7 @@ router.post('/contact', function (req, res) {
   if (!name || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || !message) {
     return res.redirect('/?contact=invalid#contact');
   }
-  console.log('[contact] enquiry from %s <%s> (%s): %s', name, email, (b.organisation || '').trim(), message.slice(0, 500));
+  console.log('[contact] %s enquiry from %s <%s> (%s): %s', (b.role || 'unknown'), name, email, (b.organisation || '').trim(), message.slice(0, 500));
   return res.redirect('/?contact=not-connected#contact');
 });
 

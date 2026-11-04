@@ -18,17 +18,34 @@ const sectors = {
 const sectorTiles = ['energy', 'video', 'fleet', 'city', 'agri'];
 
 const proof = [
-  { value: '£10M+', label: 'programmes delivered' },
+  { value: '£10M+', label: 'programme led, concept to retirement' },
   { value: '3,000', label: 'sensors in one energy system' },
-  { value: '5,000', label: 'homes on smart water control' },
-  { value: '25+',   label: 'years of engineering' }
+  { value: '5,000', label: 'homes on automated water control' },
+  { value: '75%',   label: 'faster prototype to deployment' }
 ];
 
+// Generic system life cycle stages (INCOSE SE Handbook 4e / ISO/IEC/IEEE 15288).
+// British spelling of "Utilisation" on the site.
 const steps = [
-  { title: 'Requirements', text: 'We pin down what the system must do, where it runs and how success is measured.' },
-  { title: 'Design & prototype', text: 'Hardware, firmware, cloud and app designed together, then proven on a working prototype.' },
-  { title: 'Build & deploy', text: 'Manufacture, installation and commissioning, from a pilot site to a full rollout.' },
-  { title: 'Support', text: 'Monitoring, updates and field support for the life of the system.' }
+  { title: 'Concept', text: 'Business and mission analysis, stakeholder needs and requirements, feasibility.' },
+  { title: 'Development', text: 'System requirements, architecture and design definition, prototypes and verification.' },
+  { title: 'Production', text: 'Manufacture, integration and factory acceptance testing.' },
+  { title: 'Utilisation', text: 'Transition to site, site acceptance and validation in operational use.' },
+  { title: 'Support', text: 'Maintenance, upgrades and field support for the life of the system.' },
+  { title: 'Retirement', text: 'Planned disposal and handover to a successor system.' }
+];
+
+// Who the site is for: each route ends in a clear next step
+const audiences = [
+  { title: 'Commission a System', who: 'Clients',
+    text: 'From a feasibility study to a full rollout and in-service support, with one team accountable for hardware, firmware, cloud and apps.',
+    cta: 'Discuss your project', href: '#contact' },
+  { title: 'Back a New System', who: 'Investors & Funders',
+    text: 'Reusable platforms take new products from concept to field trials quickly, with a track record of grant, KTP and joint PhD funding.',
+    cta: 'Talk about funding', href: '#contact' },
+  { title: 'Partner or Hire', who: 'Recruiters & Partners',
+    text: 'Programme and engineering leadership across the full system life cycle, from proposal and requirements to acceptance and support.',
+    cta: 'Meet the founder', href: '#research' }
 ];
 
 function loadProjects() {
@@ -46,4 +63,4 @@ const featured = projects
   .filter(function (p) { return p.featured > 0; })
   .sort(function (a, b) { return a.featured - b.featured; });
 
-module.exports = { sectors, sectorTiles, proof, steps, projects, featured };
+module.exports = { sectors, sectorTiles, proof, steps, audiences, projects, featured };
