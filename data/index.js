@@ -21,7 +21,7 @@ const sectorTiles = ['energy', 'video', 'fleet', 'city', 'agri'];
 const proof = [
   { value: '£10M+', label: 'programme led by our founder, concept to retirement' },
   { value: '3,000', label: 'sensors in one energy system' },
-  { value: '5,000', label: 'homes on automated water control' },
+  { value: '5,000', label: 'people on an automated water supply' },
   { value: '75%',   label: 'faster prototype to deployment' }
 ];
 
