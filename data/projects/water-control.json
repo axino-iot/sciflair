@@ -25,7 +25,7 @@
     "The water supply for a campus housing 5,000 people depended on a reservoir tank on a hill, filled by five well pumps at two sites, one inside the campus and four sharing a single underground pipe from up to 5 km away. Each pump ran on its own electrical panel and timer, so staff had to drive out to the wells, the tank could overflow, and a pump could run dry without anyone knowing.",
     "The client wanted to see and control every pump from its control room, fill the tank automatically without overflowing, run the pumps in sequence, and detect leaks and dry running."
   ],
-  "role": "SciFlair was the supplier and design authority. With no written specification, we elicited the stakeholder requirements through a site survey and discussions with the client's engineers, set them out as the agreed scope, then designed, built, installed and commissioned the system and supported it for two years. A SciFlair project manager was the single point of contact, with acceptance signed off by the client's project manager.",
+  "role": "SciFlair was the design authority, working with a local partner company. With no written specification, we and our partner elicited the stakeholder requirements through a site survey and discussions with the client's engineers, and set them out as the agreed scope. SciFlair designed and built the controllers, software and web application; our partner installed the system and provided two years of support. A single project manager was the point of contact, with acceptance signed off by the client's project manager.",
   "built": [
     "Six GSM-connected controllers, one at the reservoir and one at each well, each built on our Axino SM01-GSM communication module with an RS485 expansion board and high-power relays to switch the pump, in sealed enclosures",
     "A level rod in the 3 m reservoir with six sensors at 0.5 m spacing, and green, yellow and red indicator lights on the tank controller",
@@ -38,7 +38,7 @@
   "delivery": [
     {
       "title": "Stakeholder requirements",
-      "text": "With no written specification, requirements were captured from a site survey and discussions with the client's engineering team, then baselined as the project scope."
+      "text": "With no written specification, requirements were captured with our local partner through a site survey and discussions with the client's engineering team, then baselined as the project scope."
     },
     {
       "title": "Stage plan",
@@ -58,7 +58,7 @@
     },
     {
       "title": "Support",
-      "text": "Two years of support and maintenance after handover."
+      "text": "Two years of on-site support and maintenance by our local partner after handover, backed by SciFlair engineering."
     }
   ],
   "results": [
@@ -143,5 +143,6 @@
     "smart-water-metering",
     "electricity-saver",
     "axino"
-  ]
+  ],
+  "partner": "A local partner company"
 }

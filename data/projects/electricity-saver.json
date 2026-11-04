@@ -25,7 +25,7 @@
     "Air-conditioning and lights in the plant's offices were routinely left running in empty rooms, after hours and at weekends. In the region, air-conditioning can account for more than half of a building's electricity use.",
     "The client needed unoccupied areas switched off automatically, without altering the existing air-conditioning units or wiring, with the manual switches staying in charge and the lights failing safe if power or the system was lost."
   ],
-  "role": "SciFlair was the supplier and design authority for the whole system. We captured the stakeholder requirements from the client's request for quotation and a site survey, designed and manufactured the hardware and firmware, installed and commissioned it, and supported it through three phases of rollout until 2019. A SciFlair project manager was the single point of contact, with acceptance signed off by the client's project manager.",
+  "role": "SciFlair was the design authority for the whole system, working with a local partner company. Together we captured the stakeholder requirements from the client's request for quotation and a site survey. SciFlair designed, manufactured and factory-tested the hardware and firmware; our partner installed the system and provided on-site support through three phases of rollout until 2019. A single project manager was the point of contact, with acceptance signed off by the client's project manager.",
   "built": [
     "Ceiling-mounted occupancy sensors, each covering about 5 m from a 2 m ceiling, with programmable time-outs of 10–30 minutes for lights and 15–30 minutes for air-conditioning",
     "SciFlair controller boards with 8 inputs, 6 outputs and 10 A relays to switch each lighting circuit",
@@ -57,7 +57,7 @@
     },
     {
       "title": "Support",
-      "text": "Support, maintenance and warranty throughout all three phases, until 2019."
+      "text": "On-site support, maintenance and warranty by our local partner throughout all three phases, until 2019, backed by SciFlair engineering."
     }
   ],
   "results": [
@@ -141,5 +141,6 @@
     "water-control",
     "street-light-feeder",
     "sensor-magic"
-  ]
+  ],
+  "partner": "A local partner company"
 }

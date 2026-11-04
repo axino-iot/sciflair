@@ -89,6 +89,7 @@ var owned = p.stages || [];
         <% if (p.region) { %><dt>Region</dt><dd><%= p.region %></dd><% } %>
         <% if (p.year) { %><dt>Year</dt><dd><%= p.year %></dd><% } %>
         <dt>Sector</dt><dd><%= s.name %></dd>
+        <% if (p.partner) { %><dt>Delivered with</dt><dd><%= p.partner %></dd><% } %>
       </dl>
       <h3>Technologies</h3>
       <ul class="p-tech"><% (p.tech || []).forEach(function (t) { %><li><%= t %></li><% }) %></ul>
