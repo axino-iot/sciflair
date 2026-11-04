@@ -101,7 +101,17 @@
     {
       "src": "/images/projects/water-control/reservoir-tank-800.webp",
       "alt": "Raised sectional steel water tank",
-      "caption": "Reservoir tank fitted with the level rod"
+      "caption": "Reservoir tank"
+    },
+    {
+      "src": "/images/projects/water-control/tank-inlet-level-rod-800.webp",
+      "alt": "Inside the reservoir: inlet pipe discharging water beside the level sensor rod",
+      "caption": "Inside the tank: inlet and level rod"
+    },
+    {
+      "src": "/images/projects/water-control/tank-controller-800.webp",
+      "alt": "Open SciFlair controller at the reservoir with relay board, GSM module and level indicator lights",
+      "caption": "Reservoir controller with level indicator lights"
     },
     {
       "src": "/images/projects/water-control/delivery-flow-meter-800.webp",
@@ -119,19 +129,9 @@
       "caption": "Controller on a pump panel"
     },
     {
-      "src": "/images/projects/water-control/well-flow-meter-800.webp",
-      "alt": "Flow meter with pulse output fitted at a well head",
-      "caption": "Flow meter at a well head"
-    },
-    {
       "src": "/images/projects/water-control/well-pump-panel-800.webp",
       "alt": "Pump panel and flow meter at a well",
       "caption": "Pump panel and flow meter"
-    },
-    {
-      "src": "/images/projects/water-control/meter-installed-800.webp",
-      "alt": "Newly installed flow meter on the delivery pipe",
-      "caption": "Flow meter installation"
     },
     {
       "src": "/images/projects/water-control/wellhead-flow-meter-800.webp",
