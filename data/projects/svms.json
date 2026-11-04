@@ -1,0 +1,130 @@
+{
+  "slug": "svms",
+  "title": "SVMS Video Management Platform",
+  "subtitle": "Our own video management software, running CCTV networks, control-room video walls and mobile command-and-control systems",
+  "sector": "video",
+  "deliveredBy": "SciFlair",
+  "client": "Government and security clients",
+  "year": null,
+  "region": null,
+  "headline": "Our own video management software behind a 100+ camera HD surveillance network, command-and-control systems and CCTV control rooms, over microwave, satellite, fibre and WiMax links",
+  "result": "100+ cameras",
+  "featured": 3,
+  "order": 4,
+  "photo": "/images/projects/svms/svms-video-wall-800.webp",
+  "photoAlt": "SVMS operator screen showing six live camera views",
+  "hero": "/images/projects/svms/svms-video-wall-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation",
+    "Support"
+  ],
+  "need": [
+    "Security operators have to watch, record and control large numbers of IP cameras spread across wide areas, often over links with very different capacity: microwave, satellite, fibre, WiMax and mobile networks.",
+    "Our clients needed one system that works the same way in a fixed control room, a command-and-control vehicle or a rapidly deployed portable kit, makes the most of constrained links, and limits each operator to the cameras they are authorised to see."
+  ],
+  "role": "SVMS is SciFlair's own software. We extended it from the XVMS platform developed at XAD Communications, own its architecture and code, and integrate, deploy and support it as part of the systems we deliver. It is the software behind the 100+ camera HD surveillance network, our command-and-control projects and other CCTV control rooms.",
+  "built": [
+    "Database Server: the single point of access to the configuration database, so every other module can run on its own machine anywhere on the network",
+    "Operator GUI: up to 12 live or recorded views per monitor, a centred view with thumbnails, and pan, tilt, zoom, presets and auxiliary commands such as wipers for PTZ cameras",
+    "Relay Player: drives video walls and remote displays with no user interface, configured centrally from the GUI",
+    "Video Proxy: pulls each camera stream once over the constrained link and redistributes it locally, so more viewers do not mean more traffic on the link",
+    "File Recorder: continuous MP4 recording in two-minute segments, with search, export to external drives and import of footage from other sources",
+    "ONVIF camera discovery, with manual set-up for cameras that are not ONVIF-compliant",
+    "Administrator and operator roles, with each operator limited to the cameras assigned to them"
+  ],
+  "builtScope": "Deployed on fixed sites, in command-and-control vehicles and in portable kits, over microwave, satellite, fibre, WiMax and GSM links.",
+  "delivery": [
+    {
+      "title": "Architecture definition",
+      "text": "A modular client–server architecture in which every module connects to the Database Server, so a system scales by adding recorders, proxies and wall players on separate machines."
+    },
+    {
+      "title": "Integration",
+      "text": "Cameras from different manufacturers are integrated through ONVIF or manual configuration, and each is verified by assigning it to a display cell and confirming live video."
+    },
+    {
+      "title": "Deployments",
+      "text": "A 100+ camera HD surveillance network over microwave, satellite, fibre and WiMax; command-and-control vehicles and portable kits; and CCTV control rooms with video walls."
+    },
+    {
+      "title": "Transition",
+      "text": "Each system is handed over with an administrator and operator user manual and architecture documentation."
+    },
+    {
+      "title": "Support",
+      "text": "SciFlair maintains and extends the software and supports it in the field."
+    }
+  ],
+  "results": [
+    {
+      "value": "100+",
+      "label": "HD cameras on one network"
+    },
+    {
+      "value": "5",
+      "label": "link types: microwave, satellite, fibre, WiMax, GSM"
+    },
+    {
+      "value": "12",
+      "label": "live or recorded views per monitor"
+    },
+    {
+      "value": "3",
+      "label": "settings: fixed sites, vehicles, portable kits"
+    }
+  ],
+  "tech": [
+    "IP video",
+    "H.264",
+    "RTSP",
+    "ONVIF",
+    "PTZ control",
+    "MP4 recording",
+    "Client–server",
+    "Video walls"
+  ],
+  "nextGen": {
+    "title": "Where it came from: XVMS",
+    "text": "SVMS grew from XVMS, the video management platform developed at XAD Communications for its flagship £10M+ command-and-control programme. SciFlair supported XVMS in the field and extended it into SVMS, carrying more than a decade of operational experience into the software."
+  },
+  "gallery": [
+    {
+      "src": "/images/projects/svms/svms-six-camera-view-800.webp",
+      "alt": "SVMS showing six live camera views",
+      "caption": "Six live views on one monitor"
+    },
+    {
+      "src": "/images/projects/svms/svms-ptz-control-800.webp",
+      "alt": "SVMS centred view with the pan, tilt and zoom controls",
+      "caption": "Centred view with PTZ control"
+    },
+    {
+      "src": "/images/projects/svms/svms-architecture-800.webp",
+      "alt": "Diagram of the SVMS modules connected to the Database Server",
+      "caption": "SVMS architecture"
+    },
+    {
+      "src": "/images/projects/svms/svms-operator-cameras-800.webp",
+      "alt": "Assigning cameras to an operator in SVMS",
+      "caption": "Operators see only their assigned cameras"
+    },
+    {
+      "src": "/images/projects/svms/svms-video-wall-config-800.webp",
+      "alt": "Configuring a video wall player and its cell matrix",
+      "caption": "Configuring a video wall"
+    },
+    {
+      "src": "/images/projects/svms/svms-recorded-files-800.webp",
+      "alt": "SVMS recorded and imported files list with export controls",
+      "caption": "Searching and exporting recordings"
+    }
+  ],
+  "related": [
+    "command-control-vehicles",
+    "cctv-node-control",
+    "xvms"
+  ]
+}
