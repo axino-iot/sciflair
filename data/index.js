@@ -39,7 +39,7 @@ const steps = [
 // Who the site is for: each route ends in a clear next step
 const audiences = [
   { title: 'Commission a System', who: 'Clients',
-    text: 'From a feasibility study to a full rollout and in-service support, with one team accountable for hardware, firmware, cloud and apps.',
+    text: 'From a feasibility study to a full rollout and in-service support, with one senior lead accountable for hardware, firmware, cloud and apps.',
     cta: 'Discuss your project', href: '#contact' },
   { title: 'Back a New System', who: 'Investors & Funders',
     text: 'Reusable platforms take new products from concept to field trials quickly, with a track record of grant, KTP and joint PhD funding.',
