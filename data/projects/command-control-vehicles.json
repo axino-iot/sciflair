@@ -1,13 +1,13 @@
 {
   "slug": "command-control-vehicles",
   "title": "Mobile and Portable Command and Control",
-  "subtitle": "A ten-year programme of specialist command vehicles and rapid-deployment kits, connected by one IP network for live audio, video and data",
+  "subtitle": "A ten-year programme of specialist command vehicles and rapid-deployment kits on one IP network for live audio, video and data",
   "sector": "video",
   "deliveredBy": "XAD",
-  "client": "An overseas government client",
+  "client": null,
   "year": "2009–2019",
   "region": null,
-  "headline": "Mobile and portable IP command centres for overseas government clients, owned across the full life cycle and supported by SciFlair since 2016",
+  "headline": "Mobile and portable command centres on one IP network, delivered across the full life cycle and supported by SciFlair since 2016",
   "result": "£10M+ programme",
   "featured": 0,
   "order": 15,
@@ -22,46 +22,41 @@
     "Support",
     "Retirement"
   ],
-  "sciflairRole": "SciFlair took over service and support of the fleet from 2016, developed SVMS over the same period, and in 2019 proposed a Phase 2 upgrade that the client approved but did not proceed with after COVID-19, when government priorities changed",
+  "sciflairRole": "SciFlair took over service and support from 2016, developed SVMS over the same period, and in 2019 proposed a Phase 2 upgrade that was approved but did not proceed after COVID-19",
   "need": [
-    "A government client needed to collect, monitor and record audio, video and data from many sources at an incident, and pass it in real time to headquarters for decisions and analysis.",
-    "Two operational teams had to work the same way: one moving as a convoy of specialist vehicles, the other carrying the same capability in rugged portable cases that can be set up anywhere without specialist knowledge. Separate camera, radio and recording systems had to come under one common platform."
+    "The client needed to collect, monitor and record audio, video and data from many sources in the field, and share it in real time with a central headquarters.",
+    "The same capability had to work from a convoy of specialist vehicles and from rugged portable cases that can be set up anywhere, bringing separate systems under one common platform."
   ],
-  "role": "XAD Communications was the prime contractor and design authority across the whole life cycle, from concept and requirements through architecture, design, manufacture, factory and site acceptance, deployment and in-service support to final retirement. The programme was led technically by the engineer who went on to found SciFlair: he wrote the technical proposals, negotiated at director and government level, and directed XAD's four engineering groups (audio, video, data and RF), 22 engineers in total.",
+  "role": "XAD Communications was the prime contractor and design authority across the whole life cycle, from concept to final retirement. The programme was led technically by the engineer who went on to found SciFlair, directing XAD's audio, video, data and RF engineering groups.",
   "built": [
-    "Team 1, mobile: a convoy of eight converted vehicles, comprising a main operator vehicle, two auxiliary vehicles, and retransmission, transcriber, communication, intelligent and photo vehicles",
-    "Team 2, portable: the same functions as stations in precision-fabricated Pelican cases, including a main operator station, retransmission, transcriber and photo stations, and portable operations rooms",
-    "35 rapidly deployable camera and communication kits across both teams, including mobile cameras on pneumatic masts",
-    "Vehicle conversions from 4x4s and vans up to 18-tonne trucks, with operator workstations, an on-board generator and battery bank, stabilising legs, air-conditioning and networking racks",
-    "An end-to-end IP network across wired and wireless links, carrying live and recorded audio, video and data between kits, vehicles and headquarters",
-    "Portable kits with a 5 GHz wireless link, a Wi-Fi access point for nearby viewers, an industrial touchscreen for camera control and up to 8 hours on battery",
-    "XAD's own XVMS video management software, later succeeded by SciFlair's SVMS"
+    "A convoy of eight specialist vehicles, each converted for a different operational role",
+    "A portable equivalent built into rugged Pelican cases",
+    "35 rapidly deployable camera and communication kits, including cameras on pneumatic masts",
+    "Vehicle conversions from vans to heavy trucks, with operator workstations, on-board power, air-conditioning and networking",
+    "An end-to-end IP network across wired and wireless links, carrying live and recorded audio, video and data",
+    "XAD's XVMS video management software, later succeeded by SciFlair's SVMS"
   ],
-  "builtScope": "Two teams, eight specialist vehicles, a full portable equivalent in Pelican cases, and 35 deployable camera and communication kits, all on one IP network.",
+  "builtScope": "Eight specialist vehicles, a portable equivalent in Pelican cases and 35 deployable kits, all on one IP network.",
   "delivery": [
     {
       "title": "Concept and requirements",
-      "text": "Operational needs for both teams were captured and turned into the technical proposals and system requirements."
+      "text": "Operational needs captured and turned into the technical proposals and system requirements."
     },
     {
       "title": "Architecture and design",
-      "text": "One IP architecture for vehicles, portable stations and kits, so every unit can work alone or as part of the wider deployment."
+      "text": "One IP architecture so every vehicle, station and kit can work alone or as part of the wider deployment."
     },
     {
       "title": "Production and verification",
-      "text": "Vehicle conversions and Pelican-case systems manufactured and integrated, with factory acceptance testing before shipment."
+      "text": "Vehicle conversions and portable systems manufactured and integrated, with factory acceptance testing."
     },
     {
       "title": "Validation and deployment",
       "text": "Site acceptance and field testing in operational conditions, where the system exceeded the client's expectations."
     },
     {
-      "title": "Change control",
-      "text": "Scope changes over the programme were managed by agreeing priorities for critical deliverables, holding budget and schedule."
-    },
-    {
       "title": "Support and retirement",
-      "text": "In-service support for a decade, with SciFlair taking over service and support from 2016, until the programme closed in 2019."
+      "text": "In-service support for a decade, with SciFlair taking over from 2016, until the programme closed in 2019."
     }
   ],
   "results": [
@@ -86,14 +81,14 @@
     "IP networking",
     "Live video and audio",
     "Pneumatic masts",
-    "5 GHz wireless",
+    "Wireless links",
     "Vehicle conversion",
     "Pelican-case integration",
     "XVMS / SVMS"
   ],
   "nextGen": {
     "title": "What came next",
-    "text": "The programme's lessons shaped SciFlair's SVMS video management software, rewritten from the ground up from 2016. In 2019 SciFlair proposed a Phase 2 upgrade, which the client approved; it did not go ahead after COVID-19, when government priorities changed."
+    "text": "The programme's lessons shaped SciFlair's SVMS video management software, rewritten from the ground up from 2016."
   },
   "gallery": [
     {
@@ -122,14 +117,9 @@
       "caption": "Briefing area"
     },
     {
-      "src": "/images/projects/command-control/portable-kit-case-800.webp",
-      "alt": "Portable command kit in an open Pelican case with screen and camera",
-      "caption": "Portable kit in a Pelican case"
-    },
-    {
-      "src": "/images/projects/command-control/portable-camera-mast-800.webp",
-      "alt": "PTZ camera on a portable tripod mast",
-      "caption": "Portable camera mast"
+      "src": "/images/projects/command-control/portable-kit-and-mast-800.webp",
+      "alt": "Portable command kit in an open Pelican case beside a camera on a tripod mast",
+      "caption": "Portable kit and camera mast"
     }
   ],
   "related": [
