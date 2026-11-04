@@ -90,9 +90,10 @@ function ph(label, cls) {
           </div>
           <div class="project-body">
             <span class="tag tag-<%= s.tag %>"><%= s.name %></span>
-            <h3><%= p.title %></h3>
+            <h3><% if (p.need) { %><a class="card-link" href="/projects/<%= p.slug %>"><%= p.title %></a><% } else { %><%= p.title %><% } %></h3>
             <p><%= p.headline %></p>
-            <% if (p.client) { %><p class="project-meta"><%= p.client %></p><% } %>
+            <% if (p.client) { %><p class="project-meta"><%= p.client %><%= p.region ? ' · ' + p.region : '' %></p><% } %>
+            <% if (p.need) { %><span class="link card-more">Read the project <%- include('partials/icon', { name: 'arrow' }) %></span><% } %>
           </div>
         </article>
       <% }) %>

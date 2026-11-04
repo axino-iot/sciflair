@@ -1,21 +1,59 @@
 {
   "slug": "electricity-saver",
   "title": "Electricity Saver",
+  "subtitle": "Occupancy-based air-conditioning and lighting control for an industrial cement plant",
   "sector": "energy",
   "deliveredBy": "SciFlair",
   "client": "An industrial cement plant",
-  "year": null,
+  "year": "2016",
   "region": "Middle East",
   "headline": "3,000 mesh-networked sensors automating air-conditioning and lighting across an industrial cement plant, saving 10–15% of the energy used",
   "result": "10–15% energy saved",
   "featured": 1,
   "order": 1,
-  "photo": "/images/placeholder/electricity-saver.webp",
-  "photoAlt": "SciFlair Electricity Saver sensor unit beside its packaging",
-  "stages": [
-    "Concept",
-    "Development",
-    "Production",
-    "Utilisation"
-  ]
+  "photo": "/images/projects/electricity-saver/site-ac-sensor-800.webp",
+  "photoAlt": "SciFlair occupancy sensor installed in an office ceiling next to a cassette air-conditioning unit",
+  "hero": "/images/projects/electricity-saver/site-ac-sensor-1600.webp",
+  "stages": ["Concept", "Development", "Production", "Utilisation", "Support"],
+  "need": [
+    "Air-conditioning and lights in the plant's offices were routinely left running in empty rooms, after hours and at weekends. In the region, air-conditioning can account for more than half of a building's electricity use.",
+    "The client needed unoccupied areas switched off automatically, without altering the existing air-conditioning units or wiring, with the manual switches staying in charge and the lights failing safe if power or the system was lost."
+  ],
+  "role": "SciFlair was the supplier and design authority for the whole system. We captured the stakeholder requirements from the client's request for quotation and a site survey, designed and manufactured the hardware and firmware, installed and commissioned it, and provided the first year of support. A SciFlair project manager was the single point of contact, with acceptance signed off by the client's project manager.",
+  "built": [
+    "Ceiling-mounted occupancy sensors, each covering about 5 m from a 2 m ceiling, with programmable time-outs of 10–30 minutes for lights and 15–30 minutes for air-conditioning",
+    "SciFlair controller boards with 8 inputs, 6 outputs and 10 A relays to switch each lighting circuit",
+    "Infrared transmitters that switch the existing ceiling-cassette air-conditioning units with no modification to the units",
+    "A wired RS485 network linking the controllers, with a status interface to the site's security management system",
+    "Fail-safe logic: manual switches remain the master, a failed module affects no other, and the system works without the site IT network"
+  ],
+  "builtScope": "In the main administration building alone: 121 air-conditioning units (100 indoor, 21 outdoor) and 45 lighting circuits across two floors.",
+  "delivery": [
+    { "title": "Requirements traceability", "text": "Every requirement in the client's request for quotation was answered in a compliance matrix (fully, partially or not compliant, with reasons), forming the baseline for design and acceptance." },
+    { "title": "Stage plan", "text": "An eight-week plan from order to handover, with scope changes documented and justified through change control." },
+    { "title": "Verification", "text": "Controllers, sensors and transmitters were tested in our factory before shipping." },
+    { "title": "Decision gate: primary acceptance", "text": "A first stage installed five controllers and their sensors, tested and signed off by the client before the full rollout." },
+    { "title": "Validation and transition", "text": "Full installation, a signed site acceptance test in operational use, and handover with as-installed overlay drawings." },
+    { "title": "Support", "text": "First-year support, maintenance and warranty." }
+  ],
+  "results": [
+    { "value": "10–15%", "label": "of the energy used saved" },
+    { "value": "3,000", "label": "sensors deployed" },
+    { "value": "121", "label": "AC units controlled in the admin building" },
+    { "value": "0", "label": "modifications to existing AC units" }
+  ],
+  "tech": ["PIR occupancy sensing", "Infrared AC control", "Relay lighting control", "RS485", "Embedded firmware", "Fail-safe design"],
+  "nextGen": {
+    "title": "What came next: the wireless Electricity Saver range",
+    "text": "Lessons from the plant led us to develop a wireless, battery-powered product line that installs in minutes: the S720 motion sensor (up to 5 years on two AAA batteries), the S710 air-conditioning controller with a built-in IR learner, and the S715 light controller for loads up to 2,000 W, all on an IEEE 802.15.4 mesh with up to 100 m range and a certified radio module."
+  },
+  "gallery": [
+    { "src": "/images/projects/electricity-saver/site-cassette-800.webp", "alt": "Occupancy sensor installed beside a ceiling-cassette air-conditioning unit", "caption": "On site: sensor beside a cassette AC unit" },
+    { "src": "/images/projects/electricity-saver/site-lights-800.webp", "alt": "Office ceiling with lighting panels under automatic control", "caption": "On site: lighting under automatic control" },
+    { "src": "/images/projects/electricity-saver/s72x-prototype-pcb-800.webp", "alt": "Prototype circuit board for the wireless motion sensor", "caption": "Development: wireless sensor prototype" },
+    { "src": "/images/projects/electricity-saver/s72x-sensor-800.webp", "alt": "Wireless motion sensor in its enclosure", "caption": "Wireless motion sensor" },
+    { "src": "/images/projects/electricity-saver/s710-ac-controller-800.webp", "alt": "S710 air-conditioning controller", "caption": "S710 AC controller" },
+    { "src": "/images/projects/electricity-saver/s715-light-controller-800.webp", "alt": "S715 light controller", "caption": "S715 light controller" }
+  ],
+  "related": ["water-control", "street-light-feeder", "sensor-magic"]
 }

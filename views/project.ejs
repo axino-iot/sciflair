@@ -1,0 +1,122 @@
+<%
+var s = site.sectors[p.sector];
+var allStages = ['Concept', 'Development', 'Production', 'Utilisation', 'Support', 'Retirement'];
+var owned = p.stages || [];
+%>
+<!-- Project hero -->
+<section class="p-hero">
+  <img class="p-hero-img" src="<%= p.hero || p.photo %>" alt="<%= p.photoAlt %>" width="1600" height="900" />
+  <div class="p-hero-shade" aria-hidden="true"></div>
+  <div class="wrap p-hero-content">
+    <p class="crumbs"><a href="/#projects">Projects</a> / <%= s.name %></p>
+    <span class="tag tag-<%= s.tag %>"><%= s.name %></span>
+    <h1><%= p.title %></h1>
+    <% if (p.subtitle) { %><p class="p-sub"><%= p.subtitle %></p><% } %>
+    <ul class="p-meta">
+      <% if (p.region) { %><li><%= p.region %></li><% } %>
+      <% if (p.year) { %><li><%= p.year %></li><% } %>
+      <li><%= p.deliveredBy === 'XAD' ? 'Heritage – XAD Communications' : 'Delivered by SciFlair' %></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Key results -->
+<section class="proof" aria-label="Results">
+  <div class="wrap proof-grid">
+    <% (p.results || []).forEach(function (r) { %>
+      <div class="proof-item"><span class="proof-value"><%= r.value %></span><span class="proof-label"><%= r.label %></span></div>
+    <% }) %>
+  </div>
+</section>
+
+<!-- Life cycle delivered -->
+<section class="p-stages-band">
+  <div class="wrap">
+    <p class="eyebrow">System Life Cycle Delivered</p>
+    <ol class="p-stages">
+      <% allStages.forEach(function (st) { var on = owned.indexOf(st) > -1; %>
+        <li class="<%= on ? 'is-on' : '' %>"><span><%= st %></span><% if (on) { %><span class="sr"> – delivered</span><% } %></li>
+      <% }) %>
+    </ol>
+  </div>
+</section>
+
+<div class="wrap p-body">
+  <article class="p-main">
+    <section>
+      <h2>Mission and Need</h2>
+      <% p.need.forEach(function (para) { %><p><%= para %></p><% }) %>
+    </section>
+    <section>
+      <h2>Our Role</h2>
+      <p><%= p.role %></p>
+      <% if (p.sciflairRole) { %><p><%= p.sciflairRole %>.</p><% } %>
+    </section>
+    <section>
+      <h2>What We Built</h2>
+      <ul class="p-list"><% p.built.forEach(function (b) { %><li><%= b %></li><% }) %></ul>
+      <% if (p.builtScope) { %><p class="p-scope"><%= p.builtScope %></p><% } %>
+    </section>
+    <section>
+      <h2>How It Was Delivered</h2>
+      <ol class="p-delivery">
+        <% p.delivery.forEach(function (d) { %><li><h3><%= d.title %></h3><p><%= d.text %></p></li><% }) %>
+      </ol>
+    </section>
+    <% if (p.gallery && p.gallery.length) { %>
+    <section>
+      <h2>Gallery</h2>
+      <div class="p-gallery">
+        <% p.gallery.forEach(function (g) { %>
+          <figure><img src="<%= g.src %>" alt="<%= g.alt %>" width="800" height="600" loading="lazy" /><figcaption><%= g.caption %></figcaption></figure>
+        <% }) %>
+      </div>
+    </section>
+    <% } %>
+    <% if (p.nextGen) { %>
+    <section class="p-next">
+      <h2><%= p.nextGen.title %></h2>
+      <p><%= p.nextGen.text %></p>
+    </section>
+    <% } %>
+  </article>
+
+  <aside class="p-side">
+    <div class="p-card">
+      <h3>At a Glance</h3>
+      <dl>
+        <dt>Client</dt><dd><%= p.client || 'Confidential' %></dd>
+        <% if (p.region) { %><dt>Region</dt><dd><%= p.region %></dd><% } %>
+        <% if (p.year) { %><dt>Year</dt><dd><%= p.year %></dd><% } %>
+        <dt>Sector</dt><dd><%= s.name %></dd>
+      </dl>
+      <h3>Technologies</h3>
+      <ul class="p-tech"><% (p.tech || []).forEach(function (t) { %><li><%= t %></li><% }) %></ul>
+      <a class="btn btn-primary" href="/#contact">Discuss a Similar Project</a>
+    </div>
+  </aside>
+</div>
+
+<% if (related.length) { %>
+<section class="section section-grey">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Related Projects</p><h2>More Systems in the Field</h2></div>
+    <div class="project-grid">
+      <% related.forEach(function (r) { var rs = site.sectors[r.sector]; %>
+        <article class="project-card">
+          <div class="project-media">
+            <% if (r.photo) { %><img src="<%= r.photo %>" alt="<%= r.photoAlt %>" width="500" height="400" loading="lazy" />
+            <% } else { %><div class="ph ph-card" role="img" aria-label="<%= r.title %>"><span>Photo: <%= r.title %></span></div><% } %>
+            <% if (r.result) { %><span class="project-result"><%= r.result %></span><% } %>
+          </div>
+          <div class="project-body">
+            <span class="tag tag-<%= rs.tag %>"><%= rs.name %></span>
+            <h3><%= r.title %></h3>
+            <p><%= r.headline %></p>
+          </div>
+        </article>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>

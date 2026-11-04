@@ -12,6 +12,23 @@ router.get('/', function (req, res) {
   });
 });
 
+// Project pages (only projects with a full write-up get a page)
+router.get('/projects/:slug', function (req, res, next) {
+  const p = site.projects.filter(function (x) { return x.slug === req.params.slug && x.need; })[0];
+  if (!p) return next();
+  const related = (p.related || []).map(function (s) {
+    return site.projects.filter(function (x) { return x.slug === s; })[0];
+  }).filter(Boolean);
+  res.render('project', {
+    layout: 'layout',
+    bodyClass: 'project',
+    title: p.title + (p.region ? ' – ' + p.region : '') + ' | SciFlair',
+    site: site,
+    p: p,
+    related: related
+  });
+});
+
 // Contact form.
 // Delivery (SMTP or a form service) is still to be decided, so for now the
 // message is validated and logged, and the visitor is asked to email us.
