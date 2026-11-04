@@ -11,14 +11,15 @@ const sectors = {
   city:      { name: 'Smart City',       tag: 'yellow', blurb: 'Street lighting, air quality and parking sensors for councils.' },
   agri:      { name: 'AgriTech & AI',    tag: 'green',  blurb: 'Hydroponics, aquaponics and machine vision for food production.' },
   platforms: { name: 'Platforms',        tag: 'slate',  blurb: '' },
-  research:  { name: 'Research',         tag: 'slate',  blurb: '' }
+  research:  { name: 'Research',         tag: 'slate',  blurb: '' },
+  health:    { name: 'Digital Health',   tag: 'blue',   blurb: '' }
 };
 
 // Sector tiles on the homepage, in display order
 const sectorTiles = ['energy', 'video', 'fleet', 'city', 'agri'];
 
 const proof = [
-  { value: '£10M+', label: 'programme led, concept to retirement' },
+  { value: '£10M+', label: 'programme led by our founder, concept to retirement' },
   { value: '3,000', label: 'sensors in one energy system' },
   { value: '5,000', label: 'homes on automated water control' },
   { value: '75%',   label: 'faster prototype to deployment' }

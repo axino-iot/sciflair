@@ -11,5 +11,6 @@
   "featured": 0,
   "order": 18,
   "photo": null,
-  "photoAlt": "Phased-array satellite antenna prototype"
+  "photoAlt": "Phased-array satellite antenna prototype",
+  "sciflairRole": null
 }

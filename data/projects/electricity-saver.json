@@ -5,11 +5,17 @@
   "deliveredBy": "SciFlair",
   "client": "An industrial cement plant",
   "year": null,
-  "region": null,
-  "headline": "3,000 mesh sensors automating air-conditioning and lighting across an industrial plant",
-  "result": "3,000 sensors",
+  "region": "Middle East",
+  "headline": "3,000 mesh-networked sensors automating air-conditioning and lighting across an industrial cement plant, saving 10–15% of the energy used",
+  "result": "10–15% energy saved",
   "featured": 1,
   "order": 1,
   "photo": "/images/placeholder/electricity-saver.webp",
-  "photoAlt": "SciFlair Electricity Saver sensor unit beside its packaging"
+  "photoAlt": "SciFlair Electricity Saver sensor unit beside its packaging",
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation"
+  ]
 }

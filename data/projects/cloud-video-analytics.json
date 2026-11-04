@@ -11,5 +11,6 @@
   "featured": 0,
   "order": 19,
   "photo": null,
-  "photoAlt": "Video analytics detecting vehicles in a traffic scene"
+  "photoAlt": "Video analytics detecting vehicles in a traffic scene",
+  "sciflairRole": null
 }

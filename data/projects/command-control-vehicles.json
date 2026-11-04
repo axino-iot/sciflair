@@ -11,5 +11,6 @@
   "featured": 0,
   "order": 15,
   "photo": null,
-  "photoAlt": "Command and control vehicle with deployed camera masts"
+  "photoAlt": "Command and control vehicle with deployed camera masts",
+  "sciflairRole": "SciFlair provided in-service support and maintenance as subcontractor"
 }
