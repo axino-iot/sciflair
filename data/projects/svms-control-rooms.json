@@ -1,0 +1,15 @@
+{
+  "slug": "svms-control-rooms",
+  "title": "SVMS and CCTV Control Rooms",
+  "sector": "video",
+  "deliveredBy": "SciFlair",
+  "client": null,
+  "year": null,
+  "region": null,
+  "headline": "Video management for live IP streams over microwave, satellite, GSM and fibre, with GPU video walls",
+  "result": "Multi-bearer video",
+  "featured": 3,
+  "order": 4,
+  "photo": null,
+  "photoAlt": "CCTV control room video wall"
+}

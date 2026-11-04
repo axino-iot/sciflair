@@ -1,0 +1,15 @@
+{
+  "slug": "parking-sensor",
+  "title": "Parking Occupancy Sensor",
+  "sector": "city",
+  "deliveredBy": "SciFlair",
+  "client": null,
+  "year": null,
+  "region": null,
+  "headline": "Battery-powered bay sensors with a five-year life",
+  "result": "5-year battery",
+  "featured": 0,
+  "order": 10,
+  "photo": null,
+  "photoAlt": "In-ground parking occupancy sensor"
+}

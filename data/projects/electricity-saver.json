@@ -1,0 +1,15 @@
+{
+  "slug": "electricity-saver",
+  "title": "Electricity Saver",
+  "sector": "energy",
+  "deliveredBy": "SciFlair",
+  "client": "An industrial cement plant",
+  "year": null,
+  "region": null,
+  "headline": "3,000 mesh sensors automating air-conditioning and lighting across an industrial plant",
+  "result": "3,000 sensors",
+  "featured": 1,
+  "order": 1,
+  "photo": "/images/placeholder/electricity-saver.webp",
+  "photoAlt": "SciFlair Electricity Saver sensor unit beside its packaging"
+}

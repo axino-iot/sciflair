@@ -1,188 +1,189 @@
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-  <div class="container">
-      <a class="navbar-brand" href="#page-top"><img src="/images/sciflair.svg" ></a>
-      <!-- <a href="/"><img class="navbar-brand" src="/images/itrack.svg" style="max-height: 50px; margin-left: -10px;"></a> -->
-      <button class="navbar-toggler  navbar-toggler-right" id="btn-menu-tgl" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar-nav ml-auto my-2 my-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#security">Video &amp; Security</a></li>
-              <li class="nav-item"><a class="nav-link" href="#automation">IoT &amp; Energy</a></li> 
-              <li class="nav-item"><a class="nav-link" href="#our-work">Our Work</a></li> 
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-      </div>
-  </div>
-</nav>
+<%
+var sectorIcons = { energy: 'bolt', video: 'camera', fleet: 'truck', city: 'city', agri: 'leaf' };
+function ph(label, cls) {
+  // Placeholder until Fahim's project photos arrive
+  return '<div class="ph ' + (cls || '') + '" role="img" aria-label="' + label + '"><span>Photo: ' + label + '</span></div>';
+}
+%>
 
-<!-- Masthead-->
-<header class="masthead">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center justify-content-center text-center">
-            <div class="col-lg-10 align-self-end">
-              <h1 class="font-weight-bold">Connected Systems Engineering</h1>
-              <hr class="divider my-4" />
-              <h2 class="font-weight-bold">IoT &middot; Energy &middot; Video &middot; Automation &middot; AI</h2><br>
-              <!-- <hr class="divider my-4" /> -->
-            </div>
-            <div class="col-lg-8 align-self-baseline">
-                <p class="font-weight-light mb-5">
-                  SciFlair designs and builds complete connected systems &ndash; hardware, embedded firmware,
-cloud platforms and apps &ndash; and supports them in the field. From energy and water networks to video,
-smart-city and AgriTech systems, we take projects from requirements through to long-term support.
-Based in Bristol, UK.
-                </p>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- About eddbcd; dcd0c0; c0b3a0; fff7c0; #f2eee2; #f8eee7 #d7cec7; e7dfdd; e1e8f0; #393f4d-->
-
-<!-- About eddbcd; dcd0c0; c0b3a0;  #f2eee2; #f8eee7 #d7cec7; e7dfdd; e1e8f0; #393f4d-->
-<section class="page-section" id="security" style="background-color: #e7dfdd">
-  <div class="container">
-    <div class="text-center">
-      <i class="fas fa-shield-alt fa-3x mb-3 text-muted"></i>
-      <h2 class="text-uppercase font-weight-bold ">Video &amp; Security</h2>
-      <h5 class="text-uppercase font-weight-bold" style=" margin-top: 80px;">
-        Fixed, Vehicle and Portable IP Video Systems
-      </h5>
-      <hr class="divider my-4" />
-      <p>
-        Our SVMS video management software handles large numbers of live IP video streams over microwave,
-WiMax, satellite, GSM and fibre links &ndash; for fixed sites, vehicles and rapidly deployed portable kits.
-We design CCTV control rooms, remote camera-node control for tower sites and inspection-logging apps
-for service teams, and integrate everything into one turnkey system.
-      </p>
+<!-- 1. Hero -->
+<section class="hero">
+  <div class="hero-media" aria-hidden="true"><span class="ph-note">Placeholder – wide hero photo of a real deployment</span></div>
+  <div class="wrap hero-content">
+    <p class="eyebrow">SciFlair · Bristol, UK</p>
+    <h1>Connected Systems Engineering</h1>
+    <p class="hero-sectors">IoT · Energy · Video · Automation · AI</p>
+    <p class="hero-lede">We design, build and support complete connected systems – hardware, embedded firmware, cloud platforms and apps – from the first requirement to years in the field.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">See Our Projects</a>
+      <a class="btn btn-outline" href="#contact">Talk To Us</a>
     </div>
   </div>
-  <!-- <div class="container">
-    <img src="/images/security2.jpg" style="max-width: 100%; margin-top: 40px; box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);">
-  </div> -->
 </section>
 
-<!-- Automation-->
-<section class="page-section" id="automation" style="background-color: #f4f4f4;" >
-  <div class="container">
-    <div class="text-center">
-      <i class="fas fa-cogs fa-3x mb-3 text-muted"></i>
-      <h2 class="text-uppercase font-weight-bold ">IoT, Energy &amp; Automation</h2>
-      <h5 class="text-uppercase font-weight-bold" style=" margin-top: 80px;">
-        Sensing, Monitoring and Control for Energy, Water, Cities and Farms
-      </h5>
-      <hr class="divider my-4" />
-      <p>
-        We build networked energy management for industrial sites, smart water metering and pump control,
-street-light, air-quality and parking systems, <a href="https://itrack.uk/">iTrack</a> GPS fleet tracking, and
-monitoring for hydroponics, aquaponics and machine-vision insect farming. Our
-<a href="https://www.axino.co/">Axino</a> IoT platform gives every product swappable WiFi, GSM, Ethernet, LoRa
-and Mesh connectivity with secure cloud management, so systems go from prototype to deployment quickly.
-      </p>
-    </div>
-  </div>  
-  <!-- <div class="container">
-    <img src="/images/automation1.jpg" style="max-width: 30%; margin-top: 40px; box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);">
-  </div> -->
-</section>
-
-<!-- Our Work-->
-<section class="page-section" id="our-work" style="background-color: #efebe8;" >
-  <div class="container">
-    <div class="text-center">
-      <i class="fas fa-briefcase fa-3x mb-3 text-muted"></i>
-      <h2 class="text-uppercase font-weight-bold ">Our Work</h2>
-      <hr class="divider my-4" />
-      <p>
-
-        A selection of systems we have designed, built and supported. Download a datasheet for details:
-      </p>
-
-      <div class="row">
-        <div class="col-lg-6 text-center">
-          <h3 class="text-uppercase font-weight-bold" style=" margin-top: 80px;">Security</h3>
-          <hr class="divider la my-4">
-            <div class="mt-5">
-              <ul class="features-list2">
-                <li><a href="/datasheets/Security/VideoManagementSystem.pdf" download>SciFlair Video Management System</a></li>
-                <li><a href="/datasheets/Security/CommandControlVehicles.pdf" download>Command and Control Vehicles</a></li>
-                <li><a href="/datasheets/Security/PortableKits.pdf" download>Portable Surveillance Kits</a></li>
-                <li><a href="/datasheets//Security/CctvControlRoom.pdf" download>CCTV Control Room</a></li>
-                <li><a href="/datasheets/Security/CctvNodeControlSystem.pdf" download>CCTV Node Control System</a></li>
-                <li><a href="/datasheets/Security/EquipmentInspectionLogger.pdf" download>Equipment Inspection Logger</a></li>
-              </ul>
-            </div>
-        </div>
-        <div class="col-lg-6 text-center">
-          <h3 class="text-uppercase font-weight-bold" style=" margin-top: 80px;">Automation</h3>
-          <hr class="divider la my-4">
-            <div class="mt-5">
-              <ul class="features-list2">
-                <li><a href="/datasheets/Automation/FuelTankerTracking.pdf" download>Fuel Theft Monitoring & Tanker Tracking</a></li>
-                <li><a href="/datasheets/Automation//WaterControlSystem.pdf" download>Water Control System</a></li>
-                <li><a href="/datasheets/Automation/AutomaticWaterMeterReading.pdf" download>Automatic Meter Reading</a></li>
-                <li><a href="/datasheets/Automation/AirQualityMonitor.pdf" download>Air Quality Monitoring</a></li>
-                <li><a href="/datasheets/Automation/SM01SeriesModules.pdf" download>Axino Communication Modules</a></li>
-                <li><a href="/datasheets/Automation/StreetLightFeederManagement.pdf" download>Street Light Feeder Management</a></li>
-                <li><a href="/datasheets/Automation/ParkingOccupancySensor.pdf" download>Parking Occupancy Sensor</a></li>
-              </ul>
-            </div>
-        </div>
+<!-- 2. Proof strip -->
+<section class="proof" aria-label="SciFlair in numbers">
+  <div class="wrap proof-grid">
+    <% site.proof.forEach(function (p) { %>
+      <div class="proof-item">
+        <span class="proof-value"><%= p.value %></span>
+        <span class="proof-label"><%= p.label %></span>
       </div>
-
-    </div>
-  </div>  
-  <!-- <div class="container">
-    <img src="/images/automation1.jpg" style="max-width: 30%; margin-top: 40px; box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);">
-  </div> -->
+    <% }) %>
+  </div>
 </section>
 
-<!-- Contact-->
-<section class="page-section" style="background-color: #fff" id="contact">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="mt-0">Let's Get In Touch!</h2>
-                <hr class="divider my-4" />
-                <p class="text-muted mb-5">Tell us about your project &ndash; from a prototype to a full system rollout.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4  text-center mb-5 mb-lg-0">
-                <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                <div>+44 (0)117 313 7585</div>
-            </div>
-            <div class="col-lg-4  text-center mb-5 mb-lg-0">
-              <i class="fas fa-globe fa-3x mb-3 text-muted"></i>
-              <div><a href="https://www.axino.co/">axino.co</a> &nbsp;|&nbsp; <a href="https://itrack.uk/">itrack.uk</a></div>
-            </div>
-            <div class="col-lg-4  text-center">
-                <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                <a class="d-block" href="mailto:info@sciflair.com">info@sciflair.com</a>
-            </div>
-        </div>
-
-        <!-- <div class="row">
-          <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-              <i class="fas fa-globe fa-3x mb-3 text-muted"></i>
-              <div><a href="https://www.axino.co/">www.axino.co</a></div>
+<!-- 3. What we build -->
+<section class="section" id="what-we-build">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What We Build</p>
+      <h2>Five Sectors, One Engineering Team</h2>
+      <p>The same team designs the electronics, writes the firmware, runs the cloud and builds the apps, so every system works as one.</p>
+    </div>
+    <div class="sector-grid">
+      <% site.sectorTiles.forEach(function (key, i) { var s = site.sectors[key]; %>
+        <a class="sector-tile<%= i === 0 ? ' sector-tile--wide' : '' %>" href="#projects">
+          <%- ph(s.name, 'ph-tile') %>
+          <div class="sector-body">
+            <span class="sector-icon"><%- include('partials/icon', { name: sectorIcons[key] }) %></span>
+            <h3><%= s.name %></h3>
+            <p><%= s.blurb %></p>
           </div>
-          <div class="col-lg-4 mr-auto text-center">
-              <i class="fas fa-globe fa-3x mb-3 text-muted"></i>
-              <div><a href="https://www.sciflair.com/">www.sciflair.com</a></div>
-          </div>
-        </div> -->
-
-      </div>
+        </a>
+      <% }) %>
+    </div>
+  </div>
 </section>
-  
-<!-- Footer-->
-<footer class="bg-light py-4">
-    <div class="container"><div class="small text-center text-muted">
-      SciFlair Ltd | Unit 18 | Apex Court | Woodlands Lane | Bradley Stoke | Bristol BS32 4JT | United Kingdom <br>
-      <!-- SciFlair Ltd | Henleaze House | 13 Harbury Road | Bristol BS9 4PN | United Kingdom  -->
-      <span style="font-size: 0.75rem;"> Copyright © <%= new Date().getFullYear() %> SciFlair Ltd &nbsp;|&nbsp; <a href="https://www.linkedin.com/company/sciflair-limited/">LinkedIn</a></span>
+
+<!-- 4. Featured projects -->
+<section class="section section-grey" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Featured Projects</p>
+      <h2>Systems Running in the Field</h2>
     </div>
+    <div class="project-grid">
+      <% site.featured.forEach(function (p) { var s = site.sectors[p.sector]; %>
+        <article class="project-card">
+          <div class="project-media">
+            <% if (p.photo) { %>
+              <img src="<%= p.photo %>" alt="<%= p.photoAlt %>" width="500" height="400" loading="lazy" />
+            <% } else { %>
+              <%- ph(p.title, 'ph-card') %>
+            <% } %>
+            <% if (p.result) { %><span class="project-result"><%= p.result %></span><% } %>
+          </div>
+          <div class="project-body">
+            <span class="tag tag-<%= s.tag %>"><%= s.name %></span>
+            <h3><%= p.title %></h3>
+            <p><%= p.headline %></p>
+            <% if (p.client) { %><p class="project-meta"><%= p.client %></p><% } %>
+          </div>
+        </article>
+      <% }) %>
     </div>
-</footer>
+    <div class="center">
+      <!-- Phase 2: link to the full gallery at /projects -->
+      <a class="btn btn-dark" href="#contact">Discuss a Similar Project <%- include('partials/icon', { name: 'arrow' }) %></a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. How we work -->
+<section class="section section-navy">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How We Work</p>
+      <h2>The Whole Lifecycle, Under One Roof</h2>
+    </div>
+    <ol class="steps">
+      <% site.steps.forEach(function (st, i) { %>
+        <li class="step">
+          <span class="step-num"><%= ('0' + (i + 1)) %></span>
+          <h3><%= st.title %></h3>
+          <p><%= st.text %></p>
+        </li>
+      <% }) %>
+    </ol>
+  </div>
+</section>
+
+<!-- 6. Our platforms -->
+<section class="section" id="platforms">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Our Platforms</p>
+      <h2>Products We Build On</h2>
+    </div>
+    <div class="platform-grid">
+      <article class="platform">
+        <%- ph('Axino modules', 'ph-platform') %>
+        <div class="platform-body">
+          <h3>Axino</h3>
+          <p>Our IoT platform: swappable WiFi, GSM, Ethernet, LoRa and Mesh modules with secure cloud management, so products go from prototype to deployment quickly.</p>
+          <a class="link" href="https://www.axino.co/">Visit axino.co <%- include('partials/icon', { name: 'arrow' }) %></a>
+        </div>
+      </article>
+      <article class="platform">
+        <div class="platform-shot"><img src="/images/placeholder/itrack-screen.webp" alt="iTrack fleet tracking dashboard showing vehicles on a map" width="960" height="484" loading="lazy" /></div>
+        <div class="platform-body">
+          <h3>iTrack</h3>
+          <p>GPS fleet tracking built on our own S100 tracker, with electronic locks and geofencing for fuel-tanker anti-theft.</p>
+          <a class="link" href="https://itrack.uk/">Visit itrack.uk <%- include('partials/icon', { name: 'arrow' }) %></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Research & leadership -->
+<section class="section section-grey" id="research">
+  <div class="wrap founder">
+    <div class="founder-photo"><%- ph('Founder', 'ph-founder') %></div>
+    <div class="founder-body">
+      <p class="eyebrow">Research &amp; Leadership</p>
+      <h2>Led by an Engineer</h2>
+      <p class="founder-name">Dr M Fahim Tariq, Founder &amp; Director</p>
+      <p>Fahim founded SciFlair in 2014 and has led engineering programmes for more than 25 years, including a £10M+ command-and-control vehicle programme at XAD Communications. He holds a PhD in adaptive modem design from the University of Bristol.</p>
+      <ul class="facts">
+        <li><strong>17</strong> peer-reviewed papers, 380+ citations</li>
+        <li><strong>2</strong> UWE PhDs supervised, graduated 2026</li>
+        <li><strong>KTP</strong> partnership on cloud video analytics</li>
+        <li><strong>Up to 17</strong> engineers in the team</li>
+      </ul>
+      <a class="btn btn-dark" href="https://www.linkedin.com/company/sciflair-limited/"><%- include('partials/icon', { name: 'linkedin' }) %> Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Contact -->
+<section class="section section-navy" id="contact">
+  <div class="wrap contact">
+    <div class="contact-info">
+      <p class="eyebrow">Contact</p>
+      <h2>Tell Us About Your Project</h2>
+      <p>From a prototype to a full system rollout. We reply within one working day.</p>
+      <ul class="contact-list">
+        <li><%- include('partials/icon', { name: 'phone' }) %><a href="tel:+441173137585">+44 (0)117 313 7585</a></li>
+        <li><%- include('partials/icon', { name: 'mail' }) %><a href="mailto:info@sciflair.com">info@sciflair.com</a></li>
+        <li><%- include('partials/icon', { name: 'pin' }) %><a href="https://www.google.com/maps/search/?api=1&amp;query=Unit+18+Apex+Court+Bradley+Stoke+BS32+4JT">Unit 18, Apex Court, Woodlands,<br>Bradley Stoke, Bristol BS32 4JT</a></li>
+      </ul>
+    </div>
+    <form class="contact-form" method="post" action="/contact">
+      <% if (contactStatus === 'invalid') { %>
+        <p class="form-msg form-msg--warn" role="alert">Please add your name, a valid email address and a message.</p>
+      <% } else if (contactStatus === 'not-connected') { %>
+        <p class="form-msg form-msg--warn" role="alert">Thank you. Our form is being connected – please also email <a href="mailto:info@sciflair.com">info@sciflair.com</a> so we don't miss you.</p>
+      <% } else if (contactStatus === 'sent') { %>
+        <p class="form-msg" role="status">Thank you – we'll be in touch within one working day.</p>
+      <% } %>
+      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required /></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required /></div>
+      <div class="field"><label for="f-org">Organisation</label><input id="f-org" name="organisation" autocomplete="organization" /></div>
+      <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="5" required></textarea></div>
+      <div class="hp" aria-hidden="true"><label for="f-web">Website</label><input id="f-web" name="website" tabindex="-1" autocomplete="off" /></div>
+      <button class="btn btn-primary" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>

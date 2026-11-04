@@ -1,0 +1,15 @@
+{
+  "slug": "smart-water-metering",
+  "title": "Smart Water Metering",
+  "sector": "energy",
+  "deliveredBy": "SciFlair",
+  "client": null,
+  "year": null,
+  "region": null,
+  "headline": "Retrofit meter readers reporting over LoRa, SigFox, GSM and Mesh",
+  "result": null,
+  "featured": 0,
+  "order": 3,
+  "photo": null,
+  "photoAlt": "Retrofit smart water meter reader"
+}
