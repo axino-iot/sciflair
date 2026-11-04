@@ -11,9 +11,9 @@
   "result": "£10M+ programme",
   "featured": 0,
   "order": 15,
-  "photo": "/images/projects/command-control/vehicle-briefing-area-800.webp",
-  "photoAlt": "Briefing area inside a converted command vehicle",
-  "hero": "/images/projects/command-control/operations-concept-1600.webp",
+  "photo": "/images/projects/command-control/command-truck-800.webp",
+  "photoAlt": "Converted command-and-control truck with slide-out operations room",
+  "hero": "/images/projects/command-control/command-truck-1600.webp",
   "stages": [
     "Concept",
     "Development",
@@ -27,21 +27,21 @@
     "A government client needed to collect, monitor and record audio, video and data from many sources at an incident, and pass it in real time to headquarters for decisions and analysis.",
     "Two operational teams had to work the same way: one moving as a convoy of specialist vehicles, the other carrying the same capability in rugged portable cases that can be set up anywhere without specialist knowledge. Separate camera, radio and recording systems had to come under one common platform."
   ],
-  "role": "XAD Communications was the prime contractor and design authority across the whole life cycle, from concept and requirements through architecture, design, manufacture, factory and site acceptance, deployment and in-service support to final retirement. Dr M Fahim Tariq, now SciFlair's founder, was Technical Programme Director: he wrote the technical proposals, negotiated at director and government level, and directed all four engineering groups (audio, video, data and RF), 22 engineers in total.",
+  "role": "XAD Communications was the prime contractor and design authority across the whole life cycle, from concept and requirements through architecture, design, manufacture, factory and site acceptance, deployment and in-service support to final retirement. The programme was led technically by the engineer who went on to found SciFlair: he wrote the technical proposals, negotiated at director and government level, and directed XAD's four engineering groups (audio, video, data and RF), 22 engineers in total.",
   "built": [
-    "Team 1, mobile: a convoy of eight converted vehicles, comprising a main operator vehicle, two auxiliary vehicles, and retransmission, transcriber, communication, intelligence and photo vehicles",
+    "Team 1, mobile: a convoy of eight converted vehicles, comprising a main operator vehicle, two auxiliary vehicles, and retransmission, transcriber, communication, intelligent and photo vehicles",
     "Team 2, portable: the same functions as stations in precision-fabricated Pelican cases, including a main operator station, retransmission, transcriber and photo stations, and portable operations rooms",
-    "35 deployable kits across both teams: mobile camera kits on pneumatic masts, relay client kits, negotiation kits and SLR camera kits",
+    "35 rapidly deployable camera and communication kits across both teams, including mobile cameras on pneumatic masts",
     "Vehicle conversions from 4x4s and vans up to 18-tonne trucks, with operator workstations, an on-board generator and battery bank, stabilising legs, air-conditioning and networking racks",
     "An end-to-end IP network across wired and wireless links, carrying live and recorded audio, video and data between kits, vehicles and headquarters",
     "Portable kits with a 5 GHz wireless link, a Wi-Fi access point for nearby viewers, an industrial touchscreen for camera control and up to 8 hours on battery",
     "XAD's own XVMS video management software, later succeeded by SciFlair's SVMS"
   ],
-  "builtScope": "Two teams, eight specialist vehicles, a full portable equivalent in Pelican cases, and 35 camera, relay, negotiation and SLR kits, all on one IP network.",
+  "builtScope": "Two teams, eight specialist vehicles, a full portable equivalent in Pelican cases, and 35 deployable camera and communication kits, all on one IP network.",
   "delivery": [
     {
       "title": "Concept and requirements",
-      "text": "Operational needs for both teams were captured and turned into the technical proposals and system requirements, authored by the Technical Programme Director."
+      "text": "Operational needs for both teams were captured and turned into the technical proposals and system requirements."
     },
     {
       "title": "Architecture and design",
@@ -79,7 +79,7 @@
     },
     {
       "value": "35",
-      "label": "deployable kits across both teams"
+      "label": "deployable camera and communication kits"
     }
   ],
   "tech": [
@@ -97,9 +97,19 @@
   },
   "gallery": [
     {
-      "src": "/images/projects/command-control/operations-concept-800.webp",
-      "alt": "Concept diagram of vehicles, kits and links in a command-and-control deployment",
-      "caption": "How the vehicles and kits work together"
+      "src": "/images/projects/command-control/command-truck-800.webp",
+      "alt": "Converted command truck with its slide-out room extended",
+      "caption": "Command truck with slide-out room"
+    },
+    {
+      "src": "/images/projects/command-control/camera-van-800.webp",
+      "alt": "Converted van with roof-mounted camera, lights and mast",
+      "caption": "Camera van with roof-mounted PTZ camera"
+    },
+    {
+      "src": "/images/projects/command-control/pneumatic-masts-800.webp",
+      "alt": "Two pneumatic masts raised with wireless and camera heads",
+      "caption": "Pneumatic masts raised"
     },
     {
       "src": "/images/projects/command-control/vehicle-workstations-800.webp",
@@ -110,11 +120,6 @@
       "src": "/images/projects/command-control/vehicle-briefing-area-800.webp",
       "alt": "Briefing table with phones inside a converted vehicle",
       "caption": "Briefing area"
-    },
-    {
-      "src": "/images/projects/command-control/vehicle-operator-bay-800.webp",
-      "alt": "Operator bay behind the driver's cab",
-      "caption": "Operator bay behind the cab"
     },
     {
       "src": "/images/projects/command-control/portable-kit-case-800.webp",
