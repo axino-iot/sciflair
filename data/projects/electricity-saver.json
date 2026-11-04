@@ -14,7 +14,13 @@
   "photo": "/images/projects/electricity-saver/site-ac-sensor-800.webp",
   "photoAlt": "SciFlair occupancy sensor installed in an office ceiling next to a cassette air-conditioning unit",
   "hero": "/images/projects/electricity-saver/site-ac-sensor-1600.webp",
-  "stages": ["Concept", "Development", "Production", "Utilisation", "Support"],
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation",
+    "Support"
+  ],
   "need": [
     "Air-conditioning and lights in the plant's offices were routinely left running in empty rooms, after hours and at weekends. In the region, air-conditioning can account for more than half of a building's electricity use.",
     "The client needed unoccupied areas switched off automatically, without altering the existing air-conditioning units or wiring, with the manual switches staying in charge and the lights failing safe if power or the system was lost."
@@ -29,31 +35,111 @@
   ],
   "builtScope": "In the main administration building alone: 121 air-conditioning units (100 indoor, 21 outdoor) and 45 lighting circuits across two floors.",
   "delivery": [
-    { "title": "Requirements traceability", "text": "Every requirement in the client's request for quotation was answered in a compliance matrix (fully, partially or not compliant, with reasons), forming the baseline for design and acceptance." },
-    { "title": "Stage plan", "text": "An eight-week plan from order to handover, with scope changes documented and justified through change control." },
-    { "title": "Verification", "text": "Controllers, sensors and transmitters were tested in our factory before shipping." },
-    { "title": "Decision gate: primary acceptance", "text": "A first stage installed five controllers and their sensors, tested and signed off by the client before the full rollout." },
-    { "title": "Validation and transition", "text": "Full installation, a signed site acceptance test in operational use, and handover with as-installed overlay drawings." },
-    { "title": "Support", "text": "First-year support, maintenance and warranty." }
+    {
+      "title": "Requirements traceability",
+      "text": "Every requirement in the client's request for quotation was answered in a compliance matrix (fully, partially or not compliant, with reasons), forming the baseline for design and acceptance."
+    },
+    {
+      "title": "Stage plan",
+      "text": "An eight-week plan from order to handover, with scope changes documented and justified through change control."
+    },
+    {
+      "title": "Verification",
+      "text": "Controllers, sensors and transmitters were tested in our factory before shipping."
+    },
+    {
+      "title": "Decision gate: primary acceptance",
+      "text": "A first stage installed five controllers and their sensors, tested and signed off by the client before the full rollout."
+    },
+    {
+      "title": "Validation and transition",
+      "text": "Full installation, a signed site acceptance test in operational use, and handover with as-installed overlay drawings."
+    },
+    {
+      "title": "Support",
+      "text": "First-year support, maintenance and warranty."
+    }
   ],
   "results": [
-    { "value": "10–15%", "label": "of the energy used saved" },
-    { "value": "3,000", "label": "sensors deployed" },
-    { "value": "121", "label": "AC units controlled in the admin building" },
-    { "value": "0", "label": "modifications to existing AC units" }
+    {
+      "value": "10–15%",
+      "label": "of the energy used saved"
+    },
+    {
+      "value": "3,000",
+      "label": "sensors deployed"
+    },
+    {
+      "value": "121",
+      "label": "AC units controlled in the admin building"
+    },
+    {
+      "value": "0",
+      "label": "modifications to existing AC units"
+    }
   ],
-  "tech": ["PIR occupancy sensing", "Infrared AC control", "Relay lighting control", "RS485", "Embedded firmware", "Fail-safe design"],
+  "tech": [
+    "PIR occupancy sensing",
+    "Infrared AC control",
+    "Relay lighting control",
+    "RS485",
+    "Embedded firmware",
+    "Fail-safe design"
+  ],
   "nextGen": {
     "title": "What came next: the wireless Electricity Saver range",
     "text": "Lessons from the plant led us to develop a wireless, battery-powered product line that installs in minutes: the S720 motion sensor (up to 5 years on two AAA batteries), the S710 air-conditioning controller with a built-in IR learner, and the S715 light controller for loads up to 2,000 W, all on an IEEE 802.15.4 mesh with up to 100 m range and a certified radio module."
   },
   "gallery": [
-    { "src": "/images/projects/electricity-saver/site-cassette-800.webp", "alt": "Occupancy sensor installed beside a ceiling-cassette air-conditioning unit", "caption": "On site: sensor beside a cassette AC unit" },
-    { "src": "/images/projects/electricity-saver/site-lights-800.webp", "alt": "Office ceiling with lighting panels under automatic control", "caption": "On site: lighting under automatic control" },
-    { "src": "/images/projects/electricity-saver/s72x-prototype-pcb-800.webp", "alt": "Prototype circuit board for the wireless motion sensor", "caption": "Development: wireless sensor prototype" },
-    { "src": "/images/projects/electricity-saver/s72x-sensor-800.webp", "alt": "Wireless motion sensor in its enclosure", "caption": "Wireless motion sensor" },
-    { "src": "/images/projects/electricity-saver/s710-ac-controller-800.webp", "alt": "S710 air-conditioning controller", "caption": "S710 AC controller" },
-    { "src": "/images/projects/electricity-saver/s715-light-controller-800.webp", "alt": "S715 light controller", "caption": "S715 light controller" }
+    {
+      "src": "/images/projects/electricity-saver/site-cassette-800.webp",
+      "alt": "Occupancy sensor installed beside a ceiling-cassette air-conditioning unit",
+      "caption": "On site: sensor beside a cassette AC unit"
+    },
+    {
+      "src": "/images/projects/electricity-saver/site-lights-800.webp",
+      "alt": "Office ceiling with lighting panels under automatic control",
+      "caption": "On site: lighting under automatic control"
+    },
+    {
+      "src": "/images/projects/electricity-saver/installed-sensor-cassette-800.webp",
+      "alt": "Motion sensor mounted on a ceiling tile near a cassette air-conditioning unit",
+      "caption": "Ceiling-mounted motion sensor"
+    },
+    {
+      "src": "/images/projects/electricity-saver/sensor-pcb-800.webp",
+      "alt": "Circuit board of the wireless motion sensor",
+      "caption": "Development: motion sensor circuit board"
+    },
+    {
+      "src": "/images/projects/electricity-saver/motion-sensor-mounts-800.webp",
+      "alt": "Wireless motion sensor with its mounting plates",
+      "caption": "S720 motion sensor and mounting plates"
+    },
+    {
+      "src": "/images/projects/electricity-saver/light-controller-packaged-800.webp",
+      "alt": "S715 light controller beside its retail packaging",
+      "caption": "S715 light controller, ready to ship"
+    },
+    {
+      "src": "/images/projects/electricity-saver/ac-controller-packaged-800.webp",
+      "alt": "S710 air-conditioning controller beside its packaging",
+      "caption": "S710 AC controller, ready to ship"
+    },
+    {
+      "src": "/images/projects/electricity-saver/s710-ac-controller-800.webp",
+      "alt": "S710 air-conditioning controller",
+      "caption": "S710 AC controller"
+    },
+    {
+      "src": "/images/projects/electricity-saver/s715-light-controller-800.webp",
+      "alt": "S715 light controller",
+      "caption": "S715 light controller"
+    }
   ],
-  "related": ["water-control", "street-light-feeder", "sensor-magic"]
+  "related": [
+    "water-control",
+    "street-light-feeder",
+    "sensor-magic"
+  ]
 }
