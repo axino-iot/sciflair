@@ -11,9 +11,9 @@
   "result": "100+ cameras",
   "featured": 3,
   "order": 4,
-  "photo": "/images/projects/svms/svms-video-wall-800.webp",
-  "photoAlt": "SVMS operator screen showing six live camera views",
-  "hero": "/images/projects/svms/svms-video-wall-1600.webp",
+  "photo": "/images/projects/svms/control-room-video-wall-800.webp",
+  "photoAlt": "Control-room video wall showing a live traffic camera",
+  "hero": "/images/projects/svms/tower-ptz-camera-1600.webp",
   "stages": [
     "Concept",
     "Development",
@@ -92,34 +92,34 @@
   },
   "gallery": [
     {
-      "src": "/images/projects/svms/svms-six-camera-view-800.webp",
-      "alt": "SVMS showing six live camera views",
-      "caption": "Six live views on one monitor"
+      "src": "/images/projects/svms/control-room-video-wall-800.webp",
+      "alt": "Control-room video wall showing a live road camera",
+      "caption": "Control-room video wall"
     },
     {
-      "src": "/images/projects/svms/svms-ptz-control-800.webp",
-      "alt": "SVMS centred view with the pan, tilt and zoom controls",
-      "caption": "Centred view with PTZ control"
+      "src": "/images/projects/svms/rooftop-ptz-camera-800.webp",
+      "alt": "PTZ camera on a rooftop mast with WiMax antennas and junction box",
+      "caption": "Rooftop PTZ camera with WiMax link"
+    },
+    {
+      "src": "/images/projects/svms/tower-ptz-camera-wimax-800.webp",
+      "alt": "PTZ camera and WiMax antennas mounted on a communications tower",
+      "caption": "Tower-mounted camera node"
+    },
+    {
+      "src": "/images/projects/svms/tower-microwave-links-800.webp",
+      "alt": "Communications tower carrying microwave dishes and radio units",
+      "caption": "Microwave backhaul on the tower"
+    },
+    {
+      "src": "/images/projects/svms/tower-installation-800.webp",
+      "alt": "Two riggers installing equipment at height on a lattice tower",
+      "caption": "Installation at height"
     },
     {
       "src": "/images/projects/svms/svms-architecture-800.webp",
       "alt": "Diagram of the SVMS modules connected to the Database Server",
       "caption": "SVMS architecture"
-    },
-    {
-      "src": "/images/projects/svms/svms-operator-cameras-800.webp",
-      "alt": "Assigning cameras to an operator in SVMS",
-      "caption": "Operators see only their assigned cameras"
-    },
-    {
-      "src": "/images/projects/svms/svms-video-wall-config-800.webp",
-      "alt": "Configuring a video wall player and its cell matrix",
-      "caption": "Configuring a video wall"
-    },
-    {
-      "src": "/images/projects/svms/svms-recorded-files-800.webp",
-      "alt": "SVMS recorded and imported files list with export controls",
-      "caption": "Searching and exporting recordings"
     }
   ],
   "related": [
