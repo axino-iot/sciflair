@@ -1,15 +1,15 @@
 {
   "slug": "svms",
   "title": "SVMS: SciFlair Video Management Software",
-  "subtitle": "Our own video management software, rewritten from the ground up for CCTV networks, control-room video walls and mobile command-and-control systems",
+  "subtitle": "Our own video management software, rewritten from the ground up, which ran CCTV networks, control-room video walls and mobile command-and-control systems",
   "sector": "video",
   "deliveredBy": "SciFlair",
   "client": "Security and infrastructure operators",
-  "year": "2016 onwards",
+  "year": "2016–2019",
   "region": null,
-  "headline": "SciFlair Video Management Software, rewritten from the ground up and running a 100+ camera HD surveillance network, command-and-control systems and CCTV control rooms over microwave, satellite, fibre and WiMax links",
+  "headline": "SciFlair Video Management Software, rewritten from the ground up, which ran a 100+ camera HD surveillance network, command-and-control systems and CCTV control rooms",
   "result": "100+ cameras",
-  "featured": 3,
+  "featured": 0,
   "order": 4,
   "photo": "/images/projects/svms/control-room-video-wall-800.webp",
   "photoAlt": "Control-room video wall showing a live traffic camera",
@@ -25,7 +25,7 @@
     "Security operators have to watch, record and control large numbers of IP cameras spread across wide areas, often over links with very different capacity: microwave, satellite, fibre, WiMax and mobile networks.",
     "Our clients needed one system that works the same way in a fixed control room, a command-and-control vehicle or a rapidly deployed portable kit, makes the most of constrained links, and limits each operator to the cameras they are authorised to see."
   ],
-  "role": "SVMS (SciFlair Video Management Software) is our own software. Years of supporting XAD's XVMS platform in the field showed where its bottlenecks were, so we rewrote the software from the ground up rather than extending it: a new modular architecture designed around those lessons. We own the architecture and code, and integrate, deploy and support SVMS as part of the systems we deliver. It is the software behind the 100+ camera HD surveillance network, our command-and-control projects and other CCTV control rooms.",
+  "role": "SVMS (SciFlair Video Management Software) is our own software. Years of supporting XAD's XVMS platform in the field showed where its bottlenecks were, so we rewrote the software from the ground up rather than extending it: a new modular architecture designed around those lessons. We own the architecture and code, and integrated, deployed and supported SVMS as part of the systems we delivered. It was the software behind the 100+ camera HD surveillance network, our command-and-control projects and other CCTV control rooms.",
   "built": [
     "Database Server: the single point of access to the configuration database, so every other module can run on its own machine anywhere on the network",
     "Operator GUI: up to 12 live or recorded views per monitor, a centred view with thumbnails, and pan, tilt, zoom, presets and auxiliary commands such as wipers for PTZ cameras",
@@ -55,7 +55,7 @@
     },
     {
       "title": "Support",
-      "text": "SciFlair maintains and extends the software and supports it in the field."
+      "text": "SciFlair maintained and supported the software in the field. We own the code and can revive and update it for new deployments."
     }
   ],
   "results": [
