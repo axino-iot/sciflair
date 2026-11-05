@@ -7,9 +7,12 @@
       <%- include('icon', { name: 'menu' }) %>
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Main">
-      <a href="/projects">Projects</a>
-      <a href="/products">Products</a>
-      <a href="/research">R&amp;D</a>
+<% var cp = (typeof currentPath === 'string') ? currentPath : '';
+   function cur(base) { return (cp === base || cp.indexOf(base + '/') === 0) ? ' aria-current="page"' : ''; } %>
+      <a class="nav-home" href="/"<%- cp === '/' ? ' aria-current="page"' : '' %>>Home</a>
+      <a href="/projects"<%- cur('/projects') %>>Projects</a>
+      <a href="/products"<%- cur('/products') %>>Products</a>
+      <a href="/research"<%- cur('/research') %>>R&amp;D</a>
       <a href="/#research">About</a>
       <a class="btn btn-primary btn-sm" href="/#contact">Talk To Us</a>
     </nav>

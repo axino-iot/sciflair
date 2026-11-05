@@ -329,3 +329,11 @@ body:not(.home):not(.project):not(.section-page) main { padding-top: 76px; min-h
 .card-soon { display: inline-block; margin-top: 14px; font-size: .88rem; color: #7A7C80; }
 .p-ask { font-size: .95rem; color: var(--ink); }
 @media (max-width: 760px) { .sec-hero { padding: 96px 0 36px; } }
+
+/* Menu: current section and phone-only Home link */
+.site-nav .nav-home { display: none; }
+.site-nav a[aria-current="page"]:not(.btn) { color: var(--orange); box-shadow: inset 0 -2px 0 var(--orange); }
+@media (max-width: 760px) {
+  .site-nav .nav-home { display: block; }
+  .site-nav a[aria-current="page"]:not(.btn) { box-shadow: none; border-left: 3px solid var(--orange); padding-left: 12px; }
+}

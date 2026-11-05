@@ -30,6 +30,9 @@ app.use(
     })
 );
 
+// Current path for the menu highlight
+app.use(function (req, res, next) { res.locals.currentPath = req.path; next(); });
+
 //Mount Router
 app.use('/', require('./routes/web'));
 
