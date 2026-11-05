@@ -3,16 +3,104 @@
   "title": "Surgical Workflow Digitisation",
   "sector": "health",
   "deliveredBy": "SciFlair",
-  "client": null,
+  "client": "A surgical department",
   "year": "2024 onwards",
-  "region": null,
-  "headline": "Patient records digitised with OCR and queried through a Microsoft 365 app at the point of care, hosted in Europe for GDPR; next phase automates referrals and appointments with no internal emails",
-  "result": null,
+  "region": "Europe",
+  "headline": "Post-op notes and lab reports compiled automatically into one chronological patient record in Microsoft Teams, letting surgeons see up to 20 patients an hour instead of 5",
+  "result": "4× more patients per hour",
   "featured": 0,
   "order": 5,
-  "photo": null,
-  "photoAlt": "Power App screen for surgical team record queries",
+  "photo": "/images/projects/surgical-workflow/workflow-diagram-light-800.webp",
+  "photoAlt": "Diagram: post-op emails and lab reports filed automatically into a patient record shown to the surgeon in Microsoft Teams",
   "type": "project",
-  "status": "In progress",
-  "ai": false
+  "status": "In daily use",
+  "ai": false,
+  "subtitle": "Every post-operative note and lab report filed automatically in date order and shown to the surgeon in Microsoft Teams, without data leaving Microsoft 365",
+  "hero": "/images/projects/surgical-workflow/workflow-diagram-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation",
+    "Support"
+  ],
+  "need": [
+    "The surgical workflow was largely manual and ran on email. After an operation, surgeons and staff needed the operation notes and the patient's lab history quickly, often during a ward visit straight after surgery. The information existed, but it was spread across emails from different departments and labs.",
+    "Finding it could take up to 15 minutes per patient, and reports from weeks or months earlier could be missed altogether. Any solution had to protect patient data fully and meet GDPR."
+  ],
+  "role": "SciFlair was responsible for the whole solution: capturing the requirements with the surgical team, designing and building the workflow, testing it with live cases, and supporting it in daily use.",
+  "built": [
+    "Automated intake of post-operative emails from departments and of lab reports as soon as they arrive",
+    "OCR that reads only the patient identification details and skips the medical content, then files each document against the right patient",
+    "A patient record in a SharePoint list and folder, with every note and report in chronological order",
+    "A Microsoft Teams view for surgeons, so the full history is in front of them at the bedside",
+    "Exception handling: any abnormal entry is isolated and flagged for admin review, while the original email stays available to the surgeon",
+    "Document access tracking and audit trails for GDPR compliance, with all data kept inside Microsoft 365, hosted in Europe"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Mapped the existing email-based workflow with surgeons and staff, and set the measures of effectiveness: time to find information, completeness of history, and data protection."
+    },
+    {
+      "title": "Design",
+      "text": "Designed the solution entirely within Microsoft 365, using Power Automate, SharePoint, Outlook and Teams, so no patient data leaves the organisation's environment."
+    },
+    {
+      "title": "Build and verification",
+      "text": "Built the intake, OCR and filing flows, the exception route and the audit trail, and verified them against live post-op and lab emails."
+    },
+    {
+      "title": "Transition and use",
+      "text": "Rolled out to the surgical team, where it now handles about 50 cases a day."
+    },
+    {
+      "title": "Support",
+      "text": "Supported in daily use, with the next phase automating referrals and appointments with no internal emails."
+    }
+  ],
+  "results": [
+    {
+      "value": "20",
+      "label": "patients an hour, up from 5"
+    },
+    {
+      "value": "15 min",
+      "label": "of searching per patient removed"
+    },
+    {
+      "value": "50",
+      "label": "cases a day processed automatically"
+    },
+    {
+      "value": "0",
+      "label": "patient data leaving Microsoft 365"
+    }
+  ],
+  "tech": [
+    "Microsoft 365",
+    "Power Automate",
+    "SharePoint",
+    "Microsoft Teams",
+    "Outlook",
+    "OCR",
+    "Audit logging",
+    "GDPR"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/surgical-workflow/workflow-diagram-light-800.webp",
+      "alt": "Surgical workflow diagram",
+      "caption": "How it works: from email to the surgeon's screen, inside Microsoft 365"
+    }
+  ],
+  "nextGen": {
+    "title": "Next Phase: Referrals and Appointments",
+    "text": "The next phase automates referrals and appointment booking end to end, with no internal emails. We can apply the same approach to other clinical and administrative workflows."
+  },
+  "related": [
+    "electricity-saver",
+    "water-control",
+    "sensor-magic"
+  ]
 }
