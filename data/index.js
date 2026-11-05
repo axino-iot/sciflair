@@ -55,14 +55,14 @@ const steps = [
 
 // The three sections of our work, each for a different reader with a clear ask
 const sections = {
-  project: { path: 'projects', title: 'Projects', who: 'For clients',
-    intro: 'Systems we designed, delivered and supported for others, in operational use through their life cycle.',
-    ask: 'Tell us about a system you need, from a feasibility study to a full rollout and support.',
-    cta: 'Discuss your project' },
   product: { path: 'products', title: 'Products', who: 'For investors',
     intro: 'Our own hardware and software platforms, built once and reused across deployments.',
     ask: 'Back a product to scale it, or deploy it in your organisation.',
     cta: 'Talk about investment' },
+  project: { path: 'projects', title: 'Projects', who: 'For clients',
+    intro: 'Systems we designed, delivered and supported for others, in operational use through their life cycle.',
+    ask: 'Tell us about a system you need, from a feasibility study to a full rollout and support.',
+    cta: 'Discuss your project' },
   prototype: { path: 'research', title: 'Prototypes & R&D', who: 'For partners and funders',
     intro: 'Working prototypes, field trials and joint research, ready for the next stage of development.',
     ask: 'Co-develop, fund or license a prototype, or partner with us on research.',
@@ -71,12 +71,12 @@ const sections = {
 
 // Who the site is for: each route opens one section
 const audiences = [
-  { title: 'Commission a System', who: 'Clients',
-    text: 'Systems delivered and running for others, with one senior lead accountable for hardware, firmware, cloud and apps.',
-    cta: 'See our projects', href: '/projects' },
   { title: 'Back a Product', who: 'Investors',
     text: 'Our own platforms, proven in the field and reused across deployments, ready to scale.',
     cta: 'See our products', href: '/products' },
+  { title: 'Commission a System', who: 'Clients',
+    text: 'Systems delivered and running for others, with one senior lead accountable for hardware, firmware, cloud and apps.',
+    cta: 'See our projects', href: '/projects' },
   { title: 'Partner on R&D', who: 'Partners & Funders',
     text: 'Prototypes, field trials and joint PhD research ready for the next stage, with a track record of grant and university funding.',
     cta: 'See prototypes and R&D', href: '/research' }

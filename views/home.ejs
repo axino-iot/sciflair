@@ -14,7 +14,7 @@ function ph(label, cls) {
     <p class="hero-sectors">IoT · Energy · Video · Automation · AI</p>
     <p class="hero-lede">We design, build and support complete connected systems – hardware, embedded firmware, cloud platforms and apps – from the first requirement to years in the field.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#projects">See Our Projects</a>
+      <a class="btn btn-primary" href="#products">See Our Products</a>
       <a class="btn btn-outline" href="#contact">Talk To Us</a>
     </div>
   </div>
@@ -43,6 +43,23 @@ function ph(label, cls) {
         <span class="link"><%= a.cta %> <%- include('partials/icon', { name: 'arrow' }) %></span>
       </a>
     <% }) %>
+  </div>
+</section>
+
+<!-- 4. Our products (first focus) -->
+<section class="section" id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Our Products</p>
+      <h2>Platforms We Own, Built Once and Reused</h2>
+      <p>Hardware and software we designed, own and deploy across our projects, ready to scale with investors and partners.</p>
+    </div>
+    <div class="project-grid grid-4">
+      <% site.byType('product').forEach(function (p) { %><%- include('partials/card', { p: p, site: site }) %><% }) %>
+    </div>
+    <div class="center">
+      <a class="btn btn-dark" href="/products">See All Products <%- include('partials/icon', { name: 'arrow' }) %></a>
+    </div>
   </div>
 </section>
 
@@ -124,35 +141,6 @@ function ph(label, cls) {
         </li>
       <% }) %>
     </ol>
-  </div>
-</section>
-
-<!-- 6. Our platforms -->
-<section class="section" id="platforms">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Our Products</p>
-      <h2>Platforms We Built and Reuse</h2>
-      <p>Built once and reused across our projects and prototypes. <a href="/products">See all products</a>.</p>
-    </div>
-    <div class="platform-grid">
-      <article class="platform">
-        <div class="platform-shot"><img src="/images/projects/axino/module-family-800.webp" alt="Axino communication modules" width="800" height="600" loading="lazy" /></div>
-        <div class="platform-body">
-          <h3>Axino</h3>
-          <p>Our IoT platform and the backbone of our work: swappable WiFi, GSM, Ethernet, LoRa, Mesh and SigFox modules with cloud management, putting a pilot sensor network in the field within weeks.</p>
-          <a class="link" href="/products/axino">About Axino <%- include('partials/icon', { name: 'arrow' }) %></a>
-        </div>
-      </article>
-      <article class="platform">
-        <div class="platform-shot"><img src="/images/projects/itrack/s100-tracker-800.webp" alt="SciFlair S100 vehicle tracker" width="800" height="600" loading="lazy" /></div>
-        <div class="platform-body">
-          <h3>iTrack</h3>
-          <p>Cloud fleet tracking on our own S100 tracker, with multi-GNSS, dual SIM and jamming detection, built on what we learned from Axino.</p>
-          <a class="link" href="/products/itrack">About iTrack <%- include('partials/icon', { name: 'arrow' }) %></a>
-        </div>
-      </article>
-    </div>
   </div>
 </section>
 

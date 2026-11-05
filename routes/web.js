@@ -39,7 +39,7 @@ router.get('/sectors/:key', function (req, res, next) {
     site: site,
     key: key,
     s: site.sectors[key],
-    groups: ['project', 'product', 'prototype'].map(function (t) {
+    groups: ['product', 'project', 'prototype'].map(function (t) {
       return { sec: site.sections[t], items: items.filter(function (p) { return p.type === t; }) };
     }).filter(function (g) { return g.items.length; })
   });
