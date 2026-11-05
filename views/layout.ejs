@@ -4,21 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <% var pageTitle = (typeof title !== 'undefined' && title) ? title : 'SciFlair | Connected Systems Engineering – IoT, Energy, Video & AI | Bristol, UK'; %>
-    <% var pageDesc = 'SciFlair designs and builds connected systems – hardware, embedded firmware, cloud platforms and apps – for energy, water, video and security, smart city and AgriTech. Based in Bristol, UK.'; %>
+    <% var pageDesc = (typeof description !== 'undefined' && description) ? description : 'SciFlair designs, builds and supports connected systems – hardware, embedded firmware, cloud platforms and apps – across IoT, AI, energy, video and automation. Based in Bristol, UK.';
+       var path = (typeof currentPath === 'string') ? currentPath : '/';
+       var pageUrl = 'https://www.sciflair.com' + path;
+       var pageImg = 'https://www.sciflair.com' + ((typeof ogImage !== 'undefined' && ogImage) ? ogImage : '/images/og-sciflair.png'); %>
     <meta name="description" content="<%= pageDesc %>" />
     <meta name="author" content="SciFlair Ltd" />
     <meta name="theme-color" content="#1E2836" />
     <title><%= pageTitle %></title>
-    <link rel="canonical" href="https://www.sciflair.com/" />
+    <link rel="canonical" href="<%= pageUrl %>" />
     <!-- Social sharing (LinkedIn, WhatsApp, email previews) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="SciFlair" />
     <meta property="og:title" content="<%= pageTitle %>" />
     <meta property="og:description" content="<%= pageDesc %>" />
-    <meta property="og:url" content="https://www.sciflair.com/" />
-    <meta property="og:image" content="https://www.sciflair.com/images/og-sciflair.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="<%= pageUrl %>" />
+    <meta property="og:image" content="<%= pageImg %>" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <!-- Self-hosted brand fonts: Montserrat (headings), Lato (body) -->
@@ -27,7 +28,7 @@
     <link rel="stylesheet" href="/css/site.css" />
     <!-- Organisation details for search engines -->
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Organization","name":"SciFlair Ltd","url":"https://www.sciflair.com","logo":"https://www.sciflair.com/images/sciflair.svg","email":"info@sciflair.com","telephone":"+44 117 313 7585","foundingDate":"2014","address":{"@type":"PostalAddress","streetAddress":"Unit 18, Apex Court, Woodlands","addressLocality":"Bradley Stoke, Bristol","postalCode":"BS32 4JT","addressCountry":"GB"},"sameAs":["https://www.linkedin.com/company/sciflair-limited/","https://www.axino.co/","https://itrack.uk/"]}
+    {"@context":"https://schema.org","@type":"Organization","name":"SciFlair Ltd","url":"https://www.sciflair.com","logo":"https://www.sciflair.com/images/sciflair.svg","email":"info@sciflair.com","telephone":"+44 117 313 7585","foundingDate":"2014","address":{"@type":"PostalAddress","streetAddress":"Unit 18, Apex Court, Woodlands","addressLocality":"Bradley Stoke, Bristol","postalCode":"BS32 4JT","addressCountry":"GB"},"sameAs":["https://www.linkedin.com/company/sciflair-limited/"]}
     </script>
   </head>
   <body class="<%= typeof bodyClass !== 'undefined' ? bodyClass : '' %>">
