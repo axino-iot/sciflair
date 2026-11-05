@@ -1,7 +1,4 @@
 <%
-// Sector filter: only sectors that appear in this section
-var used = [];
-items.forEach(function (p) { if (used.indexOf(p.sector) < 0) used.push(p.sector); });
 var tabs = Object.keys(site.sections).map(function (k) { return site.sections[k]; });
 %>
 <section class="sec-hero">
@@ -23,14 +20,7 @@ var tabs = Object.keys(site.sections).map(function (k) { return site.sections[k]
 
 <section class="section section-grey">
   <div class="wrap">
-    <% if (used.length > 1) { %>
-    <div class="filters" role="group" aria-label="Filter by sector">
-      <button type="button" class="chip is-on" data-sector="">All</button>
-      <% used.forEach(function (k) { %><button type="button" class="chip" data-sector="<%= k %>"><%= (site.sectors[k] || site.sectors.all).name %></button><% }) %>
-      <% if (items.some(function (p) { return p.ai; })) { %><button type="button" class="chip" data-ai="1">AI</button><% } %>
-    </div>
-    <% } %>
-    <div class="project-grid">
+    <div class="project-grid<%= items.length === 4 ? ' grid-4' : '' %>">
       <% items.forEach(function (p) { %>
         <div class="grid-item" data-sector="<%= p.sector %>" data-ai="<%= p.ai ? 1 : 0 %>"><%- include('partials/card', { p: p, site: site }) %></div>
       <% }) %>
@@ -38,20 +28,15 @@ var tabs = Object.keys(site.sections).map(function (k) { return site.sections[k]
   </div>
 </section>
 
-<script>
-  (function () {
-    var chips = document.querySelectorAll('.filters .chip');
-    var items = document.querySelectorAll('.grid-item');
-    chips.forEach(function (c) {
-      c.addEventListener('click', function () {
-        chips.forEach(function (x) { x.classList.remove('is-on'); });
-        c.classList.add('is-on');
-        var sector = c.getAttribute('data-sector'), ai = c.getAttribute('data-ai');
-        items.forEach(function (it) {
-          var show = ai ? it.getAttribute('data-ai') === '1' : (!sector || it.getAttribute('data-sector') === sector);
-          it.hidden = !show;
-        });
-      });
-    });
-  })();
-</script>
+<% var order = Object.keys(site.sections).map(function (k) { return site.sections[k]; });
+   var nx = order[(order.indexOf(sec) + 1) % order.length]; %>
+<section class="sec-next">
+  <div class="wrap sec-next-inner">
+    <div>
+      <p class="eyebrow"><%= nx.who %></p>
+      <h2><%= nx.title %></h2>
+      <p><%= nx.intro %></p>
+    </div>
+    <a class="btn btn-primary btn-lg" href="/<%= nx.path %>">See Our <%= nx.path === 'research' ? 'R&D' : nx.title %> <%- include('partials/icon', { name: 'arrow' }) %></a>
+  </div>
+</section>

@@ -348,3 +348,10 @@ body:not(.home):not(.project):not(.section-page) main { padding-top: 88px; min-h
 .route .route-cta { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 18px; padding: 15px 20px; background: var(--orange); color: #fff; border-radius: 8px; font: 700 1.08rem var(--head); letter-spacing: .01em; transition: background .15s; }
 .route .route-cta .icon { width: 20px; height: 20px; }
 .route:hover .route-cta { background: var(--orange-deep); }
+
+/* Next-section link at the foot of Products, Projects and R&D */
+.sec-next { background: var(--navy); color: var(--on-dark); padding: 56px 0; }
+.sec-next-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+.sec-next h2 { color: #fff; margin: 4px 0 8px; }
+.sec-next p { margin: 0; max-width: 560px; }
+.btn-lg { padding: 16px 30px; font-size: 1.08rem; display: inline-flex; align-items: center; gap: 10px; }
