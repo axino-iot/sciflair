@@ -4,15 +4,123 @@
   "sector": "energy",
   "deliveredBy": "SciFlair",
   "client": "A client",
-  "year": null,
+  "year": "2017–2018",
   "region": "Middle East",
-  "headline": "Retrofit meter reading and pump control over LPWAN, built on Axino for a client in the Middle East",
-  "result": null,
+  "headline": "Battery-powered retrofit reader that turns existing water meters into smart meters, built on Axino for a client in the Middle East",
+  "result": "Retrofit, no meter swap",
   "featured": 0,
   "order": 201,
-  "photo": null,
-  "photoAlt": "Retrofit smart water meter reader",
+  "photo": "/images/projects/water-metering/reader-unit-open-800.webp",
+  "photoAlt": "SciFlair meter reader unit open, showing the sensor node board and battery pack",
   "type": "prototype",
   "status": "Prototype",
-  "ai": false
+  "ai": false,
+  "subtitle": "A battery-powered reader that turns existing water meters into connected smart meters, with leak and tamper alerts",
+  "hero": "/images/projects/water-metering/reader-unit-open-1600.webp",
+  "stages": [
+    "Concept",
+    "Development"
+  ],
+  "need": [
+    "Water utilities lose revenue to meters that are read by hand, read late or not at all, and to leaks and tampering that go unseen between visits. Replacing every installed meter with a smart meter is costly and slow.",
+    "A client in the Middle East asked whether its existing mechanical meters could be read remotely instead, and whether the same network could also control pumps and supply."
+  ],
+  "role": "SciFlair was the design authority. We captured the client's requirements, designed the reader hardware, firmware and head-end software, built the prototypes and tested them on meters in the lab and on site.",
+  "built": [
+    "A retrofit reader that fits existing pulse-output water meters, so the meter itself stays in place",
+    "A low-power sensor node board in an IP67 enclosure, running for years on batteries",
+    "Our Axino communication module, so the same reader can connect over GSM, LoRa, SigFox, mesh, WiFi or Ethernet to suit each site",
+    "Readings stored on the device when the network is down and sent once it returns",
+    "Alerts for leaks, continuous flow and tampering",
+    "A head-end web application showing every meter on a live map, with consumption history and alarms",
+    "Pump and valve control from the same platform, reusing our well pump control design"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Defined the stakeholder requirements with the client and set the measures of performance: battery life, read interval, range and cost per meter."
+    },
+    {
+      "title": "Architecture",
+      "text": "Chose a retrofit architecture on the Axino platform so one reader design could serve different meters and networks."
+    },
+    {
+      "title": "Design and build",
+      "text": "Designed the sensor node board, firmware and enclosure, then built a batch of prototype readers."
+    },
+    {
+      "title": "Verification",
+      "text": "Tested the readers on a range of meter types in our lab and on installed meters on site, verifying reading accuracy, battery drain and radio range."
+    },
+    {
+      "title": "Next iteration",
+      "text": "Fed the results into a smaller, round meter-reader board that fits under the meter cover."
+    }
+  ],
+  "results": [
+    {
+      "value": "0",
+      "label": "meters replaced: the reader fits existing meters"
+    },
+    {
+      "value": "6",
+      "label": "network options from one reader design"
+    },
+    {
+      "value": "IP67",
+      "label": "sealed for meter chambers"
+    }
+  ],
+  "tech": [
+    "Axino SM01",
+    "LoRa",
+    "SigFox",
+    "GSM",
+    "Mesh",
+    "Low-power embedded firmware",
+    "IP67 enclosure",
+    "Web application",
+    "Live map"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/water-metering/meter-chamber-800.webp",
+      "alt": "Water meter installed in an underground chamber",
+      "caption": "A typical meter chamber where the reader is fitted"
+    },
+    {
+      "src": "/images/projects/water-metering/reader-unit-closed-800.webp",
+      "alt": "Sealed grey meter reader enclosure with a cable",
+      "caption": "Sealed reader, ready to fit in the chamber"
+    },
+    {
+      "src": "/images/projects/water-metering/reader-unit-open-800.webp",
+      "alt": "Reader enclosure open, showing the board and batteries",
+      "caption": "Inside: sensor node board and battery pack"
+    },
+    {
+      "src": "/images/projects/water-metering/sensor-node-board-800.webp",
+      "alt": "Low power sensor node circuit board with radio module",
+      "caption": "Low-power sensor node board"
+    },
+    {
+      "src": "/images/projects/water-metering/meter-reader-board-800.webp",
+      "alt": "Round SciFlair circuit board shaped to fit a water meter",
+      "caption": "Next iteration: a round board that fits under the meter cover"
+    },
+    {
+      "src": "/images/projects/water-metering/meter-on-site-800.webp",
+      "alt": "Installed mechanical water meter with its cover open",
+      "caption": "An installed meter on site, read without replacing it"
+    }
+  ],
+  "nextGen": {
+    "title": "Ready for a Pilot",
+    "text": "The design is ready for a field pilot of a few hundred meters, with production enclosures and integration into a utility's billing system."
+  },
+  "related": [
+    "water-control",
+    "axino",
+    "street-lighting"
+  ]
 }
