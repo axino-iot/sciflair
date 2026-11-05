@@ -4,15 +4,112 @@
   "sector": "agri",
   "deliveredBy": "SciFlair",
   "client": "Bristol Robotics Lab, UWE",
-  "year": null,
+  "year": "2021–2026",
   "region": "UK and Africa",
-  "headline": "Machine-vision units for insect farms in the UK and Africa, and the joint PhD that used their data for automated insect classification and digital-twin yield forecasting",
-  "result": null,
+  "headline": "Camera and sensor units for insect farms in the UK and Africa, and the joint PhD that used their data for machine-vision automation and digital-twin yield forecasting",
+  "result": "Deployed in UK and Africa",
   "featured": 0,
   "order": 205,
-  "photo": null,
-  "photoAlt": "Insecto machine-vision unit above an insect-farming tray",
+  "photo": "/images/projects/insecto/insect-detection-800.webp",
+  "photoAlt": "Insect habitat seen from above with each insect detected and boxed by the machine-vision model",
   "type": "prototype",
-  "status": "Deployed in the UK and Africa",
-  "ai": true
+  "status": "Deployed; PhD complete",
+  "ai": true,
+  "subtitle": "Camera and sensor units that watch insect habitats around the clock, and the PhD that used their data to automate insect farming with machine vision",
+  "hero": "/images/projects/insecto/insect-detection-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Utilisation"
+  ],
+  "need": [
+    "Insects are a promising source of protein for livestock feed, but farming them at scale is hard. Yields vary with temperature, humidity, light and feed, disease spreads quickly in dense colonies, and checking fertility, sex ratio and health by eye is slow and inconsistent.",
+    "Bristol Robotics Lab was running a project to help small-scale insect farmers in Africa. It needed low-cost units that could monitor many habitats at once, capture images at regular intervals and send the data to the cloud for analysis."
+  ],
+  "role": "SciFlair designed and built the Insecto units: hardware, enclosure, firmware and cloud connection. We then co-funded and co-supervised a PhD with the University of the West of England that used the units and their data to research automated insect farming.",
+  "built": [
+    "Insecto units: a high-resolution camera and environmental sensors in a compact, wall-mounted enclosure, one per habitat",
+    "Monitoring and remote control of temperature, humidity, airflow, moisture and light for each habitat",
+    "Images captured at set intervals and sent with the sensor data to a cloud server, so many experiments can run in parallel",
+    "Machine-vision models (object detection and segmentation) that find and count insects, tell larvae, pupae and adults apart, and flag signs of disease from colour, movement and body shape",
+    "A ground-truth image and sensor dataset from working insect habitats",
+    "A digital-twin predictor that forecasts yield from species, feed and environment, so farm settings can be adjusted for a consistent harvest"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Defined the stakeholder needs with Bristol Robotics Lab: low cost, modular, remote monitoring of many habitats, suitable for small farms."
+    },
+    {
+      "title": "Design and build",
+      "text": "Designed the unit and its enclosure in CAD, then built and tested a batch of units in our lab in 2021."
+    },
+    {
+      "title": "Deployment",
+      "text": "Units went into use in the UK and in Africa, collecting images and environmental data from live insect habitats."
+    },
+    {
+      "title": "Research",
+      "text": "The joint PhD used the units and their data to train and validate machine-vision models and build the yield predictor, repeating experiments and checking results against published work."
+    },
+    {
+      "title": "Completion",
+      "text": "The PhD completed and the researcher graduated in 2026."
+    }
+  ],
+  "results": [
+    {
+      "value": "UK + Africa",
+      "label": "units deployed in live insect habitats"
+    },
+    {
+      "value": "1 PhD",
+      "label": "completed, graduated 2026"
+    }
+  ],
+  "tech": [
+    "Machine vision",
+    "YOLO",
+    "Mask R-CNN",
+    "IoT sensors",
+    "Cloud server",
+    "Digital twin",
+    "CAD enclosure design"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/insecto/insect-detection-800.webp",
+      "alt": "Machine-vision detections on an insect habitat",
+      "caption": "Each insect detected and boxed by the model"
+    },
+    {
+      "src": "/images/projects/insecto/insecto-unit-800.webp",
+      "alt": "Insecto unit with camera, ready to mount",
+      "caption": "Insecto unit: camera and sensors in one enclosure"
+    },
+    {
+      "src": "/images/projects/insecto/insecto-design-800.webp",
+      "alt": "CAD model of the Insecto enclosure",
+      "caption": "Enclosure designed in CAD"
+    },
+    {
+      "src": "/images/projects/insecto/insecto-batch-800.webp",
+      "alt": "A batch of Insecto units on test",
+      "caption": "A batch of units on test in our lab"
+    },
+    {
+      "src": "/images/projects/insecto/rearing-tray-800.webp",
+      "alt": "Insect rearing tray",
+      "caption": "A rearing tray of the kind the units monitor"
+    }
+  ],
+  "nextGen": {
+    "title": "Next: A Commercial Demonstrator",
+    "text": "We are looking for partners and funders to build a commercial demonstrator: modular, decentralised insect farming in which small farmers run breeding or rearing units guided by machine vision."
+  },
+  "related": [
+    "aquaponics-research",
+    "axino",
+    "sensor-magic"
+  ]
 }
