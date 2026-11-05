@@ -16,7 +16,7 @@
   "photoAlt": "SciFlair S100 vehicle tracker",
   "url": "https://itrack.uk/",
   "ai": false,
-  "subtitle": "Fleet tracking on our own S100 tracker, with live maps, driver behaviour scoring and alerts in the cloud and on mobile",
+  "subtitle": "Fleet tracking on our own S100 and S200 trackers, with live maps, driver behaviour scoring and alerts in the cloud and on mobile",
   "hero": "/images/projects/itrack/s100-tracker-1600.webp",
   "stages": [
     "Concept",
@@ -36,6 +36,7 @@
     "GPS and GSM jamming detection, spoofing detection and a hardware encryption engine",
     "A backup battery that keeps reporting if the vehicle battery is cut, plus a 3-axis accelerometer",
     "Inputs and outputs for ignition, doors, seat belts, fuel and temperature sensors, and an expansion port for custom hardware",
+    "S200, a compact variant for the consumer market with two-wire power connection and revised software for personal vehicles",
     "A cloud dashboard and mobile app with live maps, route replay, geofences, alerts and driver performance scoring for speeding, harsh acceleration and braking"
   ],
   "delivery": [
@@ -56,6 +57,10 @@
       "text": "In service on vehicles, with the platform now live at itrack.uk."
     },
     {
+      "title": "S200 for consumers",
+      "text": "In 2021 developed the S200, a smaller, easy-to-fit variant with revised software for private car owners."
+    },
+    {
       "title": "Support",
       "text": "Supported and extended with new reports, alerts and integrations."
     }
@@ -70,8 +75,8 @@
       "label": "SIMs with automatic changeover"
     },
     {
-      "value": "Live",
-      "label": "cloud platform at itrack.uk"
+      "value": "2",
+      "label": "trackers: S100 for fleets, S200 for consumers"
     }
   ],
   "tech": [
@@ -106,6 +111,11 @@
       "caption": "S100 tracker, ready to install under the dashboard"
     },
     {
+      "src": "/images/projects/itrack/s200-tracker-800.webp",
+      "alt": "Two compact S200 trackers with power leads",
+      "caption": "S200: compact consumer variant with revised software"
+    },
+    {
       "src": "/images/projects/itrack/tracker-boards-800.webp",
       "alt": "Panel of S100 tracker circuit boards",
       "caption": "S100 boards from a production batch"
@@ -113,7 +123,7 @@
   ],
   "nextGen": {
     "title": "Deploy or Back iTrack",
-    "text": "iTrack is live and ready for new fleets: logistics, public transport, construction plant, school transport, fuel tankers and cash-in-transit. We are looking for fleet partners and investors to scale it."
+    "text": "iTrack is live and ready for new fleets: logistics, public transport, construction plant, school transport, fuel tankers and cash-in-transit, with the S200 for private vehicles. We are looking for fleet partners and investors to scale it."
   },
   "related": [
     "axino",
