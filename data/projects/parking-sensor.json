@@ -84,11 +84,6 @@
       "caption": "Rugged housing with two sensor windows"
     },
     {
-      "src": "/images/projects/parking-sensor/sensor-closed-800.webp",
-      "alt": "Parking sensor closed, viewed from above",
-      "caption": "Sealed sensor, ready to bolt into a bay"
-    },
-    {
       "src": "/images/projects/parking-sensor/sensor-board-800.webp",
       "alt": "Parking sensor main board inside the housing",
       "caption": "Sensor board in the sealed housing"
