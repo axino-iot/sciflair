@@ -73,13 +73,13 @@ const sections = {
 const audiences = [
   { title: 'Back a Product', who: 'Investors',
     text: 'Our own platforms, proven in the field and reused across deployments, ready to scale.',
-    cta: 'See our products', href: '/products' },
+    cta: 'See Our Products', href: '/products' },
   { title: 'Commission a System', who: 'Clients',
     text: 'Systems delivered and running for others, with one senior lead accountable for hardware, firmware, cloud and apps.',
-    cta: 'See our projects', href: '/projects' },
+    cta: 'See Our Projects', href: '/projects' },
   { title: 'Partner on R&D', who: 'Partners & Funders',
     text: 'Prototypes, field trials and joint PhD research ready for the next stage, with a track record of grant and university funding.',
-    cta: 'See prototypes and R&D', href: '/research' }
+    cta: 'See Our R&D', href: '/research' }
 ];
 
 function loadProjects() {

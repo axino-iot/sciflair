@@ -343,3 +343,8 @@ body:not(.home):not(.project):not(.section-page) main { padding-top: 76px; min-h
 .project-grid.grid-4 { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 1100px) { .project-grid.grid-4 { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 760px) { .project-grid.grid-4 { grid-template-columns: 1fr; } }
+
+/* Audience routes: large, dominant buttons */
+.route .route-cta { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 18px; padding: 15px 20px; background: var(--orange); color: #fff; border-radius: 8px; font: 700 1.08rem var(--head); letter-spacing: .01em; transition: background .15s; }
+.route .route-cta .icon { width: 20px; height: 20px; }
+.route:hover .route-cta { background: var(--orange-deep); }
