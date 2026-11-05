@@ -4,15 +4,105 @@
   "sector": "city",
   "deliveredBy": "SciFlair",
   "client": "A municipality",
-  "year": null,
+  "year": "2017",
   "region": "Middle East",
-  "headline": "Remote monitoring and control of 2,000 street-light feeder panels, with fault alerts and dimming, built on Axino",
-  "result": "2,000 panels",
+  "headline": "GSM controller for street-light feeder cabinets that reports faults to the exact feeder and switches lights with sunrise and sunset, proven on site for a planned 2,000-cabinet rollout",
+  "result": "2,000 cabinets scoped",
   "featured": 0,
   "order": 202,
-  "photo": null,
-  "photoAlt": "Street-light feeder pillar with controller",
+  "photo": "/images/projects/street-lighting/controller-fitted-800.webp",
+  "photoAlt": "Street-light feeder cabinet with the SciFlair controller and current sensors fitted beside the meter",
   "type": "prototype",
-  "status": "Prototype",
-  "ai": false
+  "status": "Proof of concept, field-tested",
+  "ai": false,
+  "subtitle": "Automatic switching, fault location and door monitoring for street-light feeder cabinets, proven on site in extreme heat",
+  "partner": "A local partner company",
+  "hero": "/images/projects/street-lighting/feeder-cabinet-1600.webp",
+  "stages": [
+    "Concept",
+    "Development"
+  ],
+  "need": [
+    "A municipality in the Middle East ran its street lights from about 2,000 roadside feeder cabinets. Faults were found only when a patrol spotted them or a member of the public reported them, often with the wrong location, so field engineers had to test every feeder in the area to find the fault.",
+    "The cabinets switched lights on and off at fixed times, although sunrise and sunset move through the year, wasting energy in summer and leaving roads dark in winter. The municipality also had no record of when cabinet doors were opened and closed."
+  ],
+  "role": "SciFlair was the design authority, working with a local partner company. We captured the requirements with the municipality's engineers, designed the controller, firmware and online app, and verified the system on site. Our partner handled installation and local liaison.",
+  "built": [
+    "A controller fitted inside each feeder cabinet, built on our Axino SM01-GSM communication module",
+    "Current sensing on the outgoing circuits, so a failed lamp circuit or tripped feeder is reported at once, with the exact cabinet and feeder",
+    "Automatic on and off switching from calculated sunrise and sunset times, adjusting through the year",
+    "Remote switching and status from an online app, with every cabinet shown on a map",
+    "Cabinet door monitoring, logging every opening and closing"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Surveyed typical feeder cabinets with our partner and the municipality's engineers, and agreed the stakeholder requirements: fault reporting by location, seasonal switching and door monitoring."
+    },
+    {
+      "title": "Design",
+      "text": "Designed a retrofit controller that fits existing cabinets without rewiring the lighting circuits, using the Axino SM01-GSM module and the cloud app."
+    },
+    {
+      "title": "Proof of concept",
+      "text": "Fitted controllers in two live feeder cabinets and demonstrated switching, fault alerts and door events from the online app."
+    },
+    {
+      "title": "Field trial",
+      "text": "Left the system in service for three months through summer, where it kept working in extreme heat inside sealed roadside cabinets."
+    }
+  ],
+  "results": [
+    {
+      "value": "2",
+      "label": "live cabinets fitted as a proof of concept"
+    },
+    {
+      "value": "3 months",
+      "label": "in service in extreme heat"
+    },
+    {
+      "value": "2,000",
+      "label": "cabinets in the planned rollout"
+    }
+  ],
+  "tech": [
+    "Axino SM01-GSM",
+    "GSM",
+    "Current sensing",
+    "Astronomical timer",
+    "Web application",
+    "Live map"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/street-lighting/controller-fitted-800.webp",
+      "alt": "Feeder cabinet with the controller and current sensors fitted",
+      "caption": "Controller and current sensors fitted in a live cabinet"
+    },
+    {
+      "src": "/images/projects/street-lighting/feeder-cabinet-800.webp",
+      "alt": "Roadside street-light feeder cabinet",
+      "caption": "One of about 2,000 roadside feeder cabinets"
+    },
+    {
+      "src": "/images/projects/street-lighting/feeder-panel-survey-800.webp",
+      "alt": "Inside of a feeder cabinet during the site survey",
+      "caption": "Site survey of an existing cabinet"
+    },
+    {
+      "src": "/images/projects/street-lighting/feeder-panel-night-800.webp",
+      "alt": "Feeder cabinet open at night with lights running",
+      "caption": "Night-time testing"
+    }
+  ],
+  "nextGen": {
+    "title": "Ready to Scale",
+    "text": "The next stage adds dimming, switching selected lights off late at night when traffic is light, and motion sensors to light roads only when needed, saving further energy across the network."
+  },
+  "related": [
+    "water-metering",
+    "water-control",
+    "axino"
+  ]
 }
