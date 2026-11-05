@@ -13,7 +13,7 @@ var owned = p.stages || [];
   <img class="p-hero-img" src="<%= p.hero || p.photo %>" alt="<%= p.photoAlt %>" width="1600" height="900" />
   <div class="p-hero-shade" aria-hidden="true"></div>
   <div class="wrap p-hero-content">
-    <p class="crumbs"><a href="/<%= sec.path %>"><%= sec.title %></a> / <%= s.name %></p>
+    <p class="crumbs"><a href="/<%= sec.path %>"><%= sec.title %></a> / <% if (site.sectorTiles.indexOf(p.sector) > -1) { %><a href="/sectors/<%= p.sector %>"><%= s.name %></a><% } else { %><%= s.name %><% } %></p>
     <span class="tag tag-<%= s.tag %>"><%= s.name %></span>
     <h1><%= p.title %></h1>
     <% if (p.subtitle) { %><p class="p-sub"><%= p.subtitle %></p><% } %>

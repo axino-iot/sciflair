@@ -5,17 +5,35 @@ const fs = require('fs');
 const path = require('path');
 
 const sectors = {
-  energy:    { name: 'Energy & Water',   tag: 'green',  blurb: 'Energy management, smart metering and pump control for industry and utilities.' },
-  video:     { name: 'Video & Security', tag: 'blue',   blurb: 'IP video management, CCTV control rooms and remote camera sites.' },
-  fleet:     { name: 'Fleet & Tracking', tag: 'yellow', blurb: 'GPS tracking, fuel-theft prevention and in-vehicle monitoring.' },
-  city:      { name: 'Smart City',       tag: 'yellow', blurb: 'Street lighting, air quality and parking sensors for councils.' },
-  agri:      { name: 'AgriTech',         tag: 'green',  blurb: 'Aquaponics, insect farming and machine vision for food production.' },
-  health:    { name: 'Digital Health',   tag: 'blue',   blurb: '' },
-  all:       { name: 'All sectors',      tag: 'slate',  blurb: '' }
+  energy: { name: 'Energy & Water', tag: 'green', icon: 'bolt',
+    blurb: 'Energy management, smart metering and pump control for industry and utilities.',
+    intro: 'Connected systems that cut energy use, keep water flowing and read meters remotely, from a 3,000-sensor industrial plant to well pumps 5 km apart.',
+    photo: '/images/projects/water-control/wellhead-flow-meter-800.webp', hero: '/images/projects/electricity-saver/site-ac-sensor-1600.webp' },
+  agri: { name: 'AgriTech & AI', tag: 'green', icon: 'leaf',
+    blurb: 'Machine vision, IoT and AI for insect farming and aquaponic food production.',
+    intro: 'Field units, datasets and AI models for sustainable food and feed production, developed with Bristol Robotics Lab and UWE.',
+    photo: '/images/projects/insecto/insect-detection-800.webp', hero: '/images/projects/insecto/insect-detection-1600.webp' },
+  video: { name: 'Video & Security', tag: 'blue', icon: 'camera',
+    blurb: 'Command and control, CCTV networks, video management and live video from vehicles.',
+    intro: 'Mobile command and control, a 100+ camera surveillance network, our own video management software, and live video over multiple mobile networks.',
+    photo: '/images/projects/svms/tower-ptz-camera-800.webp', hero: '/images/projects/svms/tower-ptz-camera-1600.webp' },
+  city: { name: 'Smart City', tag: 'yellow', icon: 'city',
+    blurb: 'Street lighting, air quality and parking sensors for councils and campuses.',
+    intro: 'Sensors and controllers that make public infrastructure visible and controllable, from street-light feeders to parking bays and air quality.',
+    photo: '/images/projects/street-lighting/controller-fitted-800.webp', hero: '/images/projects/street-lighting/feeder-cabinet-1600.webp' },
+  health: { name: 'Digital Health', tag: 'blue', icon: 'pulse',
+    blurb: 'Secure clinical workflows on Microsoft 365 that put the right information in front of clinicians.',
+    intro: 'Automated clinical workflows that keep patient data inside the organisation and save clinicians time at the bedside.',
+    photo: '/images/projects/surgical-workflow/workflow-diagram-light-800.webp', hero: '/images/projects/surgical-workflow/workflow-diagram-1600.webp' },
+  fleet: { name: 'Fleet & Tracking', tag: 'yellow', icon: 'truck',
+    blurb: 'Vehicle tracking, driver behaviour and anti-theft on our own trackers.',
+    intro: 'Our own trackers and cloud platform for fleets, private vehicles and specialist assets.',
+    photo: '/images/projects/itrack/s100-tracker-800.webp', hero: '/images/projects/itrack/s100-tracker-1600.webp' },
+  all: { name: 'All sectors', tag: 'slate', blurb: '' }
 };
 
-// Sector tiles on the homepage, in display order
-const sectorTiles = ['energy', 'video', 'fleet', 'city', 'agri'];
+// Sector tiles on the homepage, in display order (Fahim's priorities)
+const sectorTiles = ['energy', 'agri', 'video', 'city', 'health', 'fleet'];
 
 const proof = [
   { value: '£10M+', label: 'programme led by our founder, concept to retirement' },
@@ -80,6 +98,7 @@ const featured = projects
   .sort(function (a, b) { return a.featured - b.featured; });
 
 function byType(t) { return projects.filter(function (p) { return p.type === t; }); }
+function bySector(k) { return projects.filter(function (p) { return p.sector === k; }); }
 function sectionFor(p) { return sections[p.type] || sections.project; }
 
-module.exports = { sectors, sectorTiles, proof, steps, audiences, sections, projects, featured, byType, sectionFor };
+module.exports = { sectors, sectorTiles, proof, steps, audiences, sections, projects, featured, byType, bySector, sectionFor };

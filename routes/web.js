@@ -27,6 +27,24 @@ Object.keys(site.sections).forEach(function (type) {
   });
 });
 
+// Sector pages: everything in one sector across Projects, Products and R&D
+router.get('/sectors/:key', function (req, res, next) {
+  const key = req.params.key;
+  if (site.sectorTiles.indexOf(key) < 0) return next();
+  const items = site.bySector(key);
+  res.render('sector', {
+    layout: 'layout',
+    bodyClass: 'section-page',
+    title: site.sectors[key].name + ' | SciFlair',
+    site: site,
+    key: key,
+    s: site.sectors[key],
+    groups: ['project', 'product', 'prototype'].map(function (t) {
+      return { sec: site.sections[t], items: items.filter(function (p) { return p.type === t; }) };
+    }).filter(function (g) { return g.items.length; })
+  });
+});
+
 // Detail pages (only items with a full write-up get a page)
 router.get('/:section(projects|products|research)/:slug', function (req, res, next) {
   const p = site.projects.filter(function (x) { return x.slug === req.params.slug && x.need; })[0];

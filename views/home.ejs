@@ -1,5 +1,4 @@
 <%
-var sectorIcons = { energy: 'bolt', video: 'camera', fleet: 'truck', city: 'city', agri: 'leaf' };
 function ph(label, cls) {
   // Placeholder until Fahim's project photos arrive
   return '<div class="ph ' + (cls || '') + '" role="img" aria-label="' + label + '"><span>Photo: ' + label + '</span></div>';
@@ -52,15 +51,15 @@ function ph(label, cls) {
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">What We Build</p>
-      <h2>Five Sectors, One Accountable Lead</h2>
+      <h2>Six Sectors, One Accountable Lead</h2>
       <p>A senior engineering lead with a trusted network of specialist freelance engineers, scaled to each project and working from our own office and research lab in Bristol. Electronics, firmware, cloud and apps are designed together, so every system works as one.</p>
     </div>
     <div class="sector-grid">
-      <% site.sectorTiles.forEach(function (key, i) { var s = site.sectors[key]; %>
-        <a class="sector-tile<%= i === 0 ? ' sector-tile--wide' : '' %>" href="/projects">
-          <%- ph(s.name, 'ph-tile') %>
+      <% site.sectorTiles.forEach(function (key) { var s = site.sectors[key]; %>
+        <a class="sector-tile" href="/sectors/<%= key %>">
+          <div class="sector-photo"><img src="<%= s.photo %>" alt="<%= s.name %>" width="800" height="600" loading="lazy" /></div>
           <div class="sector-body">
-            <span class="sector-icon"><%- include('partials/icon', { name: sectorIcons[key] }) %></span>
+            <span class="sector-icon"><%- include('partials/icon', { name: s.icon }) %></span>
             <h3><%= s.name %></h3>
             <p><%= s.blurb %></p>
           </div>
