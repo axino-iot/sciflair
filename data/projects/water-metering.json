@@ -3,10 +3,10 @@
   "title": "Smart Water Metering and Control",
   "sector": "energy",
   "deliveredBy": "SciFlair",
-  "client": "A client",
+  "client": "A water utility",
   "year": "2017–2018",
   "region": "Middle East",
-  "headline": "Battery-powered retrofit reader that turns existing water meters into smart meters, built on Axino for a client in the Middle East",
+  "headline": "Battery-powered retrofit reader that turns existing water meters into smart meters, developed for a city-wide meter reading tender in the Middle East",
   "result": "Retrofit, no meter swap",
   "featured": 0,
   "order": 201,
@@ -22,27 +22,28 @@
     "Development"
   ],
   "need": [
-    "Water utilities lose revenue to meters that are read by hand, read late or not at all, and to leaks and tampering that go unseen between visits. Replacing every installed meter with a smart meter is costly and slow.",
-    "A client in the Middle East asked whether its existing mechanical meters could be read remotely instead, and whether the same network could also control pumps and supply."
+    "A large water utility in the Middle East went to tender for automated meter reading as a managed service. The supplier would own, install and operate the meters, the communications network and the head-end system, and deliver readings for a monthly charge per meter.",
+    "The first phase covered 4,100 high-volume users, with more than 200,000 homes and businesses to follow over four years. Readings had to arrive over GPRS or cloud IoT networks rather than drive-by or walk-by reading, with at least 99% of meters read every month and penalties for any meter offline for more than a few days.",
+    "Replacing every meter would have made the monthly charge uncompetitive. We needed to show that existing meters could be retrofitted reliably and cheaply enough to meet those service levels."
   ],
-  "role": "SciFlair was the design authority. We captured the client's requirements, designed the reader hardware, firmware and head-end software, built the prototypes and tested them on meters in the lab and on site.",
+  "role": "SciFlair was the design authority. We analysed the tender requirements and service levels, set them out as system requirements, then designed the reader hardware, firmware and head-end software, built the prototypes and tested them on meters in our lab and on site.",
   "built": [
     "A retrofit reader that fits existing pulse-output water meters, so the meter itself stays in place",
     "A low-power sensor node board in an IP67 enclosure, running for years on batteries",
-    "Our Axino communication module, so the same reader can connect over GSM, LoRa, SigFox, mesh, WiFi or Ethernet to suit each site",
-    "Readings stored on the device when the network is down and sent once it returns",
-    "Alerts for leaks, continuous flow and tampering",
-    "A head-end web application showing every meter on a live map, with consumption history and alarms",
+    "Our Axino communication module, so one reader design connects over GSM/GPRS, LoRa, SigFox, mesh, WiFi or Ethernet to suit each site",
+    "Readings stored on the device when the network is down and sent once it returns, protecting the monthly read rate",
+    "Alerts for leaks, continuous flow, tampering and devices that stop reporting",
+    "A head-end web application showing every meter on a live map, with consumption history, alarms and web-service interfaces to billing",
     "Pump and valve control from the same platform, reusing our well pump control design"
   ],
   "delivery": [
     {
       "title": "Concept",
-      "text": "Defined the stakeholder requirements with the client and set the measures of performance: battery life, read interval, range and cost per meter."
+      "text": "Turned the tender's scope and service levels into system requirements and measures of performance: monthly read rate, maximum outage, battery life, range and cost per meter."
     },
     {
       "title": "Architecture",
-      "text": "Chose a retrofit architecture on the Axino platform so one reader design could serve different meters and networks."
+      "text": "Chose a retrofit architecture on the Axino platform, so one reader design could serve different meter types and networks, with the head-end hosted in the cloud."
     },
     {
       "title": "Design and build",
@@ -50,7 +51,7 @@
     },
     {
       "title": "Verification",
-      "text": "Tested the readers on a range of meter types in our lab and on installed meters on site, verifying reading accuracy, battery drain and radio range."
+      "text": "Tested the readers on a range of meter types in our lab and on installed meters on site, verifying reading accuracy, battery drain and radio range in meter chambers."
     },
     {
       "title": "Next iteration",
@@ -63,12 +64,12 @@
       "label": "meters replaced: the reader fits existing meters"
     },
     {
-      "value": "6",
-      "label": "network options from one reader design"
+      "value": "99%",
+      "label": "monthly read rate the design was built to meet"
     },
     {
-      "value": "IP67",
-      "label": "sealed for meter chambers"
+      "value": "6",
+      "label": "network options from one reader design"
     }
   ],
   "tech": [
