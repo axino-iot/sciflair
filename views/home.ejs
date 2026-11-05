@@ -63,29 +63,6 @@ function ph(label, cls) {
   </div>
 </section>
 
-<!-- 3. What we build -->
-<section class="section" id="what-we-build">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">What We Build</p>
-      <h2>Six Sectors, One Accountable Lead</h2>
-      <p>A senior engineering lead with a trusted network of specialist freelance engineers, scaled to each project and working from our own office and research lab in Bristol. Electronics, firmware, cloud and apps are designed together, so every system works as one.</p>
-    </div>
-    <div class="sector-grid">
-      <% site.sectorTiles.forEach(function (key) { var s = site.sectors[key]; %>
-        <a class="sector-tile" href="/sectors/<%= key %>">
-          <div class="sector-photo"><img src="<%= s.photo %>" alt="<%= s.name %>" width="800" height="600" loading="lazy" /></div>
-          <div class="sector-body">
-            <span class="sector-icon"><%- include('partials/icon', { name: s.icon }) %></span>
-            <h3><%= s.name %></h3>
-            <p><%= s.blurb %></p>
-          </div>
-        </a>
-      <% }) %>
-    </div>
-  </div>
-</section>
-
 <!-- 4. Featured projects -->
 <section class="section section-grey" id="projects">
   <div class="wrap">
@@ -111,6 +88,7 @@ function ph(label, cls) {
       <h2>Led by an Engineer</h2>
       <p class="founder-name">Dr M Fahim Tariq, Founder &amp; Director</p>
       <p>Fahim founded SciFlair in 2014 and has led engineering programmes for more than 25 years, including a £10M+ command-and-control vehicle programme at XAD Communications. He holds a PhD in adaptive modem design from the University of Bristol.</p>
+      <p>SciFlair works as a senior engineering lead with a trusted network of specialist freelance engineers, scaled to each project, from our own office and research lab in Bristol. Electronics, firmware, cloud and apps are designed together, so every system works as one.</p>
       <ul class="facts">
         <li><strong>17</strong> peer-reviewed papers, 380+ citations</li>
         <li><strong>2</strong> UWE PhDs co-funded and mentored, completed 2026</li>
