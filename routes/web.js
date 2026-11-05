@@ -12,10 +12,26 @@ router.get('/', function (req, res) {
   });
 });
 
-// Project pages (only projects with a full write-up get a page)
-router.get('/projects/:slug', function (req, res, next) {
+// Section index pages: Projects, Products, Prototypes & R&D
+Object.keys(site.sections).forEach(function (type) {
+  const sec = site.sections[type];
+  router.get('/' + sec.path, function (req, res) {
+    res.render('section', {
+      layout: 'layout',
+      bodyClass: 'section-page',
+      title: sec.title + ' | SciFlair',
+      site: site,
+      sec: sec,
+      items: site.byType(type)
+    });
+  });
+});
+
+// Detail pages (only items with a full write-up get a page)
+router.get('/:section(projects|products|research)/:slug', function (req, res, next) {
   const p = site.projects.filter(function (x) { return x.slug === req.params.slug && x.need; })[0];
   if (!p) return next();
+  if (site.sectionFor(p).path !== req.params.section) return res.redirect(301, '/' + site.sectionFor(p).path + '/' + p.slug);
   const related = (p.related || []).map(function (s) {
     return site.projects.filter(function (x) { return x.slug === s; })[0];
   }).filter(Boolean);

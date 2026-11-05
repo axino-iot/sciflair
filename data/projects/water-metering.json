@@ -1,0 +1,18 @@
+{
+  "slug": "water-metering",
+  "title": "Smart Water Metering and Control",
+  "sector": "energy",
+  "deliveredBy": "SciFlair",
+  "client": "A client",
+  "year": null,
+  "region": "Middle East",
+  "headline": "Retrofit meter reading and pump control over LPWAN, built on Axino for a client in the Middle East",
+  "result": null,
+  "featured": 0,
+  "order": 201,
+  "photo": null,
+  "photoAlt": "Retrofit smart water meter reader",
+  "type": "prototype",
+  "status": "Prototype",
+  "ai": false
+}

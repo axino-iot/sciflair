@@ -1,15 +1,18 @@
 {
   "slug": "insecto",
-  "title": "Insecto Machine Vision",
+  "title": "Insecto and AI for Insect Farming",
   "sector": "agri",
   "deliveredBy": "SciFlair",
-  "client": null,
+  "client": "Bristol Robotics Lab, UWE",
   "year": null,
   "region": "UK and Africa",
-  "headline": "Machine-vision units for insect farming in the UK and Africa",
+  "headline": "Machine-vision units for insect farms in the UK and Africa, and the joint PhD that used their data for automated insect classification and digital-twin yield forecasting",
   "result": null,
   "featured": 0,
-  "order": 12,
+  "order": 205,
   "photo": null,
-  "photoAlt": "Insecto machine-vision unit above an insect-farming tray"
+  "photoAlt": "Insecto machine-vision unit above an insect-farming tray",
+  "type": "prototype",
+  "status": "Deployed in the UK and Africa",
+  "ai": true
 }

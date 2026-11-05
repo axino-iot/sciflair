@@ -9,10 +9,9 @@ const sectors = {
   video:     { name: 'Video & Security', tag: 'blue',   blurb: 'IP video management, CCTV control rooms and remote camera sites.' },
   fleet:     { name: 'Fleet & Tracking', tag: 'yellow', blurb: 'GPS tracking, fuel-theft prevention and in-vehicle monitoring.' },
   city:      { name: 'Smart City',       tag: 'yellow', blurb: 'Street lighting, air quality and parking sensors for councils.' },
-  agri:      { name: 'AgriTech & AI',    tag: 'green',  blurb: 'Hydroponics, aquaponics and machine vision for food production.' },
-  platforms: { name: 'Platforms',        tag: 'slate',  blurb: '' },
-  research:  { name: 'Research',         tag: 'slate',  blurb: '' },
-  health:    { name: 'Digital Health',   tag: 'blue',   blurb: '' }
+  agri:      { name: 'AgriTech',         tag: 'green',  blurb: 'Aquaponics, insect farming and machine vision for food production.' },
+  health:    { name: 'Digital Health',   tag: 'blue',   blurb: '' },
+  all:       { name: 'All sectors',      tag: 'slate',  blurb: '' }
 };
 
 // Sector tiles on the homepage, in display order
@@ -36,17 +35,33 @@ const steps = [
   { title: 'Retirement', text: 'Planned disposal and handover to a successor system.' }
 ];
 
-// Who the site is for: each route ends in a clear next step
+// The three sections of our work, each for a different reader with a clear ask
+const sections = {
+  project: { path: 'projects', title: 'Projects', who: 'For clients',
+    intro: 'Systems we designed, delivered and supported for others, in operational use through their life cycle.',
+    ask: 'Tell us about a system you need, from a feasibility study to a full rollout and support.',
+    cta: 'Discuss your project' },
+  product: { path: 'products', title: 'Products', who: 'For investors',
+    intro: 'Our own hardware and software platforms, built once and reused across deployments.',
+    ask: 'Back a product to scale it, or deploy it in your organisation.',
+    cta: 'Talk about investment' },
+  prototype: { path: 'research', title: 'Prototypes & R&D', who: 'For partners and funders',
+    intro: 'Working prototypes, field trials and joint research, ready for the next stage of development.',
+    ask: 'Co-develop, fund or license a prototype, or partner with us on research.',
+    cta: 'Discuss a partnership' }
+};
+
+// Who the site is for: each route opens one section
 const audiences = [
   { title: 'Commission a System', who: 'Clients',
-    text: 'From a feasibility study to a full rollout and in-service support, with one senior lead accountable for hardware, firmware, cloud and apps.',
-    cta: 'Discuss your project', href: '#contact' },
-  { title: 'Back a New System', who: 'Investors & Funders',
-    text: 'Reusable platforms take new products from concept to field trials quickly, with a track record of grant, KTP and joint PhD funding.',
-    cta: 'Talk about funding', href: '#contact' },
-  { title: 'Partner or Hire', who: 'Recruiters & Partners',
-    text: 'Programme and engineering leadership across the full system life cycle, from proposal and requirements to acceptance and support.',
-    cta: 'Meet the founder', href: '#research' }
+    text: 'Systems delivered and running for others, with one senior lead accountable for hardware, firmware, cloud and apps.',
+    cta: 'See our projects', href: '/projects' },
+  { title: 'Back a Product', who: 'Investors',
+    text: 'Our own platforms, proven in the field and reused across deployments, ready to scale.',
+    cta: 'See our products', href: '/products' },
+  { title: 'Partner on R&D', who: 'Partners & Funders',
+    text: 'Prototypes, field trials and joint PhD research ready for the next stage, with a track record of grant and university funding.',
+    cta: 'See prototypes and R&D', href: '/research' }
 ];
 
 function loadProjects() {
@@ -64,4 +79,7 @@ const featured = projects
   .filter(function (p) { return p.featured > 0; })
   .sort(function (a, b) { return a.featured - b.featured; });
 
-module.exports = { sectors, sectorTiles, proof, steps, audiences, projects, featured };
+function byType(t) { return projects.filter(function (p) { return p.type === t; }); }
+function sectionFor(p) { return sections[p.type] || sections.project; }
+
+module.exports = { sectors, sectorTiles, proof, steps, audiences, sections, projects, featured, byType, sectionFor };

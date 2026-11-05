@@ -3,13 +3,16 @@
   "title": "Surgical Workflow Digitisation",
   "sector": "health",
   "deliveredBy": "SciFlair",
-  "client": "A hospital surgical team",
-  "year": "2024–2025",
+  "client": null,
+  "year": "2024 onwards",
   "region": null,
-  "headline": "OCR digitisation of patient records with a Microsoft 365 Power App for point-of-care queries, built entirely on Microsoft services hosted in Europe for GDPR compliance",
+  "headline": "Patient records digitised with OCR and queried through a Microsoft 365 app at the point of care, hosted in Europe for GDPR; next phase automates referrals and appointments with no internal emails",
   "result": null,
   "featured": 0,
-  "order": 20,
+  "order": 5,
   "photo": null,
-  "photoAlt": "Power App screen for surgical team record queries"
+  "photoAlt": "Power App screen for surgical team record queries",
+  "type": "project",
+  "status": "In progress",
+  "ai": false
 }

@@ -3,13 +3,16 @@
   "title": "Air-Quality Monitoring",
   "sector": "city",
   "deliveredBy": "SciFlair",
-  "client": null,
+  "client": "A client",
   "year": null,
   "region": null,
-  "headline": "NOx, O3 and particulate monitoring at fixed sites and on public transport, building city pollution maps",
+  "headline": "Air-quality monitor measuring NOx, O3, PM0.5–PM10, temperature and humidity",
   "result": null,
   "featured": 0,
-  "order": 9,
+  "order": 203,
   "photo": null,
-  "photoAlt": "Air-quality monitoring station"
+  "photoAlt": "Air-quality monitoring station",
+  "type": "prototype",
+  "status": "Prototype",
+  "ai": false
 }

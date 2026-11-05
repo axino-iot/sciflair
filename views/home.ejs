@@ -57,7 +57,7 @@ function ph(label, cls) {
     </div>
     <div class="sector-grid">
       <% site.sectorTiles.forEach(function (key, i) { var s = site.sectors[key]; %>
-        <a class="sector-tile<%= i === 0 ? ' sector-tile--wide' : '' %>" href="#projects">
+        <a class="sector-tile<%= i === 0 ? ' sector-tile--wide' : '' %>" href="/projects">
           <%- ph(s.name, 'ph-tile') %>
           <div class="sector-body">
             <span class="sector-icon"><%- include('partials/icon', { name: sectorIcons[key] }) %></span>
@@ -78,29 +78,10 @@ function ph(label, cls) {
       <h2>Systems Running in the Field</h2>
     </div>
     <div class="project-grid">
-      <% site.featured.forEach(function (p) { var s = site.sectors[p.sector]; %>
-        <article class="project-card">
-          <div class="project-media">
-            <% if (p.photo) { %>
-              <img src="<%= p.photo %>" alt="<%= p.photoAlt %>" width="500" height="400" loading="lazy" />
-            <% } else { %>
-              <%- ph(p.title, 'ph-card') %>
-            <% } %>
-            <% if (p.result) { %><span class="project-result"><%= p.result %></span><% } %>
-          </div>
-          <div class="project-body">
-            <span class="tag tag-<%= s.tag %>"><%= s.name %></span>
-            <h3><% if (p.need) { %><a class="card-link" href="/projects/<%= p.slug %>"><%= p.title %></a><% } else { %><%= p.title %><% } %></h3>
-            <p><%= p.headline %></p>
-            <% if (p.client) { %><p class="project-meta"><%= p.client %><%= p.region ? ' · ' + p.region : '' %></p><% } %>
-            <% if (p.need) { %><span class="link card-more">Read the project <%- include('partials/icon', { name: 'arrow' }) %></span><% } %>
-          </div>
-        </article>
-      <% }) %>
+      <% site.featured.forEach(function (p) { %><%- include('partials/card', { p: p, site: site }) %><% }) %>
     </div>
     <div class="center">
-      <!-- Phase 2: link to the full gallery at /projects -->
-      <a class="btn btn-dark" href="#contact">Discuss a Similar Project <%- include('partials/icon', { name: 'arrow' }) %></a>
+      <a class="btn btn-dark" href="/projects">See All Projects <%- include('partials/icon', { name: 'arrow' }) %></a>
     </div>
   </div>
 </section>
@@ -151,15 +132,16 @@ function ph(label, cls) {
 <section class="section" id="platforms">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Our Platforms</p>
-      <h2>Products We Build On</h2>
+      <p class="eyebrow">Our Products</p>
+      <h2>Platforms We Built and Reuse</h2>
+      <p>Built once and reused across our projects and prototypes. <a href="/products">See all products</a>.</p>
     </div>
     <div class="platform-grid">
       <article class="platform">
         <%- ph('Axino modules', 'ph-platform') %>
         <div class="platform-body">
           <h3>Axino</h3>
-          <p>Our IoT platform: swappable WiFi, GSM, Ethernet, LoRa and Mesh modules with secure cloud management, so products go from prototype to deployment quickly.</p>
+          <p>Our IoT platform and the backbone of our work: swappable WiFi, GSM, Ethernet, LoRa, Mesh and SigFox modules with cloud management, putting a pilot sensor network in the field within weeks.</p>
           <a class="link" href="https://www.axino.co/">Visit axino.co <%- include('partials/icon', { name: 'arrow' }) %></a>
         </div>
       </article>
@@ -167,7 +149,7 @@ function ph(label, cls) {
         <div class="platform-shot"><img src="/images/placeholder/itrack-screen.webp" alt="iTrack fleet tracking dashboard showing vehicles on a map" width="960" height="484" loading="lazy" /></div>
         <div class="platform-body">
           <h3>iTrack</h3>
-          <p>GPS fleet tracking built on our own S100 tracker, with electronic locks and geofencing for fuel-tanker anti-theft.</p>
+          <p>Cloud fleet tracking on our own S100 tracker, with multi-GNSS, dual SIM and jamming detection, built on what we learned from Axino.</p>
           <a class="link" href="https://itrack.uk/">Visit itrack.uk <%- include('partials/icon', { name: 'arrow' }) %></a>
         </div>
       </article>

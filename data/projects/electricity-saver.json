@@ -142,5 +142,8 @@
     "street-light-feeder",
     "sensor-magic"
   ],
-  "partner": "A local partner company"
+  "partner": "A local partner company",
+  "type": "project",
+  "status": null,
+  "ai": false
 }

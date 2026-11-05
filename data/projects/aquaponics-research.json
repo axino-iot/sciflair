@@ -1,0 +1,18 @@
+{
+  "slug": "aquaponics-research",
+  "type": "prototype",
+  "status": "Research complete, 2026",
+  "title": "IoT and AI Control of Aquaponic Farms",
+  "sector": "agri",
+  "deliveredBy": "SciFlair",
+  "client": "Joint project with UWE",
+  "year": "2022–2026",
+  "region": null,
+  "ai": true,
+  "headline": "Joint PhD with UWE: finding the best conditions for fish and plants, detecting anomalies and controlling the farm with IoT sensors and AI",
+  "result": null,
+  "featured": 0,
+  "order": 206,
+  "photo": null,
+  "photoAlt": "Aquaponics research rig with sensors"
+}

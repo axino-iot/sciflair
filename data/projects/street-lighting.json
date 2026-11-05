@@ -1,0 +1,18 @@
+{
+  "slug": "street-lighting",
+  "title": "Street-Light Feeder Management",
+  "sector": "city",
+  "deliveredBy": "SciFlair",
+  "client": "A municipality",
+  "year": null,
+  "region": "Middle East",
+  "headline": "Remote monitoring and control of 2,000 street-light feeder panels, with fault alerts and dimming, built on Axino",
+  "result": "2,000 panels",
+  "featured": 0,
+  "order": 202,
+  "photo": null,
+  "photoAlt": "Street-light feeder pillar with controller",
+  "type": "prototype",
+  "status": "Prototype",
+  "ai": false
+}

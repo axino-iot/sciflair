@@ -1,15 +1,18 @@
 {
   "slug": "sensor-magic",
   "title": "Sensor Magic",
-  "sector": "platforms",
+  "sector": "all",
   "deliveredBy": "SciFlair",
   "client": null,
   "year": null,
   "region": null,
-  "headline": "Plug-and-play wireless sensors across 25+ types, cutting field installation from months to days",
+  "headline": "Battery-powered sensor nodes in a very small form factor: proven on Axino, then the most-used sensors integrated into compact self-install nodes",
   "result": "25+ sensor types",
   "featured": 0,
-  "order": 14,
+  "order": 103,
   "photo": null,
-  "photoAlt": "Sensor Magic self-install sensors"
+  "photoAlt": "Sensor Magic self-install sensors",
+  "type": "product",
+  "status": "In development",
+  "ai": false
 }

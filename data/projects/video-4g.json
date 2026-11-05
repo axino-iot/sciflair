@@ -1,0 +1,18 @@
+{
+  "slug": "video-4g",
+  "type": "project",
+  "status": null,
+  "title": "Live Video over Two 4G Networks",
+  "sector": "video",
+  "deliveredBy": "SciFlair",
+  "client": null,
+  "year": "2015",
+  "region": "Middle East",
+  "ai": false,
+  "headline": "Live video from incident vehicles to headquarters, split across two 4G carriers and reassembled at the destination for better quality, resilience and protection against eavesdropping",
+  "result": "2 carriers, 1 stream",
+  "featured": 0,
+  "order": 6,
+  "photo": null,
+  "photoAlt": "Incident vehicle with a camera mast streaming over 4G"
+}

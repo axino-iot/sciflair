@@ -1,0 +1,57 @@
+<%
+// Sector filter: only sectors that appear in this section
+var used = [];
+items.forEach(function (p) { if (used.indexOf(p.sector) < 0) used.push(p.sector); });
+var tabs = Object.keys(site.sections).map(function (k) { return site.sections[k]; });
+%>
+<section class="sec-hero">
+  <div class="wrap">
+    <nav class="sec-tabs" aria-label="Our work">
+      <% tabs.forEach(function (t) { %>
+        <a href="/<%= t.path %>"<%- t.path === sec.path ? ' aria-current="page"' : '' %>><%= t.title %></a>
+      <% }) %>
+    </nav>
+    <p class="eyebrow"><%= sec.who %></p>
+    <h1><%= sec.title %></h1>
+    <p class="sec-intro"><%= sec.intro %></p>
+    <div class="sec-ask">
+      <p><%= sec.ask %></p>
+      <a class="btn btn-primary" href="/#contact"><%= sec.cta %></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-grey">
+  <div class="wrap">
+    <% if (used.length > 1) { %>
+    <div class="filters" role="group" aria-label="Filter by sector">
+      <button type="button" class="chip is-on" data-sector="">All</button>
+      <% used.forEach(function (k) { %><button type="button" class="chip" data-sector="<%= k %>"><%= (site.sectors[k] || site.sectors.all).name %></button><% }) %>
+      <% if (items.some(function (p) { return p.ai; })) { %><button type="button" class="chip" data-ai="1">AI</button><% } %>
+    </div>
+    <% } %>
+    <div class="project-grid">
+      <% items.forEach(function (p) { %>
+        <div class="grid-item" data-sector="<%= p.sector %>" data-ai="<%= p.ai ? 1 : 0 %>"><%- include('partials/card', { p: p, site: site }) %></div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var chips = document.querySelectorAll('.filters .chip');
+    var items = document.querySelectorAll('.grid-item');
+    chips.forEach(function (c) {
+      c.addEventListener('click', function () {
+        chips.forEach(function (x) { x.classList.remove('is-on'); });
+        c.classList.add('is-on');
+        var sector = c.getAttribute('data-sector'), ai = c.getAttribute('data-ai');
+        items.forEach(function (it) {
+          var show = ai ? it.getAttribute('data-ai') === '1' : (!sector || it.getAttribute('data-sector') === sector);
+          it.hidden = !show;
+        });
+      });
+    });
+  })();
+</script>

@@ -1,31 +1,30 @@
 {
   "slug": "svms",
   "title": "SVMS: SciFlair Video Management Software",
-  "subtitle": "Our own video management software, rewritten from the ground up, which ran CCTV networks, control-room video walls and mobile command-and-control systems",
+  "subtitle": "Our own video management software for large camera networks over mixed and constrained links",
   "sector": "video",
   "deliveredBy": "SciFlair",
-  "client": "Security and infrastructure operators",
-  "year": "2016–2019",
+  "client": null,
+  "year": "2016 onwards",
   "region": null,
-  "headline": "SciFlair Video Management Software, rewritten from the ground up, which ran a 100+ camera HD surveillance network, command-and-control systems and CCTV control rooms",
-  "result": "100+ cameras",
+  "headline": "Our own video management software, rewritten from the ground up and proven on a 100+ camera network and in command-and-control vehicles",
+  "result": "Deployed",
   "featured": 0,
-  "order": 4,
-  "photo": "/images/projects/svms/control-room-video-wall-800.webp",
-  "photoAlt": "Control-room video wall showing a live traffic camera",
+  "order": 104,
+  "photo": "/images/projects/svms/svms-architecture-800.webp",
+  "photoAlt": "Diagram of the SVMS modules connected to the Database Server",
   "hero": "/images/projects/svms/tower-ptz-camera-1600.webp",
   "stages": [
     "Concept",
     "Development",
     "Production",
-    "Utilisation",
-    "Support"
+    "Utilisation"
   ],
   "need": [
     "Security operators have to watch, record and control large numbers of IP cameras spread across wide areas, often over links with very different capacity: microwave, satellite, fibre, WiMax and mobile networks.",
     "Our clients needed one system that works the same way in a fixed control room, a command-and-control vehicle or a rapidly deployed portable kit, makes the most of constrained links, and limits each operator to the cameras they are authorised to see."
   ],
-  "role": "SVMS (SciFlair Video Management Software) is our own software. Years of supporting XAD's XVMS platform in the field showed where its bottlenecks were, so we rewrote the software from the ground up rather than extending it: a new modular architecture designed around those lessons. We own the architecture and code, and integrated, deployed and supported SVMS as part of the systems we delivered. It was the software behind the 100+ camera HD surveillance network, our command-and-control projects and other CCTV control rooms.",
+  "role": "SVMS is SciFlair's own software. Years of supporting XAD's XVMS in the field showed where its bottlenecks were, so we rewrote it from the ground up with a new modular architecture. We own the architecture and code.",
   "built": [
     "Database Server: the single point of access to the configuration database, so every other module can run on its own machine anywhere on the network",
     "Operator GUI: up to 12 live or recorded views per monitor, a centred view with thumbnails, and pan, tilt, zoom, presets and auxiliary commands such as wipers for PTZ cameras",
@@ -46,34 +45,30 @@
       "text": "Cameras from different manufacturers are integrated through ONVIF or manual configuration, and each is verified by assigning it to a display cell and confirming live video."
     },
     {
-      "title": "Deployments",
-      "text": "A 100+ camera HD surveillance network over microwave, satellite, fibre and WiMax; command-and-control vehicles and portable kits; and CCTV control rooms with video walls."
+      "title": "Proven in service",
+      "text": "Deployed on the 100+ camera HD surveillance network and in mobile and portable command-and-control systems."
     },
     {
-      "title": "Transition",
-      "text": "Each system is handed over with an administrator and operator user manual and architecture documentation."
-    },
-    {
-      "title": "Support",
-      "text": "SciFlair maintained and supported the software in the field. We own the code and can revive and update it for new deployments."
+      "title": "Next stage",
+      "text": "SVMS needs re-testing on current operating systems and cameras before new deployments. We are looking for a partner or client to take it forward."
     }
   ],
   "results": [
     {
       "value": "100+",
-      "label": "HD cameras on one network"
-    },
-    {
-      "value": "5",
-      "label": "link types: microwave, satellite, fibre, WiMax, GSM"
+      "label": "HD cameras on one deployment"
     },
     {
       "value": "12",
       "label": "live or recorded views per monitor"
     },
     {
-      "value": "3",
-      "label": "settings: fixed sites, vehicles, portable kits"
+      "value": "5",
+      "label": "link types supported"
+    },
+    {
+      "value": "2",
+      "label": "deployments: fixed network and vehicles"
     }
   ],
   "tech": [
@@ -86,45 +81,28 @@
     "Client–server",
     "Video walls"
   ],
-  "nextGen": {
-    "title": "Where it came from: XVMS",
-    "text": "XVMS was the video management platform developed at XAD Communications for its flagship £10M+ command-and-control programme. Supporting it in the field revealed bottlenecks that could not be fixed by patching, so SciFlair rewrote everything from the ground up as SVMS, keeping the operational know-how and replacing the code and architecture."
-  },
+  "nextGen": null,
   "gallery": [
+    {
+      "src": "/images/projects/svms/svms-architecture-800.webp",
+      "alt": "Diagram of the SVMS modules connected to the Database Server",
+      "caption": "SVMS architecture"
+    },
     {
       "src": "/images/projects/svms/control-room-video-wall-800.webp",
       "alt": "Control-room video wall showing a live road camera",
       "caption": "Control-room video wall"
     },
     {
-      "src": "/images/projects/svms/rooftop-ptz-camera-800.webp",
-      "alt": "PTZ camera on a rooftop mast with WiMax antennas and junction box",
-      "caption": "Rooftop PTZ camera with WiMax link"
-    },
-    {
       "src": "/images/projects/svms/tower-ptz-camera-wimax-800.webp",
       "alt": "PTZ camera and WiMax antennas mounted on a communications tower",
       "caption": "Tower-mounted camera node"
-    },
-    {
-      "src": "/images/projects/svms/tower-microwave-links-800.webp",
-      "alt": "Communications tower carrying microwave dishes and radio units",
-      "caption": "Microwave backhaul on the tower"
-    },
-    {
-      "src": "/images/projects/svms/tower-installation-800.webp",
-      "alt": "Two riggers installing equipment at height on a lattice tower",
-      "caption": "Installation at height"
-    },
-    {
-      "src": "/images/projects/svms/svms-architecture-800.webp",
-      "alt": "Diagram of the SVMS modules connected to the Database Server",
-      "caption": "SVMS architecture"
     }
   ],
   "related": [
-    "command-control-vehicles",
-    "cctv-node-control",
-    "xvms"
-  ]
+    "surveillance-network",
+    "command-control-vehicles"
+  ],
+  "type": "product",
+  "status": "Needs re-testing"
 }

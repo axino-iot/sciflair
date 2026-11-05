@@ -6,10 +6,13 @@
   "client": null,
   "year": null,
   "region": null,
-  "headline": "Battery-powered kerbside occupancy sensors with a live availability web app",
+  "headline": "Battery-powered kerbside occupancy sensor with a live availability web app, built and tested",
   "result": "5-year battery",
   "featured": 0,
-  "order": 10,
+  "order": 204,
   "photo": null,
-  "photoAlt": "In-ground parking occupancy sensor"
+  "photoAlt": "In-ground parking occupancy sensor",
+  "type": "prototype",
+  "status": "Prototype, tested",
+  "ai": false
 }

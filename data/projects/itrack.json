@@ -1,0 +1,19 @@
+{
+  "slug": "itrack",
+  "type": "product",
+  "status": "Live",
+  "title": "iTrack Fleet Tracking",
+  "sector": "fleet",
+  "deliveredBy": "SciFlair",
+  "client": null,
+  "year": null,
+  "region": null,
+  "headline": "Cloud fleet tracking on our own S100 tracker with multi-GNSS, dual SIM and jamming detection, built on what we learned from Axino",
+  "result": null,
+  "featured": 0,
+  "order": 102,
+  "photo": "/images/placeholder/itrack-screen.webp",
+  "photoAlt": "iTrack fleet tracking dashboard",
+  "url": "https://itrack.uk/",
+  "ai": false
+}

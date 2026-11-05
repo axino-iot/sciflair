@@ -1,15 +1,19 @@
 {
   "slug": "axino",
   "title": "Axino IoT Platform",
-  "sector": "platforms",
+  "sector": "all",
   "deliveredBy": "SciFlair",
   "client": null,
   "year": null,
   "region": null,
-  "headline": "Swappable WiFi, GSM, Ethernet, LoRa and Mesh modules with secure cloud management, cutting prototype-to-deployment time by 75%",
+  "headline": "Swappable WiFi, GSM, Ethernet, LoRa, Mesh and SigFox modules with cloud management: the backbone of our projects, products and prototypes, putting a pilot sensor network in the field within weeks",
   "result": "75% faster",
   "featured": 0,
-  "order": 13,
+  "order": 101,
   "photo": null,
-  "photoAlt": "Axino communication modules"
+  "photoAlt": "Axino communication modules",
+  "type": "product",
+  "status": "Live",
+  "ai": false,
+  "url": "https://www.axino.co/"
 }

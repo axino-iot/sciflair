@@ -1,0 +1,115 @@
+{
+  "slug": "surveillance-network",
+  "type": "project",
+  "title": "100+ Camera HD Surveillance Network",
+  "subtitle": "A wide-area HD camera network with control rooms, video walls and remote tower sites, run on our SVMS software",
+  "sector": "video",
+  "deliveredBy": "SciFlair",
+  "client": null,
+  "year": "2016–2017",
+  "region": null,
+  "headline": "More than 100 HD cameras over microwave, satellite, fibre and WiMax links, with control rooms, video walls and remote control of tower camera sites",
+  "result": "100+ cameras",
+  "featured": 0,
+  "order": 4,
+  "photo": "/images/projects/svms/control-room-video-wall-800.webp",
+  "photoAlt": "Control-room video wall showing a live road camera",
+  "hero": "/images/projects/svms/tower-ptz-camera-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation",
+    "Support"
+  ],
+  "need": [
+    "The client needed live HD video from more than 100 cameras spread over a wide area, brought into control rooms over whatever link each site could get: microwave, satellite, fibre or WiMax.",
+    "Remote tower sites had to be powered and controlled without staff on site, and each operator had to see only the cameras they were authorised to view."
+  ],
+  "role": "A follow-on project from the command-and-control programme. SciFlair directed the programme: requirements, system design and integration, vendor management, factory acceptance and client sign-off, with SVMS, our own video management software, at its core.",
+  "built": [
+    "More than 100 HD PTZ cameras on towers and rooftops, each with its own wireless or wired link",
+    "A mixed backhaul over microwave, satellite, fibre and WiMax, carrying every stream to the control rooms",
+    "CCTV control rooms with video walls driven by SVMS wall players",
+    "Remote power and control of tower camera sites, so faults are handled without a site visit",
+    "SVMS video management: live and recorded viewing, PTZ control, recording and per-operator camera rights"
+  ],
+  "builtScope": "Fixed tower and rooftop sites, control rooms and video walls, all on one SVMS system.",
+  "delivery": [
+    {
+      "title": "Requirements and design",
+      "text": "Camera sites, link types and control-room needs captured and turned into one system architecture."
+    },
+    {
+      "title": "Vendor management and integration",
+      "text": "Cameras, radios and control-room equipment from several vendors integrated under SVMS."
+    },
+    {
+      "title": "Verification",
+      "text": "Factory acceptance testing before deployment."
+    },
+    {
+      "title": "Validation and transition",
+      "text": "Installation at height, commissioning and client sign-off, handed over with administrator and operator manuals."
+    }
+  ],
+  "results": [
+    {
+      "value": "100+",
+      "label": "HD cameras on one network"
+    },
+    {
+      "value": "4",
+      "label": "link types: microwave, satellite, fibre, WiMax"
+    },
+    {
+      "value": "2016–17",
+      "label": "delivered in two years"
+    },
+    {
+      "value": "1",
+      "label": "video management system for every site"
+    }
+  ],
+  "tech": [
+    "HD PTZ cameras",
+    "Microwave",
+    "Satellite",
+    "Fibre",
+    "WiMax",
+    "Video walls",
+    "SVMS"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/svms/control-room-video-wall-800.webp",
+      "alt": "Control-room video wall showing a live road camera",
+      "caption": "Control-room video wall"
+    },
+    {
+      "src": "/images/projects/svms/rooftop-ptz-camera-800.webp",
+      "alt": "PTZ camera on a rooftop mast with WiMax antennas and junction box",
+      "caption": "Rooftop PTZ camera with WiMax link"
+    },
+    {
+      "src": "/images/projects/svms/tower-ptz-camera-wimax-800.webp",
+      "alt": "PTZ camera and WiMax antennas mounted on a communications tower",
+      "caption": "Tower-mounted camera node"
+    },
+    {
+      "src": "/images/projects/svms/tower-microwave-links-800.webp",
+      "alt": "Communications tower carrying microwave dishes and radio units",
+      "caption": "Microwave backhaul on the tower"
+    },
+    {
+      "src": "/images/projects/svms/tower-installation-800.webp",
+      "alt": "Two riggers installing equipment at height on a lattice tower",
+      "caption": "Installation at height"
+    }
+  ],
+  "related": [
+    "svms",
+    "command-control-vehicles",
+    "video-4g"
+  ]
+}
