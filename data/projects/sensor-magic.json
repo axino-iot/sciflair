@@ -4,15 +4,99 @@
   "sector": "all",
   "deliveredBy": "SciFlair",
   "client": null,
-  "year": null,
+  "year": "2021 onwards",
   "region": null,
-  "headline": "Battery-powered sensor nodes in a very small form factor: proven on Axino, then the most-used sensors integrated into compact self-install nodes",
-  "result": "25+ sensor types",
+  "headline": "Battery-powered sensor nodes that combine sensor, processor and radio in one small unit, ready to install out of the box with no programming",
+  "result": "No programming needed",
   "featured": 0,
   "order": 103,
-  "photo": null,
-  "photoAlt": "Sensor Magic self-install sensors",
+  "photo": "/images/projects/sensor-magic/nodes-open-800.webp",
+  "photoAlt": "Sensor Magic hub and battery sensor node shown open beside their enclosures",
   "type": "product",
   "status": "In development",
-  "ai": false
+  "ai": false,
+  "subtitle": "Battery-powered sensor nodes that anyone can take out of the box and install, with no programming, connected through a small WiFi hub",
+  "hero": "/images/projects/sensor-magic/hub-and-node-1600.webp",
+  "stages": [
+    "Concept",
+    "Development"
+  ],
+  "need": [
+    "Axino makes it quick for engineers to build a connected prototype, but it still needs someone who can wire sensors and write code. Most people who want to monitor a room, a property or a piece of equipment simply want a sensor that works.",
+    "Sensor Magic takes what we proved on Axino and packages it for the end user: a finished sensor they can buy, take out of the box and install themselves."
+  ],
+  "role": "SciFlair is designing Sensor Magic end to end: sensor node and hub hardware, low-power firmware, enclosures and the cloud connection, building on the Axino platform.",
+  "built": [
+    "Battery-powered sensor nodes that combine the sensor, processor and radio in one small enclosure",
+    "A very low-power 2.4 GHz wireless link between the nodes and the hub, for long battery life",
+    "A hub that joins the local WiFi network and connects every node to the cloud",
+    "Out-of-the-box set-up: no wiring, soldering or programming, so customers can install it themselves",
+    "Compact white enclosures for the hub and nodes, designed to sit unobtrusively in homes and workplaces"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Defined the stakeholder need from our Axino projects: the same sensing capability, but in a finished product a non-specialist can buy and install."
+    },
+    {
+      "title": "Proof of concept",
+      "text": "Proved the sensing and communication on Axino before integrating them into dedicated, battery-powered node hardware."
+    },
+    {
+      "title": "Development",
+      "text": "Designed the hub and node boards and enclosures, and built the first sensor types."
+    },
+    {
+      "title": "Testing",
+      "text": "Now testing the nodes and hub for use in our own projects, including property monitoring, before wider release."
+    }
+  ],
+  "results": [
+    {
+      "value": "0",
+      "label": "lines of code needed to install"
+    },
+    {
+      "value": "1 unit",
+      "label": "sensor, processor and radio combined"
+    },
+    {
+      "value": "DIY",
+      "label": "bought and installed by the customer"
+    }
+  ],
+  "tech": [
+    "2.4 GHz low-power radio",
+    "WiFi hub",
+    "Battery power",
+    "Low-power firmware",
+    "Cloud platform",
+    "Axino"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/sensor-magic/nodes-open-800.webp",
+      "alt": "Hub and sensor node open beside their enclosures",
+      "caption": "Hub (square) and battery sensor node, shown open"
+    },
+    {
+      "src": "/images/projects/sensor-magic/nodes-exploded-800.webp",
+      "alt": "Sensor Magic hub and node laid out in parts",
+      "caption": "Hub, node boards and enclosures"
+    },
+    {
+      "src": "/images/projects/sensor-magic/node-boards-800.webp",
+      "alt": "Close-up of the hub board and coin-cell sensor node board",
+      "caption": "Hub board and coin-cell sensor node"
+    }
+  ],
+  "nextGen": {
+    "title": "Next: A Range of Ready-Made Sensors",
+    "text": "We are extending the range towards the most commonly needed sensor types and preparing for production. We are looking for investors and launch partners."
+  },
+  "related": [
+    "axino",
+    "itrack",
+    "parking-sensor"
+  ]
 }
