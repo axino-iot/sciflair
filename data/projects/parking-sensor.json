@@ -3,16 +3,109 @@
   "title": "Parking Occupancy Sensor",
   "sector": "city",
   "deliveredBy": "SciFlair",
-  "client": null,
-  "year": null,
+  "client": "Own R&D",
+  "year": "2020",
   "region": null,
-  "headline": "Battery-powered kerbside occupancy sensor with a live availability web app, built and tested",
-  "result": "5-year battery",
+  "headline": "Battery-powered parking bay sensor with dual-sensor detection and a 5-year battery, showing free spaces on a live map, built on Axino",
+  "result": "5+ year battery",
   "featured": 0,
   "order": 204,
-  "photo": null,
-  "photoAlt": "In-ground parking occupancy sensor",
+  "photo": "/images/projects/parking-sensor/sensor-open-800.webp",
+  "photoAlt": "Parking sensor opened, showing the Axino LoRa module and batteries",
   "type": "prototype",
   "status": "Prototype, tested",
-  "ai": false
+  "ai": false,
+  "subtitle": "A battery-powered sensor bolted into each parking bay, showing drivers the nearest free space on a live map",
+  "hero": "/images/projects/parking-sensor/sensor-open-1600.webp",
+  "stages": [
+    "Concept",
+    "Development"
+  ],
+  "need": [
+    "In busy town centres, drivers circle the streets looking for a free space, adding to congestion and air pollution. Councils and car park operators cannot see which bays are free, so they cannot guide drivers or plan enforcement.",
+    "A bay sensor has to survive being driven over, run for years without wiring or battery changes, and never report a space as free when a car is parked on it."
+  ],
+  "role": "SciFlair designed and built the system end to end as its own R&D: sensor hardware, firmware, enclosure, cloud service and the driver app.",
+  "built": [
+    "A sensor that bolts to the surface in the centre of each bay and detects whether a vehicle is parked above it",
+    "Dual-sensor verification, so a space is only reported as occupied or free when both sensors agree",
+    "Battery power with an average life of more than five years, depending on how often the bay changes",
+    "An IP66 housing that takes the weight of a vehicle without damaging the electronics",
+    "Our Axino communication module, with a choice of LoRa, SigFox or mesh networking",
+    "Battery-level and tamper alerts for maintenance",
+    "A cloud service and app showing free bays on a live map, with directions to the nearest one"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Defined the stakeholder needs for drivers and operators, and set the measures of performance: detection accuracy, battery life, load rating and cost per bay."
+    },
+    {
+      "title": "Architecture",
+      "text": "Built on the Axino platform so the same sensor board can use whichever low-power network covers the site."
+    },
+    {
+      "title": "Design and build",
+      "text": "Designed the sensor board, firmware and rugged housing, then built working prototypes."
+    },
+    {
+      "title": "Verification",
+      "text": "Tested detection with dual-sensor verification, battery drain against the five-year target, and network reporting to the live map."
+    }
+  ],
+  "results": [
+    {
+      "value": "5+ years",
+      "label": "average battery life"
+    },
+    {
+      "value": "2",
+      "label": "sensors per bay to prevent false readings"
+    },
+    {
+      "value": "IP66",
+      "label": "housing that takes a vehicle's weight"
+    }
+  ],
+  "tech": [
+    "Axino SM01",
+    "LoRa",
+    "SigFox",
+    "Mesh",
+    "Dual-sensor detection",
+    "Low-power firmware",
+    "IP66",
+    "Live map app"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/parking-sensor/sensor-housing-800.webp",
+      "alt": "Black rugged parking sensor housing with two sensor windows",
+      "caption": "Rugged housing with two sensor windows"
+    },
+    {
+      "src": "/images/projects/parking-sensor/sensor-closed-800.webp",
+      "alt": "Parking sensor closed, viewed from above",
+      "caption": "Sealed sensor, ready to bolt into a bay"
+    },
+    {
+      "src": "/images/projects/parking-sensor/sensor-board-800.webp",
+      "alt": "Parking sensor main board inside the housing",
+      "caption": "Sensor board in the sealed housing"
+    },
+    {
+      "src": "/images/projects/parking-sensor/sensor-open-800.webp",
+      "alt": "Sensor with Axino LoRa module and batteries fitted",
+      "caption": "Axino LoRa module and battery pack fitted"
+    }
+  ],
+  "nextGen": {
+    "title": "Ready for a Pilot",
+    "text": "The design is ready for a pilot in a car park or a town-centre street, linked to the operator's signs, app or enforcement system."
+  },
+  "related": [
+    "street-lighting",
+    "air-quality",
+    "axino"
+  ]
 }
