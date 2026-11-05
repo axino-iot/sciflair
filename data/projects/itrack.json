@@ -6,14 +6,118 @@
   "sector": "fleet",
   "deliveredBy": "SciFlair",
   "client": null,
-  "year": null,
+  "year": "2017 onwards",
   "region": null,
-  "headline": "Cloud fleet tracking on our own S100 tracker with multi-GNSS, dual SIM and jamming detection, built on what we learned from Axino",
-  "result": null,
+  "headline": "Cloud fleet tracking on our own S100 tracker, with multi-GNSS positioning, dual SIM, jamming detection, driver scoring and live maps",
+  "result": "Live at itrack.uk",
   "featured": 0,
   "order": 102,
-  "photo": "/images/placeholder/itrack-screen.webp",
-  "photoAlt": "iTrack fleet tracking dashboard",
+  "photo": "/images/projects/itrack/s100-tracker-800.webp",
+  "photoAlt": "SciFlair S100 vehicle tracker",
   "url": "https://itrack.uk/",
-  "ai": false
+  "ai": false,
+  "subtitle": "Fleet tracking on our own S100 tracker, with live maps, driver behaviour scoring and alerts in the cloud and on mobile",
+  "hero": "/images/projects/itrack/s100-tracker-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation",
+    "Support"
+  ],
+  "need": [
+    "Fleet operators need to know where every vehicle is, how it is being driven and when something goes wrong, from theft and fuel loss to speeding and harsh braking. Many low-cost trackers lose position in cities, drop out when one mobile network is weak, and are easily defeated by jammers or a cut battery cable.",
+    "We wanted a tracker we fully control, from hardware to cloud, so it can be adapted to each fleet and integrated with other sensors."
+  ],
+  "role": "SciFlair designed and owns iTrack end to end: the S100 tracker hardware and firmware, the cloud tracking platform, the web dashboard and the mobile app. It builds on what we learned from Axino.",
+  "built": [
+    "S100 tracker with a 72-channel receiver that uses up to three satellite systems at once (GPS, Galileo, GLONASS, BeiDou) for accurate positions in difficult areas",
+    "Dual SIM slots with automatic changeover, so the tracker stays connected when one network is weak",
+    "GPS and GSM jamming detection, spoofing detection and a hardware encryption engine",
+    "A backup battery that keeps reporting if the vehicle battery is cut, plus a 3-axis accelerometer",
+    "Inputs and outputs for ignition, doors, seat belts, fuel and temperature sensors, and an expansion port for custom hardware",
+    "A cloud dashboard and mobile app with live maps, route replay, geofences, alerts and driver performance scoring for speeding, harsh acceleration and braking"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Defined the needs of fleet operators: reliable positions, constant connectivity, tamper resistance, driver behaviour and reports."
+    },
+    {
+      "title": "Development",
+      "text": "Designed the S100 hardware and firmware, the tracking server and the web and mobile applications, and verified them on vehicles in daily use."
+    },
+    {
+      "title": "Production",
+      "text": "Manufactured S100 boards and units in batches for fleet installations."
+    },
+    {
+      "title": "Utilisation",
+      "text": "In service on vehicles, with the platform now live at itrack.uk."
+    },
+    {
+      "title": "Support",
+      "text": "Supported and extended with new reports, alerts and integrations."
+    }
+  ],
+  "results": [
+    {
+      "value": "3",
+      "label": "satellite systems used at once"
+    },
+    {
+      "value": "2",
+      "label": "SIMs with automatic changeover"
+    },
+    {
+      "value": "Live",
+      "label": "cloud platform at itrack.uk"
+    }
+  ],
+  "tech": [
+    "Multi-GNSS",
+    "GSM / GPRS",
+    "Dual SIM",
+    "Jamming detection",
+    "Hardware encryption",
+    "Accelerometer",
+    "Cloud platform",
+    "Mobile app"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/itrack/itrack-dashboard-800.webp",
+      "alt": "iTrack dashboard with vehicle list and live map",
+      "caption": "iTrack dashboard: fleet list and live map"
+    },
+    {
+      "src": "/images/projects/itrack/driver-performance-800.webp",
+      "alt": "Driver performance score, speed and ignition charts",
+      "caption": "Driver performance scoring with speed and ignition history"
+    },
+    {
+      "src": "/images/projects/itrack/route-replay-800.webp",
+      "alt": "Route replay on a satellite map with event markers",
+      "caption": "Route replay with speeding and braking events"
+    },
+    {
+      "src": "/images/projects/itrack/s100-tracker-wired-800.webp",
+      "alt": "S100 tracker with its wiring loom",
+      "caption": "S100 tracker, ready to install under the dashboard"
+    },
+    {
+      "src": "/images/projects/itrack/tracker-boards-800.webp",
+      "alt": "Panel of S100 tracker circuit boards",
+      "caption": "S100 boards from a production batch"
+    }
+  ],
+  "nextGen": {
+    "title": "Deploy or Back iTrack",
+    "text": "iTrack is live and ready for new fleets: logistics, public transport, construction plant, school transport, fuel tankers and cash-in-transit. We are looking for fleet partners and investors to scale it."
+  },
+  "related": [
+    "axino",
+    "video-4g",
+    "sensor-magic"
+  ]
 }
