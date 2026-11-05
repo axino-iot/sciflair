@@ -102,11 +102,6 @@
       "caption": "Two modems on separate networks, one stream"
     },
     {
-      "src": "/images/projects/video-4g/control-room-800.webp",
-      "alt": "Control room video wall",
-      "caption": "Live video on the headquarters video wall"
-    },
-    {
       "src": "/images/projects/video-4g/dual-carrier-diagram-light-800.webp",
       "alt": "Diagram of the dual-network video system",
       "caption": "How it works: one stream, two networks, reassembled at headquarters"
