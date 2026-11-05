@@ -1,18 +1,100 @@
 {
   "slug": "video-4g",
   "type": "project",
-  "status": null,
+  "status": "Delivered and supported",
   "title": "Live Video over Two 4G Networks",
   "sector": "video",
   "deliveredBy": "SciFlair",
-  "client": null,
+  "client": "Confidential",
   "year": "2015",
   "region": "Middle East",
   "ai": false,
-  "headline": "Live video from incident vehicles to headquarters, split across two 4G carriers and reassembled at the destination for better quality, resilience and protection against eavesdropping",
-  "result": "2 carriers, 1 stream",
+  "headline": "Live HD video from two incident vehicles to headquarters, split across two 4G carriers and reassembled at the destination for higher quality, resilience and protection against eavesdropping",
+  "result": "Delivered in 3 months",
   "featured": 0,
   "order": 6,
-  "photo": null,
-  "photoAlt": "Incident vehicle with a camera mast streaming over 4G"
+  "photo": "/images/projects/video-4g/dual-carrier-diagram-light-800.webp",
+  "photoAlt": "Diagram: video from an incident vehicle split across two 4G carriers and reassembled at headquarters for three control rooms",
+  "subtitle": "Live HD video from incident vehicles to headquarters, split across two 4G networks and reassembled at the destination",
+  "partner": "XAD Communications (video streamers)",
+  "hero": "/images/projects/video-4g/dual-carrier-diagram-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation",
+    "Support"
+  ],
+  "need": [
+    "Teams at an incident needed headquarters to see what they could see, live and in HD, from wherever the vehicles were parked. A single mobile connection could not sustain HD video everywhere, and it dropped whenever that network was weak.",
+    "The client also wanted to steer and record the cameras from headquarters, show the video in several control rooms, and keep the stream away from anyone listening on a single network."
+  ],
+  "role": "SciFlair led the project as design authority, responsible for the system design, integration, vehicle fit-out, acceptance, training and first-year support. XAD Communications supplied the 4G video streamers.",
+  "built": [
+    "Video streamers in two vehicles that split each video stream into packets and send them over two separate 4G carriers at once, choosing links by their live quality",
+    "Reassembly at headquarters, so the full stream only exists at the destination: neither network carries all of it",
+    "Remote PTZ camera control and recording at headquarters, with the live video shown in three control rooms",
+    "A 5 m pneumatic camera mast on the new vehicle",
+    "Three-level power on the new vehicle: mains, generator and battery"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Captured the operational need with the client and set the measures of effectiveness: video quality, resilience when one network is weak, and security of the stream."
+    },
+    {
+      "title": "Development and integration",
+      "text": "Integrated the dual-carrier streamers, cameras, mast and power system into the vehicles, and the reassembly, recording and display at headquarters."
+    },
+    {
+      "title": "Field testing",
+      "text": "Tested in the field, where combining the two carriers gave higher-quality live video and kept the stream running where one network was weaker than the other. The trials were very successful."
+    },
+    {
+      "title": "Acceptance and transition",
+      "text": "Completed the site acceptance test, trained 5 administrators and 15 operators, and ran a one-day mock exercise before handover."
+    },
+    {
+      "title": "Support",
+      "text": "Provided first-year support under a three-level service agreement. The whole project was delivered in three months."
+    }
+  ],
+  "results": [
+    {
+      "value": "2",
+      "label": "4G carriers combined into one stream"
+    },
+    {
+      "value": "3",
+      "label": "control rooms receiving live video"
+    },
+    {
+      "value": "3 months",
+      "label": "from contract to handover"
+    },
+    {
+      "value": "20",
+      "label": "administrators and operators trained"
+    }
+  ],
+  "tech": [
+    "4G / LTE bonding",
+    "HD video streaming",
+    "PTZ camera control",
+    "Video recording",
+    "Pneumatic mast",
+    "Vehicle power systems"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/video-4g/dual-carrier-diagram-light-800.webp",
+      "alt": "Diagram of the dual-carrier video system",
+      "caption": "How it works: one stream, two networks, reassembled at headquarters"
+    }
+  ],
+  "related": [
+    "command-control-vehicles",
+    "surveillance-network",
+    "svms"
+  ]
 }
