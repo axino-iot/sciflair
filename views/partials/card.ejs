@@ -19,7 +19,6 @@ var meta = [p.client, p.region, p.year].filter(Boolean).join(' · ');
     <div class="card-tags">
       <span class="tag tag-<%= s.tag %>"><%= s.name %></span>
       <% if (p.ai) { %><span class="tag tag-ai">AI</span><% } %>
-      <% if (p.status) { %><span class="status"><%= p.status %></span><% } %>
     </div>
     <h3><% if (href) { %><a class="card-link" href="<%= href %>"<%- external ? ' rel="noopener"' : '' %>><%= p.title %></a><% } else { %><%= p.title %><% } %></h3>
     <p><%= p.headline %></p>

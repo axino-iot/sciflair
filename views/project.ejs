@@ -21,7 +21,6 @@ var owned = p.stages || [];
       <% if (p.region) { %><li><%= p.region %></li><% } %>
       <% if (p.year) { %><li><%= p.year %></li><% } %>
       <li><%= p.deliveredBy === 'XAD' ? 'Heritage – XAD Communications' : (isProduct ? 'SciFlair product' : isProto ? 'SciFlair R&D' : 'Delivered by SciFlair') %></li>
-      <% if (p.status) { %><li><%= p.status %></li><% } %>
     </ul>
   </div>
 </section>
@@ -95,6 +94,7 @@ var owned = p.stages || [];
         <% if (p.region) { %><dt>Region</dt><dd><%= p.region %></dd><% } %>
         <% if (p.year) { %><dt>Year</dt><dd><%= p.year %></dd><% } %>
         <dt>Sector</dt><dd><%= s.name %></dd>
+        <% if (isProto && p.status) { %><dt>Maturity</dt><dd><%= p.status %></dd><% } %>
         <% if (p.partner) { %><dt>Delivered with</dt><dd><%= p.partner %></dd><% } %>
       </dl>
       <h3>Technologies</h3>
