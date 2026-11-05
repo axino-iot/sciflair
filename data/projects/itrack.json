@@ -37,6 +37,7 @@
     "A backup battery that keeps reporting if the vehicle battery is cut, plus a 3-axis accelerometer",
     "Inputs and outputs for ignition, doors, seat belts, fuel and temperature sensors, and an expansion port for custom hardware",
     "S200, a compact variant for the consumer market with two-wire power connection and revised software for personal vehicles",
+    "An Axino-based tracker build, pairing an Axino module with a GNSS board, for specialist uses that need custom sensors, radios or enclosures",
     "A cloud dashboard and mobile app with live maps, route replay, geofences, alerts and driver performance scoring for speeding, harsh acceleration and braking"
   ],
   "delivery": [
@@ -75,8 +76,8 @@
       "label": "SIMs with automatic changeover"
     },
     {
-      "value": "2",
-      "label": "trackers: S100 for fleets, S200 for consumers"
+      "value": "3",
+      "label": "tracker options: S100 fleet, S200 consumer, Axino specialist"
     }
   ],
   "tech": [
@@ -116,6 +117,11 @@
       "caption": "S200: compact consumer variant with revised software"
     },
     {
+      "src": "/images/projects/itrack/axino-tracker-800.webp",
+      "alt": "Axino module on a carrier board wired to a GNSS receiver board",
+      "caption": "Axino-based tracker for specialist uses"
+    },
+    {
       "src": "/images/projects/itrack/tracker-boards-800.webp",
       "alt": "Panel of S100 tracker circuit boards",
       "caption": "S100 boards from a production batch"
@@ -123,7 +129,7 @@
   ],
   "nextGen": {
     "title": "Deploy or Back iTrack",
-    "text": "iTrack is live and ready for new fleets: logistics, public transport, construction plant, school transport, fuel tankers and cash-in-transit, with the S200 for private vehicles. We are looking for fleet partners and investors to scale it."
+    "text": "iTrack is live and ready for new fleets: logistics, public transport, construction plant, school transport, fuel tankers and cash-in-transit, with the S200 for private vehicles and Axino-based builds for specialist needs. We are looking for fleet partners and investors to scale it."
   },
   "related": [
     "axino",
