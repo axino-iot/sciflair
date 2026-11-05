@@ -99,6 +99,7 @@ var owned = p.stages || [];
       </dl>
       <h3>Technologies</h3>
       <ul class="p-tech"><% (p.tech || []).forEach(function (t) { %><li><%= t %></li><% }) %></ul>
+      <% if (p.url) { %><p><a class="link" href="<%= p.url %>">Visit <%= p.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') %> <%- include('partials/icon', { name: 'arrow' }) %></a></p><% } %>
       <p class="p-ask"><%= sec.ask %></p>
       <a class="btn btn-primary" href="/#contact"><%= sec.cta %></a>
     </div>
