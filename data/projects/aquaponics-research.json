@@ -9,10 +9,111 @@
   "year": "2022–2026",
   "region": null,
   "ai": true,
-  "headline": "Joint PhD with UWE: finding the best conditions for fish and plants, detecting anomalies and controlling the farm with IoT sensors and AI",
-  "result": null,
+  "headline": "Joint PhD with UWE: a multi-sensor water-quality unit and AI models that detect anomalies and optimise an aquaponics farm, tested in a working greenhouse",
+  "result": "PhD complete, 2026",
   "featured": 0,
   "order": 206,
-  "photo": null,
-  "photoAlt": "Aquaponics research rig with sensors"
+  "photo": "/images/projects/aquaponics-research/research-farm-800.webp",
+  "photoAlt": "Inside the aquaponics research greenhouse, with vertical towers, grow beds and plants",
+  "subtitle": "A joint PhD with UWE that built a multi-sensor water-quality unit and used IoT data and AI to find, and hold, the best conditions for fish and plants",
+  "hero": "/images/projects/aquaponics-research/research-farm-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Utilisation"
+  ],
+  "need": [
+    "Conventional farming is under pressure from water scarcity, soil depletion, pesticide use and climate change. Aquaponics, which raises fish and grows plants in one recirculating system, uses far less water and no soil or pesticides, but it is a delicate ecosystem.",
+    "Temperature, light, airflow, dissolved oxygen, pH, ammonia and nitrate all interact. Most so-called smart aquaponics systems only compare readings against fixed limits. Commercial growers need a system that understands how these parameters affect fish and plant growth, spots problems early and keeps the farm at its best automatically."
+  ],
+  "role": "SciFlair co-funded and co-supervised the PhD with the University of the West of England, and provided the IoT hardware, cloud and engineering support. The research was carried out in a working aquaponics greenhouse.",
+  "built": [
+    "A multi-sensor water-quality unit: a sealed electronics enclosure with a probe head holding several water-quality probes, placed directly in the fish tank",
+    "Continuous logging of water quality and greenhouse conditions to the cloud, with a web application to view the data and send alerts",
+    "Environmental control in the greenhouse, including ventilation fans",
+    "Anomaly detection that finds patterns, correlations and trends in the sensor data and flags problems before they harm fish or plants",
+    "Optimisation models that recommend or apply corrections to water quality, nutrient flow and climate for each fish and crop combination"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "A literature review set out existing optimisation techniques and the key parameters to control, and defined the research questions."
+    },
+    {
+      "title": "Design and build",
+      "text": "Designed and built the multi-sensor unit and its probe head, and connected it to the cloud with the greenhouse sensors and controls."
+    },
+    {
+      "title": "Field operation",
+      "text": "Ran the system in a working aquaponics greenhouse with fish tanks, grow beds, deep-water lettuce rafts and vertical growing towers, collecting data across growing seasons."
+    },
+    {
+      "title": "Analysis and validation",
+      "text": "Developed the anomaly detection and optimisation models from the data and validated them against further experiments and published work."
+    },
+    {
+      "title": "Completion",
+      "text": "The PhD completed and the researcher graduated in 2026."
+    }
+  ],
+  "results": [
+    {
+      "value": "1 PhD",
+      "label": "completed, graduated 2026"
+    },
+    {
+      "value": "1 system",
+      "label": "monitoring fish and plants together"
+    }
+  ],
+  "tech": [
+    "IoT sensors",
+    "Water-quality probes",
+    "Cloud data logging",
+    "Web application",
+    "Anomaly detection",
+    "Machine learning",
+    "Environmental control"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/aquaponics-research/sensor-unit-800.webp",
+      "alt": "Multi-sensor water-quality unit with its probe head",
+      "caption": "Multi-sensor water-quality unit and probe head"
+    },
+    {
+      "src": "/images/projects/aquaponics-research/sensor-electronics-800.webp",
+      "alt": "Inside the sensor unit enclosure",
+      "caption": "Inside the unit: probe interfaces and controller"
+    },
+    {
+      "src": "/images/projects/aquaponics-research/sensor-at-tank-800.webp",
+      "alt": "Sensor unit installed at the fish tank",
+      "caption": "Installed at the fish tank"
+    },
+    {
+      "src": "/images/projects/aquaponics-research/farm-interior-800.webp",
+      "alt": "Inside the aquaponics research greenhouse",
+      "caption": "The research greenhouse"
+    },
+    {
+      "src": "/images/projects/aquaponics-research/lettuce-raft-800.webp",
+      "alt": "Lettuce growing on a floating raft",
+      "caption": "Lettuce on a deep-water raft"
+    },
+    {
+      "src": "/images/projects/aquaponics-research/grow-bed-800.webp",
+      "alt": "Seedlings in a clay-pebble grow bed",
+      "caption": "Clay-pebble grow bed fed by fish water"
+    }
+  ],
+  "nextGen": {
+    "title": "Next: Commercial Aquaponics Control",
+    "text": "We are looking for growers, partners and funders to turn the research into a control system for commercial aquaponics and controlled-environment farms."
+  },
+  "related": [
+    "insecto",
+    "water-control",
+    "axino"
+  ]
 }
