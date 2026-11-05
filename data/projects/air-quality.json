@@ -4,15 +4,99 @@
   "sector": "city",
   "deliveredBy": "SciFlair",
   "client": "A client",
-  "year": null,
+  "year": "2020",
   "region": null,
-  "headline": "Air-quality monitor measuring NOx, O3, PM0.5–PM10, temperature and humidity",
-  "result": null,
+  "headline": "Air-quality monitor measuring nitrogen oxides, ozone, five sizes of particulate matter, temperature and humidity, powered by mains, solar or vehicle battery and connected through Axino",
+  "result": "NOx, O3 and PM0.5–PM10",
   "featured": 0,
   "order": 203,
-  "photo": null,
-  "photoAlt": "Air-quality monitoring station",
+  "photo": "/images/projects/air-quality/monitor-800.webp",
+  "photoAlt": "SciFlair air-quality monitor in a sealed grey enclosure with a vented sensor head",
   "type": "prototype",
   "status": "Prototype",
-  "ai": false
+  "ai": false,
+  "subtitle": "A rugged monitor for nitrogen oxides, ozone and fine particles, for indoor, outdoor and in-vehicle use, built on Axino",
+  "hero": "/images/projects/air-quality/monitor-1600.webp",
+  "stages": [
+    "Concept",
+    "Development"
+  ],
+  "need": [
+    "Clean air reduces the risk of stroke, heart and lung disease and asthma. Traffic, industry, construction, household activity and wildfires all degrade it, and nitrogen dioxide in built-up areas is one of the biggest health risks people need to know about to reduce their exposure.",
+    "Reference air-quality stations are expensive and fixed in place. Councils, site operators and researchers need monitors they can place where people actually are: on streets, on sites, indoors and on the move."
+  ],
+  "role": "SciFlair designed the monitor end to end: sensor selection, electronics, enclosure, power system, firmware and the cloud connection through Axino.",
+  "built": [
+    "Sensors for nitrogen oxides (NOx) and ozone (O3), each 20–500 ppb, with a five-year sensor life",
+    "A laser particle sensor, MCERTS approved, measuring PM0.5, PM1, PM2.5, PM4 and PM10, rated for more than eight years of continuous use",
+    "Temperature and humidity sensing",
+    "A built-in rechargeable battery, powered from mains, a solar panel or a vehicle battery",
+    "Optional GPS so the monitor can take mobile measurements along travel routes",
+    "A sealed enclosure for indoor and outdoor installation",
+    "Connectivity through Axino over GSM, WiFi, Ethernet, LoRa, SigFox or mesh, with data sent directly to Azure, Google Cloud, AWS, IBM Watson or any application by webhook",
+    "Readings reported against the standard Air Quality Index bands, from Good to Hazardous"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Defined the measures of performance: the pollutants that matter most for health, sensor ranges and life, power options and installation settings."
+    },
+    {
+      "title": "Design",
+      "text": "Selected the gas and particle sensors, designed the electronics around Axino and the internal layout of the sealed enclosure in CAD."
+    },
+    {
+      "title": "Build and test",
+      "text": "Built the prototype monitor in 2020 and tested its sensing, power and data reporting."
+    }
+  ],
+  "results": [
+    {
+      "value": "7",
+      "label": "pollutant readings: NOx, O3 and five particle sizes"
+    },
+    {
+      "value": "8+ years",
+      "label": "particle sensor life in continuous use"
+    },
+    {
+      "value": "3",
+      "label": "power options: mains, solar or vehicle"
+    }
+  ],
+  "tech": [
+    "NOx sensor",
+    "Ozone sensor",
+    "Laser PM sensor (MCERTS)",
+    "GPS",
+    "Solar power",
+    "Axino",
+    "Cloud webhooks"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/air-quality/monitor-800.webp",
+      "alt": "Air-quality monitor enclosure",
+      "caption": "Sealed monitor with vented sensor head"
+    },
+    {
+      "src": "/images/projects/air-quality/monitor-inside-800.webp",
+      "alt": "CAD view inside the air-quality monitor",
+      "caption": "Internal layout designed in CAD"
+    },
+    {
+      "src": "/images/projects/air-quality/monitor-prototype-800.webp",
+      "alt": "Air-quality monitor prototype in the lab",
+      "caption": "Prototype on test in our lab"
+    }
+  ],
+  "nextGen": {
+    "title": "Ready for Field Trials",
+    "text": "The monitor is ready for field trials with councils, construction and industrial sites, or research partners, including mobile monitoring on vehicles."
+  },
+  "related": [
+    "street-lighting",
+    "parking-sensor",
+    "axino"
+  ]
 }
