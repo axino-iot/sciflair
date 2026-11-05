@@ -2,13 +2,13 @@
   "slug": "itrack",
   "type": "product",
   "status": "Live",
-  "title": "iTrack Fleet Tracking",
+  "title": "In-Vehicle Monitoring Systems",
   "sector": "fleet",
   "deliveredBy": "SciFlair",
   "client": null,
   "year": "2017 onwards",
   "region": null,
-  "headline": "Cloud fleet tracking on our own S100 tracker, with multi-GNSS positioning, dual SIM, jamming detection, driver scoring and live maps",
+  "headline": "In-vehicle monitoring (IVMS) on our own S100 tracker, with multi-GNSS positioning, dual SIM, jamming detection, driver scoring and live maps",
   "result": "Live at itrack.uk",
   "featured": 0,
   "order": 102,
@@ -16,7 +16,7 @@
   "photoAlt": "SciFlair S100 vehicle tracker",
   "url": "https://itrack.uk/",
   "ai": false,
-  "subtitle": "Fleet tracking on our own S100 and S200 trackers, with live maps, driver behaviour scoring and alerts in the cloud and on mobile",
+  "subtitle": "IVMS on our own S100 and S200 trackers, with live maps, driver behaviour scoring and alerts in the cloud and on mobile",
   "hero": "/images/projects/itrack/s100-tracker-1600.webp",
   "stages": [
     "Concept",
@@ -29,7 +29,7 @@
     "Fleet operators need to know where every vehicle is, how it is being driven and when something goes wrong, from theft and fuel loss to speeding and harsh braking. Many low-cost trackers lose position in cities, drop out when one mobile network is weak, and are easily defeated by jammers or a cut battery cable.",
     "We wanted a tracker we fully control, from hardware to cloud, so it can be adapted to each fleet and integrated with other sensors."
   ],
-  "role": "SciFlair designed and owns iTrack end to end: the S100 tracker hardware and firmware, the cloud tracking platform, the web dashboard and the mobile app. It builds on what we learned from Axino.",
+  "role": "SciFlair designed and owns the IVMS end to end: the S100 and S200 tracker hardware and firmware, the cloud tracking platform, the web dashboard and the mobile app. It builds on what we learned from Axino, and runs live at itrack.uk.",
   "built": [
     "S100 tracker with a 72-channel receiver that uses up to three satellite systems at once (GPS, Galileo, GLONASS, BeiDou) for accurate positions in difficult areas",
     "Dual SIM slots with automatic changeover, so the tracker stays connected when one network is weak",
@@ -93,8 +93,8 @@
   "gallery": [
     {
       "src": "/images/projects/itrack/itrack-dashboard-800.webp",
-      "alt": "iTrack dashboard with vehicle list and live map",
-      "caption": "iTrack dashboard: fleet list and live map"
+      "alt": "IVMS dashboard with vehicle list and live map",
+      "caption": "IVMS dashboard: fleet list and live map"
     },
     {
       "src": "/images/projects/itrack/driver-performance-800.webp",
@@ -128,8 +128,8 @@
     }
   ],
   "nextGen": {
-    "title": "Deploy or Back iTrack",
-    "text": "iTrack is live and ready for new fleets: logistics, public transport, construction plant, school transport, fuel tankers and cash-in-transit, with the S200 for private vehicles and Axino-based builds for specialist needs. We are looking for fleet partners and investors to scale it."
+    "title": "Deploy or Back Our IVMS",
+    "text": "Our IVMS is live and ready for new fleets: logistics, public transport, construction plant, school transport, fuel tankers and cash-in-transit, with the S200 for private vehicles and Axino-based builds for specialist needs. We are looking for fleet partners and investors to scale it."
   },
   "related": [
     "axino",
