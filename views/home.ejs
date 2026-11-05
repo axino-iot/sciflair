@@ -63,24 +63,8 @@ function ph(label, cls) {
   </div>
 </section>
 
-<!-- 4. Featured projects -->
-<section class="section section-grey" id="projects">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Featured Projects</p>
-      <h2>Systems Running in the Field</h2>
-    </div>
-    <div class="project-grid">
-      <% site.featured.forEach(function (p) { %><%- include('partials/card', { p: p, site: site }) %><% }) %>
-    </div>
-    <div class="center">
-      <a class="btn btn-dark" href="/projects">See All Projects <%- include('partials/icon', { name: 'arrow' }) %></a>
-    </div>
-  </div>
-</section>
-
 <!-- 7. Research & leadership -->
-<section class="section" id="research">
+<section class="section section-grey" id="research">
   <div class="wrap founder">
     <div class="founder-photo"><%- ph('Founder', 'ph-founder') %></div>
     <div class="founder-body">
