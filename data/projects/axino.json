@@ -34,7 +34,7 @@
     "Identical software libraries across every module, so application code moves from one network to another without being rewritten",
     "Firmware updates over the air, and a client for the SciFlair communication server to send and receive data from the cloud",
     "SX142 expansion board for real installations: four protected digital inputs, two 10 A relays, RS485 and a 12 V or 24 V supply with short-circuit protection",
-    "Further carrier boards for sensors and gateways, and production batches for field deployment",
+    "SX01-GB carrier board that accepts over 280 off-the-shelf Grove sensors and actuators without soldering, with battery charging; and SGX01 gateways that link mesh and LoRa networks to the cloud",
     "The axino.co cloud service for device management, data and dashboards"
   ],
   "delivery": [
@@ -108,8 +108,8 @@
     },
     {
       "src": "/images/projects/axino/sgx01-gateway-800.webp",
-      "alt": "Axino carrier board with sensor connectors",
-      "caption": "Carrier board with plug-in sensor connectors"
+      "alt": "Axino SX01-GB carrier board with Grove sensor connectors",
+      "caption": "SX01-GB board: plug in any of 280+ Grove sensors without soldering"
     },
     {
       "src": "/images/projects/axino/production-batch-800.webp",
