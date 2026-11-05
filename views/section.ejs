@@ -1,13 +1,5 @@
-<%
-var tabs = Object.keys(site.sections).map(function (k) { return site.sections[k]; });
-%>
 <section class="sec-hero">
   <div class="wrap">
-    <nav class="sec-tabs" aria-label="Our work">
-      <% tabs.forEach(function (t) { %>
-        <a href="/<%= t.path %>"<%- t.path === sec.path ? ' aria-current="page"' : '' %>><%= t.title %></a>
-      <% }) %>
-    </nav>
     <p class="eyebrow"><%= sec.who %></p>
     <h1><%= sec.title %></h1>
     <p class="sec-intro"><%= sec.intro %></p>
