@@ -1,21 +1,21 @@
 {
   "slug": "aquaponics-research",
   "type": "prototype",
-  "status": "Research complete, 2026",
+  "status": "Research complete",
   "title": "IoT and AI Control of Aquaponic Farms",
   "sector": "agri",
   "deliveredBy": "SciFlair",
   "client": "Joint project with UWE",
-  "year": "2022–2026",
-  "region": null,
+  "year": "2022–2025",
+  "region": "UK",
   "ai": true,
-  "headline": "Joint PhD with UWE: a multi-sensor water-quality unit and AI models that detect anomalies and optimise an aquaponics farm, tested in a working greenhouse",
-  "result": "PhD complete, 2026",
+  "headline": "Joint PhD with UWE: an IoT sensing platform ran for 12 months on a commercial aquaponics farm, and AI models used its data to detect anomalies and cut grid heating energy by up to 27%",
+  "result": "12 months on a commercial farm",
   "featured": 0,
   "order": 206,
   "photo": "/images/projects/aquaponics-research/research-farm-800.webp",
   "photoAlt": "Inside the aquaponics research greenhouse, with vertical towers, grow beds and plants",
-  "subtitle": "A joint PhD with UWE that built a multi-sensor water-quality unit and used IoT data and AI to find, and hold, the best conditions for fish and plants",
+  "subtitle": "A joint PhD with UWE: twelve months of IoT data from a commercial aquaponics farm, used to detect faults early and cut heating energy",
   "hero": "/images/projects/aquaponics-research/research-farm-1600.webp",
   "stages": [
     "Concept",
@@ -23,57 +23,63 @@
     "Utilisation"
   ],
   "need": [
-    "Conventional farming is under pressure from water scarcity, soil depletion, pesticide use and climate change. Aquaponics, which raises fish and grows plants in one recirculating system, uses far less water and no soil or pesticides, but it is a delicate ecosystem.",
-    "Temperature, light, airflow, dissolved oxygen, pH, ammonia and nitrate all interact. Most so-called smart aquaponics systems only compare readings against fixed limits. Commercial growers need a system that understands how these parameters affect fish and plant growth, spots problems early and keeps the farm at its best automatically."
+    "Aquaponics raises fish and grows plants in one recirculating system, using far less water and no soil or pesticides. But its biology, chemistry and physics are tightly linked, and most farms still rely on manual checks and fixed alarm thresholds that miss slow drifts and sensor faults.",
+    "Energy is the other barrier. Pumping, aeration and above all water heating make aquaponics expensive to run in a cold climate. Published research had mostly used small rigs, a few sensors and short trials, so there was little long-term data from a real commercial farm to build better control on."
   ],
-  "role": "SciFlair co-funded and co-supervised the PhD with the University of the West of England, and provided the IoT hardware, cloud and engineering support. The research was carried out in a working aquaponics greenhouse.",
+  "role": "SciFlair co-funded the PhD with the University of the West of England and provided the IoT engineering and industrial support. The sensing platform was deployed on a commercial aquaponics farm in the UK.",
   "built": [
-    "A multi-sensor water-quality unit: a sealed electronics enclosure with a probe head holding several water-quality probes, placed directly in the fish tank",
-    "Continuous logging of water quality and greenhouse conditions to the cloud, with a web application to view the data and send alerts",
-    "Environmental control in the greenhouse, including ventilation fans",
-    "Anomaly detection that finds patterns, correlations and trends in the sensor data and flags problems before they harm fish or plants",
-    "Optimisation models that recommend or apply corrections to water quality, nutrient flow and climate for each fish and crop combination"
+    "An edge sensing unit measuring nine parameters: water temperature, pH, dissolved oxygen, ammonia, nitrite and nitrate, plus air temperature, humidity and light",
+    "Signal conditioning, wireless communication and cloud storage, with applications to view the data and raise alerts",
+    "Local rule-based control in the hardware, validated in the lab and kept disabled on the live farm to protect fish welfare",
+    "A twelve-month, high-resolution dataset from a working commercial farm, capturing seasonal change, farm activity and real sensor faults",
+    "Anomaly detection compared across statistical, Isolation Forest, neural network, LSTM and GRU models, to catch sensor faults, spikes and gradual drift early",
+    "An energy-aware heating controller that uses the water's thermal mass and solar forecasts to heat when solar power is available, within safe limits for fish, plants and bacteria"
   ],
   "delivery": [
     {
       "title": "Concept",
-      "text": "A literature review set out existing optimisation techniques and the key parameters to control, and defined the research questions."
+      "text": "A literature review found that most systems use few sensors, short trials and fixed thresholds, and set the research questions on sensing, anomaly detection and energy."
     },
     {
       "title": "Design and build",
-      "text": "Designed and built the multi-sensor unit and its probe head, and connected it to the cloud with the greenhouse sensors and controls."
+      "text": "Designed the edge sensing unit, probe head and cloud architecture to collect water-quality and climate data reliably on a working farm."
     },
     {
       "title": "Field operation",
-      "text": "Ran the system in a working aquaponics greenhouse with fish tanks, grow beds, deep-water lettuce rafts and vertical growing towers, collecting data across growing seasons."
+      "text": "Ran the platform continuously for twelve months on a commercial aquaponics farm in the UK, despite sensor noise, farm activity and patchy communications."
     },
     {
       "title": "Analysis and validation",
-      "text": "Developed the anomaly detection and optimisation models from the data and validated them against further experiments and published work."
+      "text": "Evaluated five anomaly-detection methods on the farm data, and simulated the energy-aware heating controller against a standard thermostat using a year of real conditions."
     },
     {
       "title": "Completion",
-      "text": "The PhD completed and the researcher graduated in 2026."
+      "text": "The thesis was submitted in December 2025 and the researcher graduated in 2026."
     }
   ],
   "results": [
     {
-      "value": "1 PhD",
-      "label": "completed, graduated 2026"
+      "value": "12 months",
+      "label": "continuous monitoring on a commercial farm"
     },
     {
-      "value": "1 system",
-      "label": "monitoring fish and plants together"
+      "value": "9",
+      "label": "water-quality and climate parameters measured"
+    },
+    {
+      "value": "Up to 27%",
+      "label": "less grid electricity for water heating, in simulation on real farm data"
     }
   ],
   "tech": [
-    "IoT sensors",
+    "IoT edge sensing",
     "Water-quality probes",
     "Cloud data logging",
-    "Web application",
-    "Anomaly detection",
-    "Machine learning",
-    "Environmental control"
+    "Isolation Forest",
+    "LSTM",
+    "GRU",
+    "Solar forecasting",
+    "Energy-aware control"
   ],
   "gallery": [
     {
@@ -94,7 +100,7 @@
     {
       "src": "/images/projects/aquaponics-research/farm-interior-800.webp",
       "alt": "Inside the aquaponics research greenhouse",
-      "caption": "The research greenhouse"
+      "caption": "The aquaponics farm"
     },
     {
       "src": "/images/projects/aquaponics-research/lettuce-raft-800.webp",
@@ -109,7 +115,7 @@
   ],
   "nextGen": {
     "title": "Next: Commercial Aquaponics Control",
-    "text": "We are looking for growers, partners and funders to turn the research into a control system for commercial aquaponics and controlled-environment farms."
+    "text": "The next step is to switch on closed-loop control on a working farm and add the energy-aware heating controller with solar power. We are looking for growers, partners and funders to take it there."
   },
   "related": [
     "insecto",

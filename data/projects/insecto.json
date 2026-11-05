@@ -6,8 +6,8 @@
   "client": "Bristol Robotics Lab, UWE",
   "year": "2021–2026",
   "region": "UK and Africa",
-  "headline": "Camera and sensor units for insect farms in the UK and Africa, and the joint PhD that used their data for machine-vision automation and digital-twin yield forecasting",
-  "result": "Deployed in UK and Africa",
+  "headline": "Insecto camera and sensor units for insect farms in the UK and Africa, and the joint PhD that detects, segments and health-checks mealworm beetles on a Raspberry Pi 5",
+  "result": "F1 0.98 beetle detection",
   "featured": 0,
   "order": 205,
   "photo": "/images/projects/insecto/insect-detection-800.webp",
@@ -15,7 +15,7 @@
   "type": "prototype",
   "status": "Deployed; PhD complete",
   "ai": true,
-  "subtitle": "Camera and sensor units that watch insect habitats around the clock, and the PhD that used their data to automate insect farming with machine vision",
+  "subtitle": "Camera and sensor units for insect habitats, and the joint PhD that built on them to automate insect monitoring with machine vision on low-cost edge hardware",
   "hero": "/images/projects/insecto/insect-detection-1600.webp",
   "stages": [
     "Concept",
@@ -23,17 +23,17 @@
     "Utilisation"
   ],
   "need": [
-    "Insects are a promising source of protein for livestock feed, but farming them at scale is hard. Yields vary with temperature, humidity, light and feed, disease spreads quickly in dense colonies, and checking fertility, sex ratio and health by eye is slow and inconsistent.",
+    "Insects are a promising, sustainable source of protein for animal feed, but insect farms still depend on staff inspecting crates by eye. Checking numbers, health and deformities across thousands of densely packed insects is slow, inconsistent and hard to scale.",
     "Bristol Robotics Lab was running a project to help small-scale insect farmers in Africa. It needed low-cost units that could monitor many habitats at once, capture images at regular intervals and send the data to the cloud for analysis."
   ],
-  "role": "SciFlair designed and built the Insecto units: hardware, enclosure, firmware and cloud connection. We then co-funded and co-supervised a PhD with the University of the West of England that used the units and their data to research automated insect farming.",
+  "role": "SciFlair designed and built the Insecto units: hardware, enclosure, firmware and cloud connection. SciFlair and the University of the West of England then co-funded a PhD at the Centre for Machine Vision, Bristol Robotics Lab, which built on the Insecto platform to automate insect monitoring.",
   "built": [
-    "Insecto units: a high-resolution camera and environmental sensors in a compact, wall-mounted enclosure, one per habitat",
-    "Monitoring and remote control of temperature, humidity, airflow, moisture and light for each habitat",
-    "Images captured at set intervals and sent with the sensor data to a cloud server, so many experiments can run in parallel",
-    "Machine-vision models (object detection and segmentation) that find and count insects, tell larvae, pupae and adults apart, and flag signs of disease from colour, movement and body shape",
-    "A ground-truth image and sensor dataset from working insect habitats",
-    "A digital-twin predictor that forecasts yield from species, feed and environment, so farm settings can be adjusted for a consistent harvest"
+    "Insecto units: a high-resolution camera and environmental sensors in a compact, wall-mounted enclosure, one per habitat, sending images and data to a cloud server",
+    "Synthetic and real-farm image datasets of mealworm beetles, released publicly for other researchers",
+    "Beetle detection with YOLOv8 and a sliding-window method that finds small, densely packed beetles in cluttered rearing crates",
+    "A memory-efficient segmentation workflow using the Segment Anything Model, applied beetle by beetle, benchmarked against Mask R-CNN, SOLOv2 and YOLO segmentation models",
+    "Anomaly detection with an autoencoder trained only on healthy beetles, which flags deformed or abnormal insects without needing a large library of rare defects",
+    "The full detection, segmentation and anomaly pipeline running on a Raspberry Pi 5, low-cost hardware suited to farm use"
   ],
   "delivery": [
     {
@@ -42,7 +42,7 @@
     },
     {
       "title": "Design and build",
-      "text": "Designed the unit and its enclosure in CAD, then built and tested a batch of units in our lab in 2021."
+      "text": "Designed the Insecto unit and its enclosure in CAD, then built and tested a batch of units in our lab in 2021."
     },
     {
       "title": "Deployment",
@@ -50,37 +50,42 @@
     },
     {
       "title": "Research",
-      "text": "The joint PhD used the units and their data to train and validate machine-vision models and build the yield predictor, repeating experiments and checking results against published work."
+      "text": "The joint PhD built synthetic and real-farm datasets with a commercial insect farm, then developed and compared detection, segmentation and anomaly-detection models for mealworm beetles."
     },
     {
-      "title": "Completion",
-      "text": "The PhD completed and the researcher graduated in 2026."
+      "title": "Edge deployment",
+      "text": "Validated the complete machine-vision pipeline on a Raspberry Pi 5, showing it can run on the farm rather than in a data centre. The PhD completed in 2026."
     }
   ],
   "results": [
     {
       "value": "UK + Africa",
-      "label": "units deployed in live insect habitats"
+      "label": "Insecto units deployed in live insect habitats"
     },
     {
-      "value": "1 PhD",
-      "label": "completed, graduated 2026"
+      "value": "F1 0.98",
+      "label": "beetle detection in dense, real farm crates"
+    },
+    {
+      "value": "Pi 5",
+      "label": "full vision pipeline running on low-cost edge hardware"
     }
   ],
   "tech": [
     "Machine vision",
-    "YOLO",
+    "YOLOv8",
+    "Segment Anything (SAM)",
     "Mask R-CNN",
+    "Autoencoder",
+    "Raspberry Pi 5",
     "IoT sensors",
-    "Cloud server",
-    "Digital twin",
-    "CAD enclosure design"
+    "Cloud server"
   ],
   "gallery": [
     {
       "src": "/images/projects/insecto/insect-detection-800.webp",
       "alt": "Machine-vision detections on an insect habitat",
-      "caption": "Each insect detected and boxed by the model"
+      "caption": "Insects detected and boxed by the model in an Insecto habitat"
     },
     {
       "src": "/images/projects/insecto/insecto-unit-800.webp",
@@ -104,8 +109,8 @@
     }
   ],
   "nextGen": {
-    "title": "Next: A Commercial Demonstrator",
-    "text": "We are looking for partners and funders to build a commercial demonstrator: modular, decentralised insect farming in which small farmers run breeding or rearing units guided by machine vision."
+    "title": "Next: Farm-Scale Trials",
+    "text": "The next step is to extend the models to larvae and pupae and run field trials in operational insect farms, leading to modular, decentralised insect farming for small farmers. We are looking for partners and funders."
   },
   "related": [
     "aquaponics-research",
