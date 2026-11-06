@@ -4,11 +4,11 @@
       <img src="/images/sciflair-cs.svg" alt="SciFlair – Connected Systems" width="160" height="45" loading="lazy" />
       <p class="footer-tag">Connected systems engineering, designed and built in Bristol since 2014.</p>
     </div>
-    <div>
+    <% if (currentPath !== '/') { %><div>
       <h3>Contact</h3>
       <p>Unit 18, Apex Court, Woodlands<br>Bradley Stoke, Bristol BS32 4JT<br>United Kingdom</p>
       <p><a href="tel:+441173137585">+44 (0)117 313 7585</a><br><a href="mailto:info@sciflair.com">info@sciflair.com</a></p>
-    </div>
+    </div><% } %>
     <div>
       <h3>Our Products</h3>
       <p><a href="/products/axino">Axino IoT platform</a><br><a href="/products/itrack">In-vehicle monitoring</a></p>
