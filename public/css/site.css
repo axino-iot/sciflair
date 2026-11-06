@@ -430,8 +430,9 @@ body:not(.home):not(.project):not(.section-page) main { padding-top: 88px; min-h
 /* Bristol base photos */
 .base { margin-top: 48px; }
 .base-title { font-size: 1.15rem; color: var(--navy); margin: 0 0 16px; }
-.base-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.base-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .base-grid figure { margin: 0; }
 .base-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
 .base-grid figcaption { font-size: .88rem; margin-top: 6px; color: #6B6D70; }
-@media (max-width: 760px) { .base-grid { grid-template-columns: 1fr; } }
+@media (max-width: 960px) { .base-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .base-grid { grid-template-columns: 1fr; } }
