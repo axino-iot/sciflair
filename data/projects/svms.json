@@ -24,7 +24,7 @@
     "Security operators have to watch, record and control large numbers of IP cameras spread across wide areas, often over links with very different capacity: microwave, satellite, fibre, WiMax and mobile networks.",
     "Our clients needed one system that works the same way in a fixed control room, a command-and-control vehicle or a rapidly deployed portable kit, makes the most of constrained links, and limits each operator to the cameras they are authorised to see."
   ],
-  "role": "SVMS is SciFlair's own software. Years of supporting XAD's XVMS in the field showed where its bottlenecks were, so we rewrote it from the ground up with a new modular architecture. We own the architecture and code.",
+  "role": "SVMS is SciFlair's own software. Years of supporting the earlier video management software in the field showed where its bottlenecks were, so we rewrote it from the ground up with a new modular architecture. We own the architecture and code.",
   "built": [
     "Database Server: the single point of access to the configuration database, so every other module can run on its own machine anywhere on the network",
     "Operator GUI: up to 12 live or recorded views per monitor, a centred view with thumbnails, and pan, tilt, zoom, presets and auxiliary commands such as wipers for PTZ cameras",
