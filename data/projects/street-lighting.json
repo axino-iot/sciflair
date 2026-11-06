@@ -5,7 +5,7 @@
   "deliveredBy": "SciFlair",
   "client": "A municipality",
   "year": "2017",
-  "region": "Middle East",
+  "region": null,
   "headline": "GSM controller for street-light feeder cabinets that reports faults to the exact feeder and switches lights with sunrise and sunset, proven on site for a planned 2,000-cabinet rollout",
   "result": "2,000 cabinets scoped",
   "featured": 0,
@@ -23,7 +23,7 @@
     "Development"
   ],
   "need": [
-    "A municipality in the Middle East ran its street lights from about 2,000 roadside feeder cabinets. Faults were found only when a patrol spotted them or a member of the public reported them, often with the wrong location, so field engineers had to test every feeder in the area to find the fault.",
+    "A municipality ran its street lights from about 2,000 roadside feeder cabinets. Faults were found only when a patrol spotted them or a member of the public reported them, often with the wrong location, so field engineers had to test every feeder in the area to find the fault.",
     "The cabinets switched lights on and off at fixed times, although sunrise and sunset move through the year, wasting energy in summer and leaving roads dark in winter. The municipality also had no record of when cabinet doors were opened and closed."
   ],
   "role": "SciFlair was the design authority, working with a local partner company. We captured the requirements with the municipality's engineers, designed the controller, firmware and online app, and verified the system on site. Our partner handled installation and local liaison.",

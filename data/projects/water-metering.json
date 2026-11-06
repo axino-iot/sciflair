@@ -5,8 +5,8 @@
   "deliveredBy": "SciFlair",
   "client": "A water utility",
   "year": "2017–2018",
-  "region": "Middle East",
-  "headline": "Battery-powered retrofit reader that turns existing water meters into smart meters, developed for a city-wide meter reading tender in the Middle East",
+  "region": null,
+  "headline": "Battery-powered retrofit reader that turns existing water meters into smart meters, developed for a city-wide meter reading tender",
   "result": "Retrofit, no meter swap",
   "featured": 0,
   "order": 201,
@@ -22,7 +22,7 @@
     "Development"
   ],
   "need": [
-    "A large water utility in the Middle East went to tender for automated meter reading as a managed service. The supplier would own, install and operate the meters, the communications network and the head-end system, and deliver readings for a monthly charge per meter.",
+    "A large water utility went to tender for automated meter reading as a managed service. The supplier would own, install and operate the meters, the communications network and the head-end system, and deliver readings for a monthly charge per meter.",
     "The first phase covered 4,100 high-volume users, with more than 200,000 homes and businesses to follow over four years. Readings had to arrive over GPRS or cloud IoT networks rather than drive-by or walk-by reading, with at least 99% of meters read every month and penalties for any meter offline for more than a few days.",
     "Replacing every meter would have made the monthly charge uncompetitive. We needed to show that existing meters could be retrofitted reliably and cheaply enough to meet those service levels."
   ],

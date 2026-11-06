@@ -5,7 +5,7 @@
   "deliveredBy": "SciFlair",
   "client": "A surgical department",
   "year": "2024 onwards",
-  "region": "Europe",
+  "region": null,
   "headline": "Post-op notes and lab reports compiled automatically into one chronological patient record in Microsoft Teams, letting surgeons see up to 20 patients an hour instead of 5",
   "result": "4× more patients per hour",
   "featured": 0,
