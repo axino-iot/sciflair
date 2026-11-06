@@ -3,7 +3,7 @@ const router = express.Router();
 const site = require('../data');
 
 // Search titles and descriptions
-const SEC_TITLES = { product: 'IoT Products and Platforms', project: 'Connected Systems Projects and Case Studies', prototype: 'IoT and AI Prototypes, Research and Development' };
+const SEC_TITLES = { product: 'IoT Products and Platforms', project: 'IoT and Embedded Systems Projects, Case Studies', prototype: 'IoT and AI Prototypes, Proof of Concept and R&D' };
 function clip(s, n) { s = String(s || '').replace(/\s+/g, ' ').trim(); if (s.length <= n) return s; s = s.slice(0, n - 1); return s.slice(0, s.lastIndexOf(' ')).replace(/[,;:–-]$/, '') + '…'; }
 function crumbs(list) {
   return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: list.map(function (c, i) {
