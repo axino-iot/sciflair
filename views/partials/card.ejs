@@ -1,0 +1,30 @@
+<%
+// One work item as a card. Locals: p (item), site
+var s = site.sectors[p.sector] || site.sectors.all;
+var sec = site.sectionFor(p);
+var href = p.need ? '/' + sec.path + '/' + p.slug : (p.url || null);
+var external = !p.need && p.url;
+var meta = [p.region, p.year].filter(Boolean).join(' · ');
+%>
+<article class="project-card">
+  <div class="project-media">
+    <% if (p.photo) { %>
+      <img src="<%= p.photo %>" alt="<%= p.photoAlt %>" width="500" height="400" loading="lazy" />
+    <% } else { %>
+      <div class="ph ph-card" role="img" aria-label="<%= p.title %>"><span>Photo: <%= p.title %></span></div>
+    <% } %>
+    <% if (p.result) { %><span class="project-result"><%= p.result %></span><% } %>
+  </div>
+  <div class="project-body">
+    <div class="card-tags">
+      <span class="tag tag-<%= s.tag %>"><%= s.name %></span>
+      <% if (p.ai) { %><span class="tag tag-ai">AI</span><% } %>
+    </div>
+    <h3><% if (href) { %><a class="card-link" href="<%= href %>"<%- external ? ' rel="noopener"' : '' %>><%= p.title %></a><% } else { %><%= p.title %><% } %></h3>
+    <p><%= p.headline %></p>
+    <% if (meta) { %><p class="project-meta"><%= meta %></p><% } %>
+    <% if (p.need) { %><span class="link card-more">Read more <%- include('icon', { name: 'arrow' }) %></span>
+    <% } else if (external) { %><span class="link card-more">Visit site <%- include('icon', { name: 'arrow' }) %></span>
+    <% } else { %><span class="card-soon">Full write-up coming soon</span><% } %>
+  </div>
+</article>

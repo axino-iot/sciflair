@@ -1,0 +1,108 @@
+{
+  "slug": "parking-sensor",
+  "title": "Parking Occupancy Sensor",
+  "sector": "city",
+  "deliveredBy": "SciFlair",
+  "client": "A university",
+  "year": "2019–2020",
+  "region": null,
+  "headline": "Battery-powered bay sensor with dual-sensor detection, co-developed with a university for a planned 1,000-bay campus rollout",
+  "result": "5+ year battery",
+  "featured": 0,
+  "order": 204,
+  "photo": "/images/projects/parking-sensor/sensor-open-800.webp",
+  "photoAlt": "Parking sensor opened, showing the Axino LoRa module and batteries",
+  "type": "prototype",
+  "status": "Prototype, tested",
+  "ai": false,
+  "subtitle": "A battery-powered sensor bolted into each parking bay, co-developed with a university for a 1,000-bay campus rollout",
+  "hero": "/images/projects/parking-sensor/sensor-open-1600.webp",
+  "stages": [
+    "Concept",
+    "Development"
+  ],
+  "need": [
+    "A large university campus with about 25 car parks sees some 3,500 vehicles a day. At peak times drivers circle looking for a space, miss free bays they cannot see, and park on the roadside, blocking traffic.",
+    "The university wanted live bay-by-bay occupancy on a campus map and displays at car park entrances, starting with 50 bays and growing to 1,000 across the campus. It also wanted a product it could later offer to other organisations."
+  ],
+  "role": "SciFlair led the project and was design authority for the sensor hardware, firmware and communication server. The university's engineering faculty, funded through the project, developed the web and mobile applications and entrance displays, with the university's own works team planned to install the sensors. We set this out in a staged proposal with acceptance tests at each stage.",
+  "built": [
+    "A sensor that bolts to the surface in the centre of each bay, with tapered edges so it does not damage tyres and security screws against theft",
+    "Dual-sensor verification: one sensor detects the vehicle's metal body and the other confirms that the sensor is covered, so a bay is only reported when both agree",
+    "Our Axino communication module on a plug-in socket, so LoRa and mesh radios could be compared on site before choosing one for production",
+    "Battery power with an average life of more than five years, depending on how often the bay changes",
+    "An IP66 housing that takes the weight of a vehicle without damaging the electronics",
+    "Battery-level and tamper alerts, and our communication server hosted on the university's own cloud, with REST interfaces for its applications"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Worked with the university from early 2019 to define the stakeholder needs, and trialled several vehicle detection methods before choosing two that could be combined for reliable detection."
+    },
+    {
+      "title": "Staged plan",
+      "text": "Proposed a staged plan with a decision gate and acceptance test at each stage: 10 prototypes, then 50 production units at the first car park, entrance displays, a second site, and finally 1,000 bays."
+    },
+    {
+      "title": "Design and build",
+      "text": "Designed the sensor board, firmware and rugged housing on the Axino platform and built working prototypes with plug-in LoRa and mesh modules."
+    },
+    {
+      "title": "Verification",
+      "text": "Tested dual-sensor detection, battery drain against the five-year target, and reporting through the communication server to the live map."
+    }
+  ],
+  "results": [
+    {
+      "value": "1,000",
+      "label": "bays in the planned campus rollout"
+    },
+    {
+      "value": "2",
+      "label": "sensing methods per bay to prevent false readings"
+    },
+    {
+      "value": "5+ years",
+      "label": "average battery life"
+    }
+  ],
+  "tech": [
+    "Axino SM01",
+    "LoRa",
+    "LoRaWAN",
+    "Mesh",
+    "Dual-sensor detection",
+    "Low-power firmware",
+    "IP66",
+    "REST API",
+    "Live map app"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/parking-sensor/sensor-housing-800.webp",
+      "alt": "Black rugged parking sensor housing with two sensor windows",
+      "caption": "Rugged housing with two sensor windows"
+    },
+    {
+      "src": "/images/projects/parking-sensor/sensor-board-800.webp",
+      "alt": "Parking sensor main board inside the housing",
+      "caption": "Sensor board in the sealed housing"
+    },
+    {
+      "src": "/images/projects/parking-sensor/sensor-open-800.webp",
+      "alt": "Sensor with Axino LoRa module and batteries fitted",
+      "caption": "Plug-in Axino LoRa module and battery pack fitted"
+    }
+  ],
+  "nextGen": {
+    "title": "Ready for Production",
+    "text": "The next stage is a cost-reduced production board derived from Axino, a first batch of 50 units, and type approval, ready for car parks, campuses and town-centre streets."
+  },
+  "related": [
+    "street-lighting",
+    "air-quality",
+    "axino"
+  ],
+  "partner": "The university's engineering faculty",
+  "seoTitle": "Parking Occupancy Sensor (Bay Sensor)"
+}

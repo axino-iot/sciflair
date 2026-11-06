@@ -1,0 +1,30 @@
+<section class="sec-hero">
+  <div class="wrap">
+    <nav class="sec-tabs" aria-label="Sectors">
+      <% site.sectorTiles.forEach(function (k) { %>
+        <a href="/sectors/<%= k %>"<%- k === key ? ' aria-current="page"' : '' %>><%= site.sectors[k].name %></a>
+      <% }) %>
+    </nav>
+    <p class="eyebrow">Sector</p>
+    <h1><%= s.name %></h1>
+    <p class="sec-intro"><%= s.intro %></p>
+    <div class="sec-ask">
+      <p>Tell us about a system you need in <%= s.name.replace('&', 'and') %>, from a feasibility study to a full rollout and support.</p>
+      <a class="btn btn-primary" href="/#contact">Talk To Us</a>
+    </div>
+  </div>
+</section>
+
+<% groups.forEach(function (g, i) { %>
+<section class="section<%= i % 2 === 0 ? ' section-grey' : '' %>">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow"><%= g.sec.who %></p>
+      <h2><%= g.sec.title %></h2>
+    </div>
+    <div class="project-grid">
+      <% g.items.forEach(function (p) { %><%- include('partials/card', { p: p, site: site }) %><% }) %>
+    </div>
+  </div>
+</section>
+<% }) %>

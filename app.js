@@ -1,7 +1,6 @@
 const httpError = require('http-errors');
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
-const session = require('express-session');
 const path = require('path');
 const dotenv = require('dotenv');
 const errorHandler = require('./middleware/error');
@@ -11,7 +10,7 @@ dotenv.config({path: './config/config.env'});
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), { maxAge: '7d' }));
 
 //EJS 
 app.use(expressLayouts);
@@ -21,14 +20,10 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
-// Express session
-app.use(
-    session({
-      secret: 'secret',
-      resave: true,
-      saveUninitialized: true
-    })
-);
+// No session or cookies: the site sets no cookies, so no cookie banner is needed.
+
+// Current path for the menu highlight
+app.use(function (req, res, next) { res.locals.currentPath = req.path; next(); });
 
 //Mount Router
 app.use('/', require('./routes/web'));

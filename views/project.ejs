@@ -1,0 +1,142 @@
+<%
+var s = site.sectors[p.sector] || site.sectors.all;
+var sec = site.sectionFor(p);
+var isProduct = p.type === 'product', isProto = p.type === 'prototype';
+var H = isProduct ? { need: 'The Problem It Solves', role: 'Our Role', built: 'What It Does', delivery: 'Development and Use' }
+      : isProto ? { need: 'The Challenge', role: 'Our Role', built: 'What We Built', delivery: 'How It Was Developed' }
+      : { need: 'Mission and Need', role: 'Our Role', built: 'What We Built', delivery: 'How It Was Delivered' };
+var allStages = ['Concept', 'Development', 'Production', 'Utilisation', 'Support', 'Retirement'];
+var owned = p.stages || [];
+%>
+<!-- Project hero -->
+<section class="p-hero">
+  <img class="p-hero-img" src="<%= p.hero || p.photo %>" alt="<%= p.photoAlt %>" width="1600" height="900" />
+  <div class="p-hero-shade" aria-hidden="true"></div>
+  <div class="wrap p-hero-content">
+    <p class="crumbs"><a href="/<%= sec.path %>"><%= sec.title %></a> / <% if (site.sectorTiles.indexOf(p.sector) > -1) { %><a href="/sectors/<%= p.sector %>"><%= s.name %></a><% } else { %><%= s.name %><% } %></p>
+    <span class="tag tag-<%= s.tag %>"><%= s.name %></span>
+    <h1><%= p.title %></h1>
+    <% if (p.subtitle) { %><p class="p-sub"><%= p.subtitle %></p><% } %>
+    <ul class="p-meta">
+      <% if (p.region) { %><li><%= p.region %></li><% } %>
+      <% if (p.year) { %><li><%= p.year %></li><% } %>
+      <li><%= p.deliveredBy === 'XAD' ? 'Heritage – XAD Communications' : (isProduct ? 'SciFlair product' : isProto ? 'SciFlair R&D' : 'Delivered by SciFlair') %></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Key results -->
+<section class="proof" aria-label="Results">
+  <div class="wrap proof-grid">
+    <% (p.results || []).forEach(function (r) { %>
+      <div class="proof-item"><span class="proof-value"><%= r.value %></span><span class="proof-label"><%= r.label %></span></div>
+    <% }) %>
+  </div>
+</section>
+
+<!-- Life cycle delivered -->
+<section class="p-stages-band">
+  <div class="wrap">
+    <p class="eyebrow">System Life Cycle Delivered</p>
+    <ol class="p-stages">
+      <% allStages.forEach(function (st) { var on = owned.indexOf(st) > -1; %>
+        <li class="<%= on ? 'is-on' : '' %>"><span><%= st %></span><% if (on) { %><span class="sr"> – delivered</span><% } %></li>
+      <% }) %>
+    </ol>
+  </div>
+</section>
+
+<div class="wrap p-body">
+  <article class="p-main">
+    <section>
+      <h2><%= H.need %></h2>
+      <% p.need.forEach(function (para) { %><p><%= para %></p><% }) %>
+    </section>
+    <section>
+      <h2><%= H.role %></h2>
+      <p><%= p.role %></p>
+      <% if (p.sciflairRole) { %><p><%= p.sciflairRole %>.</p><% } %>
+    </section>
+    <section>
+      <h2><%= H.built %></h2>
+      <ul class="p-list"><% p.built.forEach(function (b) { %><li><%= b %></li><% }) %></ul>
+      <% if (p.builtScope) { %><p class="p-scope"><%= p.builtScope %></p><% } %>
+    </section>
+    <section>
+      <h2><%= H.delivery %></h2>
+      <ol class="p-delivery">
+        <% p.delivery.forEach(function (d) { %><li><h3><%= d.title %></h3><p><%= d.text %></p></li><% }) %>
+      </ol>
+    </section>
+    <% if (p.gallery && p.gallery.length) { %>
+    <section>
+      <h2>Gallery</h2>
+      <div class="p-gallery">
+        <% p.gallery.forEach(function (g) { %>
+          <% if (g.full) { %><figure class="is-zoom"><a href="<%= g.full %>" class="zoom-link" data-zoom aria-label="Enlarge: <%= g.caption %>"><img src="<%= g.src %>" alt="<%= g.alt %>" width="800" height="600" loading="lazy" /><span class="zoom-badge"><%- include('partials/icon', { name: 'zoom' }) %><span class="zb-mouse">Click to enlarge</span><span class="zb-touch">Tap to enlarge</span></span></a><figcaption><%= g.caption %></figcaption></figure>
+          <% } else { %><figure><img src="<%= g.src %>" alt="<%= g.alt %>" width="800" height="600" loading="lazy" /><figcaption><%= g.caption %></figcaption></figure><% } %>
+        <% }) %>
+      </div>
+    </section>
+    <% } %>
+    <% if (p.nextGen) { %>
+    <section class="p-next">
+      <h2><%= p.nextGen.title %></h2>
+      <p><%= p.nextGen.text %></p>
+    </section>
+    <% } %>
+  </article>
+
+  <aside class="p-side">
+    <div class="p-card">
+      <h3>At a Glance</h3>
+      <dl>
+        <% if (p.region) { %><dt>Region</dt><dd><%= p.region %></dd><% } %>
+        <% if (p.year) { %><dt>Year</dt><dd><%= p.year %></dd><% } %>
+        <dt>Sector</dt><dd><%= s.name %></dd>
+        <% if (isProto && p.status) { %><dt>Maturity</dt><dd><%= p.status %></dd><% } %>
+        <% if (p.partner) { %><dt>Delivered with</dt><dd><%= p.partner %></dd><% } %>
+      </dl>
+      <h3>Technologies</h3>
+      <ul class="p-tech"><% (p.tech || []).forEach(function (t) { %><li><%= t %></li><% }) %></ul>
+      <% if (p.url) { %><p><a class="link" href="<%= p.url %>">Visit <%= p.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') %> <%- include('partials/icon', { name: 'arrow' }) %></a></p><% } %>
+      <p class="p-ask"><%= sec.ask %></p>
+      <a class="btn btn-primary" href="/#contact"><%= sec.cta %></a>
+    </div>
+  </aside>
+</div>
+
+<% if (related.length) { %>
+<section class="section section-grey">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Related Work</p><h2>See Also</h2></div>
+    <div class="project-grid">
+      <% related.forEach(function (r) { %><%- include('partials/card', { p: r, site: site }) %><% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+  <div class="lightbox-frame"><img alt="" /></div>
+  <p class="lightbox-hint">Swipe to see the whole diagram</p>
+  <p class="lightbox-cap"></p>
+</div>
+<script>
+  (function () {
+    var box = document.getElementById('lightbox'); if (!box) return;
+    var img = box.querySelector('img'), cap = box.querySelector('.lightbox-cap');
+    function close() { box.hidden = true; document.body.style.overflow = ''; img.src = ''; }
+    document.querySelectorAll('[data-zoom]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        img.src = a.getAttribute('href'); img.alt = a.querySelector('img').alt;
+        var fc = a.parentNode.querySelector('figcaption'); cap.textContent = fc ? fc.textContent : '';
+        box.hidden = false; document.body.style.overflow = 'hidden'; box.querySelector('button').focus();
+      });
+    });
+    box.addEventListener('click', function (e) { if (e.target === box || e.target.classList.contains('lightbox-close') || e.target.classList.contains('lightbox-cap')) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !box.hidden) close(); });
+  })();
+</script>

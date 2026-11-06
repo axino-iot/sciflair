@@ -1,0 +1,126 @@
+{
+  "slug": "aquaponics-research",
+  "type": "prototype",
+  "status": "Research complete",
+  "title": "IoT and AI Control of Aquaponic Farms",
+  "sector": "agri",
+  "deliveredBy": "SciFlair",
+  "client": "Joint project with UWE",
+  "year": "2022–2025",
+  "region": "UK",
+  "ai": true,
+  "headline": "Joint PhD with UWE: an IoT sensing platform ran for 12 months on a commercial aquaponics farm, and AI models used its data to detect anomalies and cut grid heating energy by up to 27%",
+  "result": "12 months on a commercial farm",
+  "featured": 0,
+  "order": 206,
+  "photo": "/images/projects/aquaponics-research/research-farm-800.webp",
+  "photoAlt": "Inside the aquaponics research greenhouse, with vertical towers, grow beds and plants",
+  "subtitle": "A joint PhD with UWE: twelve months of IoT data from a commercial aquaponics farm, used to detect faults early and cut heating energy",
+  "hero": "/images/projects/aquaponics-research/research-farm-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Utilisation"
+  ],
+  "need": [
+    "Aquaponics raises fish and grows plants in one recirculating system, using far less water and no soil or pesticides. But its biology, chemistry and physics are tightly linked, and most farms still rely on manual checks and fixed alarm thresholds that miss slow drifts and sensor faults.",
+    "Energy is the other barrier. Pumping, aeration and above all water heating make aquaponics expensive to run in a cold climate. Published research had mostly used small rigs, a few sensors and short trials, so there was little long-term data from a real commercial farm to build better control on."
+  ],
+  "role": "SciFlair co-funded the PhD with the University of the West of England and provided the IoT engineering and industrial support. The sensing platform was deployed on a commercial aquaponics farm in the UK.",
+  "built": [
+    "An edge sensing unit measuring nine parameters: water temperature, pH, dissolved oxygen, ammonia, nitrite and nitrate, plus air temperature, humidity and light",
+    "Signal conditioning, wireless communication and cloud storage, with applications to view the data and raise alerts",
+    "Local rule-based control in the hardware, validated in the lab and kept disabled on the live farm to protect fish welfare",
+    "A twelve-month, high-resolution dataset from a working commercial farm, capturing seasonal change, farm activity and real sensor faults",
+    "Anomaly detection compared across statistical, Isolation Forest, neural network, LSTM and GRU models, to catch sensor faults, spikes and gradual drift early",
+    "An energy-aware heating controller that uses the water's thermal mass and solar forecasts to heat when solar power is available, within safe limits for fish, plants and bacteria"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "A literature review found that most systems use few sensors, short trials and fixed thresholds, and set the research questions on sensing, anomaly detection and energy."
+    },
+    {
+      "title": "Design and build",
+      "text": "Designed the edge sensing unit, probe head and cloud architecture to collect water-quality and climate data reliably on a working farm."
+    },
+    {
+      "title": "Field operation",
+      "text": "Ran the platform continuously for twelve months on a commercial aquaponics farm in the UK, despite sensor noise, farm activity and patchy communications."
+    },
+    {
+      "title": "Analysis and validation",
+      "text": "Evaluated five anomaly-detection methods on the farm data, and simulated the energy-aware heating controller against a standard thermostat using a year of real conditions."
+    },
+    {
+      "title": "Completion",
+      "text": "The thesis was submitted in December 2025 and the researcher graduated in 2026."
+    }
+  ],
+  "results": [
+    {
+      "value": "12 months",
+      "label": "continuous monitoring on a commercial farm"
+    },
+    {
+      "value": "9",
+      "label": "water-quality and climate parameters measured"
+    },
+    {
+      "value": "Up to 27%",
+      "label": "less grid electricity for water heating, in simulation on real farm data"
+    }
+  ],
+  "tech": [
+    "IoT edge sensing",
+    "Water-quality probes",
+    "Cloud data logging",
+    "Isolation Forest",
+    "LSTM",
+    "GRU",
+    "Solar forecasting",
+    "Energy-aware control"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/aquaponics-research/sensor-unit-800.webp",
+      "alt": "Multi-sensor water-quality unit with its probe head",
+      "caption": "Multi-sensor water-quality unit and probe head"
+    },
+    {
+      "src": "/images/projects/aquaponics-research/sensor-electronics-800.webp",
+      "alt": "Inside the sensor unit enclosure",
+      "caption": "Inside the unit: probe interfaces and controller"
+    },
+    {
+      "src": "/images/projects/aquaponics-research/sensor-at-tank-800.webp",
+      "alt": "Sensor unit installed at the fish tank",
+      "caption": "Installed at the fish tank"
+    },
+    {
+      "src": "/images/projects/aquaponics-research/farm-interior-800.webp",
+      "alt": "Inside the aquaponics research greenhouse",
+      "caption": "The aquaponics farm"
+    },
+    {
+      "src": "/images/projects/aquaponics-research/lettuce-raft-800.webp",
+      "alt": "Lettuce growing on a floating raft",
+      "caption": "Lettuce on a deep-water raft"
+    },
+    {
+      "src": "/images/projects/aquaponics-research/grow-bed-800.webp",
+      "alt": "Seedlings in a clay-pebble grow bed",
+      "caption": "Clay-pebble grow bed fed by fish water"
+    }
+  ],
+  "nextGen": {
+    "title": "Next: Commercial Aquaponics Control",
+    "text": "The next step is to switch on closed-loop control on a working farm and add the energy-aware heating controller with solar power. We are looking for growers, partners and funders to take it there."
+  },
+  "related": [
+    "insecto",
+    "water-control",
+    "axino"
+  ],
+  "seoTitle": "IoT and AI Control of Aquaponic Farms"
+}

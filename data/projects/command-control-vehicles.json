@@ -1,0 +1,143 @@
+{
+  "slug": "command-control-vehicles",
+  "title": "Mobile and Portable Command and Control",
+  "subtitle": "A ten-year programme of specialist command vehicles and rapid-deployment kits on one IP network for live audio, video and data",
+  "sector": "video",
+  "deliveredBy": "XAD",
+  "client": null,
+  "year": "2009–2019",
+  "region": null,
+  "headline": "Mobile and portable command centres on one IP network, delivered across the full life cycle and supported by SciFlair since 2016",
+  "result": "£10M+ programme",
+  "featured": 1,
+  "order": 2,
+  "photo": "/images/projects/command-control/command-truck-800.webp",
+  "photoAlt": "Converted command-and-control vehicle with slide-out operations room",
+  "hero": "/images/projects/command-control/command-truck-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation",
+    "Support",
+    "Retirement"
+  ],
+  "sciflairRole": "SciFlair took over service and support from 2016, developed SVMS over the same period, and in 2019 proposed a Phase 2 upgrade that was approved but did not proceed after COVID-19",
+  "need": [
+    "The client needed to collect, monitor and record audio, video and data from many sources in the field, and share it in real time with a central headquarters.",
+    "The same capability had to work from a convoy of specialist vehicles and from rugged portable cases that can be set up anywhere, bringing separate systems under one common platform."
+  ],
+  "role": "XAD Communications was the prime contractor and design authority across the whole life cycle, from concept to final retirement. The Technical Director who later founded SciFlair led the programme, directing XAD's audio, video, data and RF engineering groups.",
+  "built": [
+    "A fleet of eight specialist vehicles, each converted for a different operational role",
+    "A portable equivalent built into rugged cases that can be set up anywhere",
+    "35 rapidly deployable camera and communication kits, including cameras on pneumatic masts",
+    "Vehicle conversions from vans to heavy trucks, with operator workstations, meeting rooms, on-board power, air-conditioning and networking",
+    "An end-to-end IP network across wired and wireless links, carrying live and recorded audio, video and data",
+    "Video management software, later succeeded by SciFlair's SVMS"
+  ],
+  "builtScope": "Eight specialist vehicles, a portable equivalent in rugged cases and 35 deployable kits, all on one IP network.",
+  "delivery": [
+    {
+      "title": "Concept and requirements",
+      "text": "Operational needs captured and turned into the technical proposals and system requirements."
+    },
+    {
+      "title": "Architecture and design",
+      "text": "One IP architecture so every vehicle, station and kit can work alone or as part of the wider deployment."
+    },
+    {
+      "title": "Production and verification",
+      "text": "Vehicle conversions and portable systems manufactured and integrated, with factory acceptance testing."
+    },
+    {
+      "title": "Validation and deployment",
+      "text": "Site acceptance and field testing in operational conditions, where the system exceeded the client's expectations."
+    },
+    {
+      "title": "Support and retirement",
+      "text": "In-service support for a decade, with SciFlair taking over from 2016, until the programme closed in 2019."
+    }
+  ],
+  "results": [
+    {
+      "value": "£10M+",
+      "label": "programme value"
+    },
+    {
+      "value": "10",
+      "label": "years in service, 2009–2019"
+    },
+    {
+      "value": "8",
+      "label": "specialist vehicles in the mobile team"
+    },
+    {
+      "value": "35",
+      "label": "deployable camera and communication kits"
+    }
+  ],
+  "tech": [
+    "IP networking",
+    "Live video and audio",
+    "Pneumatic masts",
+    "Wireless links",
+    "Vehicle conversion",
+    "Rugged-case integration",
+    "Video management software"
+  ],
+  "nextGen": {
+    "title": "What came next",
+    "text": "The programme's lessons shaped SciFlair's SVMS video management software, rewritten from the ground up from 2016."
+  },
+  "gallery": [
+    {
+      "src": "/images/projects/command-control/command-truck-800.webp",
+      "alt": "Converted vehicle with its slide-out room extended",
+      "caption": "Large operations vehicle with slide-out room"
+    },
+    {
+      "src": "/images/projects/command-control/camera-van-800.webp",
+      "alt": "Converted van with roof-mounted camera, lights and mast",
+      "caption": "Vehicle with roof-mounted camera"
+    },
+    {
+      "src": "/images/projects/command-control/pneumatic-masts-800.webp",
+      "alt": "Two pneumatic masts raised with wireless and camera heads",
+      "caption": "Pneumatic masts raised"
+    },
+    {
+      "src": "/images/projects/command-control/vehicle-workstations-800.webp",
+      "alt": "Operator workstations with screens and an equipment rack inside a converted vehicle",
+      "caption": "Operator workstations"
+    },
+    {
+      "src": "/images/projects/command-control/vehicle-control-room-800.webp",
+      "alt": "Operations room inside a converted vehicle with desks, phones and a display",
+      "caption": "Operations room"
+    },
+    {
+      "src": "/images/projects/command-control/vehicle-briefing-area-800.webp",
+      "alt": "Meeting room with a long table, phones and display screens inside a converted vehicle",
+      "caption": "Meeting room"
+    },
+    {
+      "src": "/images/projects/command-control/portable-kit-and-mast-800.webp",
+      "alt": "Portable kit in an open rugged case beside a camera on a tripod mast",
+      "caption": "Portable camera kit and mast"
+    },
+    {
+      "src": "/images/projects/command-control/portable-power-unit-800.webp",
+      "alt": "Portable power unit in a rugged case with battery connectors, mains socket and solar panel",
+      "caption": "Portable power unit"
+    }
+  ],
+  "related": [
+    "svms",
+    "satcom-on-the-move"
+  ],
+  "type": "project",
+  "status": null,
+  "ai": false,
+  "seoTitle": "Mobile Command and Control Vehicles and Kits"
+}

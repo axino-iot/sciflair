@@ -1,0 +1,110 @@
+{
+  "slug": "svms",
+  "title": "SVMS: SciFlair Video Management Software",
+  "subtitle": "Our own video management software for large camera networks over mixed and constrained links",
+  "sector": "video",
+  "deliveredBy": "SciFlair",
+  "client": null,
+  "year": "2016 onwards",
+  "region": null,
+  "headline": "Our own video management software, rewritten from the ground up and proven on a 100+ camera network and in command-and-control vehicles",
+  "result": "Deployed",
+  "featured": 0,
+  "order": 104,
+  "photo": "/images/projects/svms/control-room-video-wall-800.webp",
+  "photoAlt": "SVMS running on a control-room video wall",
+  "hero": "/images/projects/svms/tower-ptz-camera-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation"
+  ],
+  "need": [
+    "Security operators have to watch, record and control large numbers of IP cameras spread across wide areas, often over links with very different capacity: microwave, satellite, fibre, WiMax and mobile networks.",
+    "Our clients needed one system that works the same way in a fixed control room, a command-and-control vehicle or a rapidly deployed portable kit, makes the most of constrained links, and limits each operator to the cameras they are authorised to see."
+  ],
+  "role": "SVMS is SciFlair's own software. Years of supporting the earlier video management software in the field showed where its bottlenecks were, so we rewrote it from the ground up with a new modular architecture. We own the architecture and code.",
+  "built": [
+    "Database Server: the single point of access to the configuration database, so every other module can run on its own machine anywhere on the network",
+    "Operator GUI: up to 12 live or recorded views per monitor, a centred view with thumbnails, and pan, tilt, zoom, presets and auxiliary commands such as wipers for PTZ cameras",
+    "Relay Player: drives video walls and remote displays with no user interface, configured centrally from the GUI",
+    "Video Proxy: pulls each camera stream once over the constrained link and redistributes it locally, so more viewers do not mean more traffic on the link",
+    "File Recorder: continuous MP4 recording in two-minute segments, with search, export to external drives and import of footage from other sources",
+    "ONVIF camera discovery, with manual set-up for cameras that are not ONVIF-compliant",
+    "Administrator and operator roles, with each operator limited to the cameras assigned to them"
+  ],
+  "builtScope": "Deployed on fixed sites, in command-and-control vehicles and in portable kits, over microwave, satellite, fibre, WiMax and GSM links.",
+  "delivery": [
+    {
+      "title": "Architecture definition",
+      "text": "A modular client–server architecture in which every module connects to the Database Server, so a system scales by adding recorders, proxies and wall players on separate machines."
+    },
+    {
+      "title": "Integration",
+      "text": "Cameras from different manufacturers are integrated through ONVIF or manual configuration, and each is verified by assigning it to a display cell and confirming live video."
+    },
+    {
+      "title": "Proven in service",
+      "text": "Deployed on the 100+ camera HD surveillance network and in mobile and portable command-and-control systems."
+    },
+    {
+      "title": "Next stage",
+      "text": "The next step is to validate SVMS on current operating systems and camera models ahead of new deployments. We are looking for a partner or client to take it forward."
+    }
+  ],
+  "results": [
+    {
+      "value": "100+",
+      "label": "HD cameras on one deployment"
+    },
+    {
+      "value": "12",
+      "label": "live or recorded views per monitor"
+    },
+    {
+      "value": "5",
+      "label": "link types supported"
+    },
+    {
+      "value": "2",
+      "label": "deployments: fixed network and vehicles"
+    }
+  ],
+  "tech": [
+    "IP video",
+    "H.264",
+    "RTSP",
+    "ONVIF",
+    "PTZ control",
+    "MP4 recording",
+    "Client–server",
+    "Video walls"
+  ],
+  "nextGen": null,
+  "gallery": [
+    {
+      "src": "/images/projects/svms/svms-architecture-800.webp",
+      "alt": "Diagram of the SVMS modules connected to the Database Server",
+      "caption": "SVMS architecture",
+      "full": "/images/projects/svms/svms-architecture-full.webp"
+    },
+    {
+      "src": "/images/projects/svms/control-room-video-wall-800.webp",
+      "alt": "Control-room video wall showing a live road camera",
+      "caption": "Control-room video wall"
+    },
+    {
+      "src": "/images/projects/svms/tower-ptz-camera-wimax-800.webp",
+      "alt": "PTZ camera and WiMax antennas mounted on a communications tower",
+      "caption": "Tower-mounted camera node"
+    }
+  ],
+  "related": [
+    "surveillance-network",
+    "command-control-vehicles"
+  ],
+  "type": "product",
+  "status": "Needs re-testing",
+  "seoTitle": "SVMS Video Management Software for CCTV"
+}

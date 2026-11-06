@@ -1,0 +1,131 @@
+{
+  "slug": "axino",
+  "title": "Axino IoT Platform",
+  "sector": "all",
+  "deliveredBy": "SciFlair",
+  "client": null,
+  "year": "2016 onwards",
+  "region": null,
+  "headline": "Plug-in WiFi, GSM, Ethernet, LoRa, mesh and SigFox modules that share one processor and one code base, with cloud management: the backbone of our projects, products and prototypes",
+  "result": "75% faster",
+  "featured": 0,
+  "order": 101,
+  "photo": "/images/projects/axino/axino-board-800.webp",
+  "photoAlt": "Axino node board with SIM holder and plug-in sensor connectors",
+  "type": "product",
+  "status": "Live",
+  "ai": false,
+  "subtitle": "Plug-in communication modules, expansion boards and a cloud server that let us build a connected device once and deploy it on any network",
+  "hero": "/images/projects/axino/axino-board-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation",
+    "Support"
+  ],
+  "need": [
+    "Every connected device needs the same building blocks: a processor, a radio, storage, a clock, secure messaging and a way to update firmware in the field. Building these from scratch for each project is slow and expensive, and changing the network later, from GSM to LoRa for example, usually means a new design.",
+    "Off-the-shelf prototyping kits are quick to start with but are not built for real installations, where inputs and outputs connect to pumps, relays and sensors that can damage unprotected electronics."
+  ],
+  "role": "SciFlair designed, built and owns Axino end to end: hardware, firmware libraries, cloud communication server and the axino.co service. We use it in our own projects and products, and offer it to clients and developers.",
+  "built": [
+    "SM01 communication modules in six versions, GSM, WiFi, Ethernet, LoRa, mesh and SigFox, all with the same 16-bit processor, 4 MB flash, real-time clock, temperature sensor and hardware encryption engine",
+    "Identical software libraries across every module, so application code moves from one network to another without being rewritten",
+    "Firmware updates over the air, and a client for the SciFlair communication server to send and receive data from the cloud",
+    "SX142 expansion board for real installations: four protected digital inputs, two 10 A relays, RS485 and a 12 V or 24 V supply with short-circuit protection",
+    "SX01-GB carrier board that accepts over 280 off-the-shelf Grove sensors and actuators without soldering, with battery charging; and SGX01 gateways that link mesh and LoRa networks to the cloud",
+    "The axino.co cloud service for device management, data and dashboards"
+  ],
+  "delivery": [
+    {
+      "title": "Concept",
+      "text": "Set the requirements from our own project experience: one processor and code base across many networks, low power, low cost, and protection for real-world inputs and outputs."
+    },
+    {
+      "title": "Development",
+      "text": "Designed the SM01 modules and libraries, the SX142 expansion board and the communication server, and verified each module on its own network."
+    },
+    {
+      "title": "Production",
+      "text": "Manufactured the modules and boards in batches for field deployments."
+    },
+    {
+      "title": "Utilisation",
+      "text": "Deployed in our well pump and reservoir control, street-light feeder management, smart water metering and parking sensor work, in specialist IVMS tracker builds, and in the sensor nodes that led to Sensor Magic."
+    },
+    {
+      "title": "Support",
+      "text": "Maintained and extended through new carrier boards, library updates and the axino.co service."
+    }
+  ],
+  "results": [
+    {
+      "value": "6",
+      "label": "network options from one design"
+    },
+    {
+      "value": "1",
+      "label": "code base across every module"
+    },
+    {
+      "value": "75%",
+      "label": "faster from prototype to deployment"
+    }
+  ],
+  "tech": [
+    "GSM",
+    "WiFi",
+    "Ethernet",
+    "LoRa",
+    "Mesh",
+    "SigFox",
+    "RS485",
+    "Firmware over the air",
+    "Hardware encryption",
+    "Cloud server"
+  ],
+  "gallery": [
+    {
+      "src": "/images/projects/axino/module-family-800.webp",
+      "alt": "A row of Axino communication modules",
+      "caption": "SM01 modules: one processor, a choice of radios"
+    },
+    {
+      "src": "/images/projects/axino/sm01-gsm-800.webp",
+      "alt": "SM01-GSM module",
+      "caption": "SM01-GSM module"
+    },
+    {
+      "src": "/images/projects/axino/sm01-wifi-800.webp",
+      "alt": "SM01-WiFi module",
+      "caption": "SM01-WiFi module"
+    },
+    {
+      "src": "/images/projects/axino/module-on-sx142-800.webp",
+      "alt": "Axino module plugged into the SX142 expansion board with terminal blocks",
+      "caption": "Module on the SX142 board: protected inputs, relays and RS485"
+    },
+    {
+      "src": "/images/projects/axino/sgx01-gateway-800.webp",
+      "alt": "Axino SX01-GB carrier board with Grove sensor connectors",
+      "caption": "SX01-GB board: plug in any of 280+ Grove sensors without soldering"
+    },
+    {
+      "src": "/images/projects/axino/production-batch-800.webp",
+      "alt": "Panels of Axino boards from a production batch",
+      "caption": "A production batch for field deployment"
+    }
+  ],
+  "nextGen": {
+    "title": "Build on Axino",
+    "text": "Axino is ready for new products and pilots. We are looking for investors to scale it and for organisations that want a connected device in the field quickly."
+  },
+  "related": [
+    "water-control",
+    "street-lighting",
+    "sensor-magic"
+  ],
+  "url": "https://www.axino.co/",
+  "seoTitle": "Axino Modular IoT Hardware Platform"
+}

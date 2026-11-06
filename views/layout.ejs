@@ -1,98 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <% var pageTitle = (typeof title !== 'undefined' && title) ? title : 'SciFlair | Connected Systems Engineering – IoT, Energy, Video & AI | Bristol, UK'; %>
-    <% var pageDesc = 'SciFlair designs and builds connected systems – hardware, embedded firmware, cloud platforms and apps – for energy, water, video and security, smart city and AgriTech. Based in Bristol, UK.'; %>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <% var pageTitle = (typeof title !== 'undefined' && title) ? title : 'Embedded Systems and IoT Design, Bristol UK | SciFlair'; %>
+    <% var pageDesc = (typeof description !== 'undefined' && description) ? description : 'SciFlair designs embedded electronics, firmware and cloud software for connected products, from first prototype to production and support. Bristol, UK.';
+       var path = (typeof currentPath === 'string') ? currentPath : '/';
+       var pageUrl = 'https://www.sciflair.com' + path;
+       var pageImg = 'https://www.sciflair.com' + ((typeof ogImage !== 'undefined' && ogImage) ? ogImage : '/images/og-sciflair.jpg'); %>
     <meta name="description" content="<%= pageDesc %>" />
-    <meta name="keywords" content="IoT, connected systems, embedded systems, energy management, smart water metering, video management software, CCTV, GPS fleet tracking, LoRa, machine vision, AgriTech, Bristol">
     <meta name="author" content="SciFlair Ltd" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="theme-color" content="#1E2836" />
     <title><%= pageTitle %></title>
-    <link rel="canonical" href="https://www.sciflair.com/" />
+    <link rel="canonical" href="<%= pageUrl %>" />
     <!-- Social sharing (LinkedIn, WhatsApp, email previews) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="SciFlair" />
     <meta property="og:title" content="<%= pageTitle %>" />
     <meta property="og:description" content="<%= pageDesc %>" />
-    <meta property="og:url" content="https://www.sciflair.com/" />
-    <meta property="og:image" content="https://www.sciflair.com/images/og-sciflair.png" />
+    <meta property="og:url" content="<%= pageUrl %>" />
+    <meta property="og:image" content="<%= pageImg %>" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="<%= pageTitle %>" />
+    <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
-    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Self-hosted brand fonts: Montserrat (headings), Lato (body) -->
+    <link rel="preload" href="/fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/lato-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/css/site.css" />
     <!-- Organisation details for search engines -->
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Organization","name":"SciFlair Ltd","url":"https://www.sciflair.com","logo":"https://www.sciflair.com/images/sciflair.svg","email":"info@sciflair.com","telephone":"+44 117 313 7585","foundingDate":"2014","address":{"@type":"PostalAddress","streetAddress":"Unit 18, Apex Court, Woodlands","addressLocality":"Bradley Stoke, Bristol","postalCode":"BS32 4JT","addressCountry":"GB"},"sameAs":["https://www.linkedin.com/company/sciflair-limited/","https://www.axino.co/","https://itrack.uk/"]}
+    {"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://www.sciflair.com/#org","name":"SciFlair Ltd","alternateName":"SciFlair","url":"https://www.sciflair.com","logo":"https://www.sciflair.com/images/sciflair-logo-600.png","image":"https://www.sciflair.com/images/og-sciflair.jpg","description":"Embedded electronics, firmware, cloud and IoT systems design, prototyping and support.","email":"info@sciflair.com","telephone":"+44 117 313 7585","foundingDate":"2014","founder":{"@type":"Person","name":"Dr M Fahim Tariq"},"address":{"@type":"PostalAddress","streetAddress":"Unit 18, Apex Court, Woodlands","addressLocality":"Bradley Stoke, Bristol","postalCode":"BS32 4JT","addressCountry":"GB"},"areaServed":"GB","knowsAbout":["Embedded systems","PCB design","Firmware","Internet of Things","Machine vision","Video management software","Systems engineering"],"sameAs":["https://www.linkedin.com/company/sciflair-limited/"]}
     </script>
-    <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"> -->
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/css/styles.css" rel="stylesheet" />
+    <% if (typeof jsonld !== 'undefined' && jsonld) { %><script type="application/ld+json"><%- JSON.stringify(jsonld) %></script><% } %>
   </head>
-  <body id="page-top">
-    <%- body %>
-
+  <body class="<%= typeof bodyClass !== 'undefined' ? bodyClass : '' %>">
+    <a class="skip" href="#main">Skip to content</a>
+    <%- include('partials/header') %>
+    <main id="main">
+      <%- body %>
+    </main>
+    <%- include('partials/footer') %>
     <script>
-
-        var section; // = document.querySelectorAll(".section");
-        var sections = {};
-        var i = 0;
-
-        window.onload = function (){
-          //scroll spy on sections
-          // section = document.querySelectorAll("section");
-          // Array.prototype.forEach.call(section, function(e) {
-          //   sections[e.id] = e.offsetTop;
-          // });
-
-
-          //menu toggeler
-          let el = document.getElementById('btn-menu-tgl');
-          if(el)
-          {
-            el.addEventListener('click', (e) =>{
-              let el2 = document.getElementById('navbarMenu');
-              el2.classList.toggle("collapse");
-              if(el2.classList.contains('collapse'))
-                el.setAttribute('aria-expanded', 'false');
-              else
-                el.setAttribute('aria-expanded', 'true');
-            });
-          }  
+      (function () {
+        var header = document.getElementById('site-header');
+        var btn = document.getElementById('nav-toggle');
+        var nav = document.getElementById('site-nav');
+        if (btn && nav) {
+          btn.addEventListener('click', function () {
+            var open = nav.classList.toggle('is-open');
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          });
+          nav.addEventListener('click', function (e) {
+            if (e.target.tagName === 'A') { nav.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); }
+          });
         }
-
-
-
-        window.onscroll = function() {
-          //scrollspy  
-          // let sypos = document.documentElement.scrollTop || document.body.scrollTop;
-          // for (i in sections) {
-          //   if (sypos > sections[i] - 10) {
-          //     let el = document.getElementById('navbarMenu').querySelectorAll("a.nav-link");
-          //     el.forEach(itm =>{
-          //       itm.classList.remove('active');
-          //     });
-          //     document.querySelector('a[href*=' + i + ']').classList.add('active');
-          //   }
-          // }
-          //change header on scroll down
-          let el = document.getElementById('mainNav');
-          if(el)
-          {
-            let sypos = window.pageYOffset;
-            if(sypos > 100)
-            {
-              el.classList.add('navbar-scrolled'); 
-            }
-            else el.classList.remove('navbar-scrolled');
-          }
-        }
-
-      </script>
+        function onScroll() { if (header) header.classList.toggle('is-scrolled', window.pageYOffset > 40); }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      })();
+    </script>
   </body>
 </html>

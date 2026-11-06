@@ -1,0 +1,152 @@
+{
+  "slug": "water-control",
+  "title": "Well Pump and Reservoir Control",
+  "subtitle": "Remote monitoring and automatic control of five well pumps feeding a hilltop reservoir",
+  "sector": "energy",
+  "deliveredBy": "SciFlair",
+  "client": "A residential training campus",
+  "year": "2017",
+  "region": null,
+  "headline": "GSM-connected control of five well pumps up to 5 km apart, keeping water flowing to a campus of 5,000 people and stopping pumps that run dry",
+  "result": "5,000 people served",
+  "featured": 3,
+  "order": 4,
+  "photo": "/images/projects/water-control/wellhead-flow-meter-800.webp",
+  "photoAlt": "Well head with a SciFlair-monitored flow meter in a mountain landscape",
+  "hero": "/images/projects/water-control/wellhead-flow-meter-1600.webp",
+  "stages": [
+    "Concept",
+    "Development",
+    "Production",
+    "Utilisation",
+    "Support"
+  ],
+  "need": [
+    "The water supply for a campus housing 5,000 people depended on a reservoir tank on a hill, filled by five well pumps at two sites, one inside the campus and four sharing a single underground pipe from up to 5 km away. Each pump ran on its own electrical panel and timer, so staff had to drive out to the wells, the tank could overflow, and a pump could run dry without anyone knowing.",
+    "The client wanted to see and control every pump from its control room, fill the tank automatically without overflowing, run the pumps in sequence, and detect leaks and dry running."
+  ],
+  "role": "SciFlair was the design authority, working with a local partner company. With no written specification, we and our partner elicited the stakeholder requirements through a site survey and discussions with the client's engineers, and set them out as the agreed scope. SciFlair designed and built the controllers, software and web application; our partner installed the system and provided two years of support. A single project manager was the point of contact, with acceptance signed off by the client's project manager.",
+  "built": [
+    "Six GSM-connected controllers, one at the reservoir and one at each well, each built on our Axino SM01-GSM communication module with an RS485 expansion board and high-power relays to switch the pump, in sealed enclosures",
+    "A level rod in the 3 m reservoir with six sensors at 0.5 m spacing, and green, yellow and red indicator lights on the tank controller",
+    "Flow meters at each well and at the reservoir inlet, so the system can halt a pump that is running dry and spot leaks between source and delivery",
+    "Control logic in each controller to fill the tank automatically, stop before overflow, run the pumps in sequence and give each motor rest time",
+    "A manual, off and automatic switch at every pump panel, so operators can always override the system",
+    "A web application on a map showing the tank level and each pump as running, stopped or halted with no flow, with on-screen buttons to control the pumps from the control room"
+  ],
+  "builtScope": "Five well pumps at two sites, the largest 25 HP, feeding one reservoir through an underground pipeline of up to 200 mm diameter.",
+  "delivery": [
+    {
+      "title": "Stakeholder requirements",
+      "text": "With no written specification, requirements were captured with our local partner through a site survey and discussions with the client's engineering team, then baselined as the project scope."
+    },
+    {
+      "title": "Stage plan",
+      "text": "A 12-week plan from order to handover, with scope changes documented and justified through change control."
+    },
+    {
+      "title": "Verification",
+      "text": "Each controller and its sensors were tested on site as they were deployed, against block diagrams produced for the tank and each pump."
+    },
+    {
+      "title": "Decision gate: primary acceptance",
+      "text": "A first stage installed two controllers, tested and signed off by the client before the remaining wells were connected."
+    },
+    {
+      "title": "Validation and transition",
+      "text": "All six controllers installed, a signed site acceptance test in operational use, and handover with system documentation and an operator guide to the web application."
+    },
+    {
+      "title": "Support",
+      "text": "Two years of on-site support and maintenance by our local partner after handover, backed by SciFlair engineering."
+    }
+  ],
+  "results": [
+    {
+      "value": "5,000",
+      "label": "people on the campus water supply"
+    },
+    {
+      "value": "5",
+      "label": "well pumps under remote control"
+    },
+    {
+      "value": "5 km",
+      "label": "to the furthest well"
+    },
+    {
+      "value": "6",
+      "label": "Axino controllers on one web dashboard"
+    }
+  ],
+  "tech": [
+    "GSM",
+    "Axino SM01-GSM",
+    "RS485",
+    "Flow metering",
+    "Level sensing",
+    "Relay pump control",
+    "Web application"
+  ],
+  "nextGen": {
+    "title": "What came next: the SciFlair Water Control System",
+    "text": "The design became our Water Control System product: an Axino module on a purpose-built expansion board, float-switch level sensors daisy-chained over RS485, and a choice of GSM, WiFi, Ethernet, LoRa, Mesh or SigFox connectivity. It prevents overflows, dry running and pump overheating, reports pipe bursts and unusual consumption, and integrates with other systems through webhooks and a REST API."
+  },
+  "gallery": [
+    {
+      "src": "/images/projects/water-control/reservoir-on-hill-800.webp",
+      "alt": "Reservoir tank on a hilltop above the access road",
+      "caption": "The hilltop reservoir"
+    },
+    {
+      "src": "/images/projects/water-control/reservoir-tank-800.webp",
+      "alt": "Raised sectional steel water tank",
+      "caption": "Reservoir tank"
+    },
+    {
+      "src": "/images/projects/water-control/tank-inlet-level-rod-800.webp",
+      "alt": "Inside the reservoir: inlet pipe discharging water beside the level sensor rod",
+      "caption": "Inside the tank: inlet and level rod"
+    },
+    {
+      "src": "/images/projects/water-control/tank-controller-800.webp",
+      "alt": "Open SciFlair controller at the reservoir with relay board, GSM module and level indicator lights",
+      "caption": "Reservoir controller with level indicator lights"
+    },
+    {
+      "src": "/images/projects/water-control/delivery-flow-meter-800.webp",
+      "alt": "Flow meter on the reservoir inlet pipe",
+      "caption": "Delivery flow meter at the reservoir"
+    },
+    {
+      "src": "/images/projects/water-control/wellhead-800.webp",
+      "alt": "Well head pipework in open desert with the controller panel",
+      "caption": "A remote well site"
+    },
+    {
+      "src": "/images/projects/water-control/well-controller-800.webp",
+      "alt": "Sealed SciFlair controller enclosure mounted on a pump panel",
+      "caption": "Controller on a pump panel"
+    },
+    {
+      "src": "/images/projects/water-control/well-pump-panel-800.webp",
+      "alt": "Pump panel and flow meter at a well",
+      "caption": "Pump panel and flow meter"
+    },
+    {
+      "src": "/images/projects/water-control/wellhead-flow-meter-800.webp",
+      "alt": "Well head with flow meter and mountains behind",
+      "caption": "Monitored well in the mountains"
+    }
+  ],
+  "related": [
+    "smart-water-metering",
+    "electricity-saver",
+    "axino"
+  ],
+  "partner": "A local partner company",
+  "type": "project",
+  "status": null,
+  "ai": false,
+  "seoTitle": "Well Pump and Reservoir Control System (IoT)"
+}
