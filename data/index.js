@@ -101,4 +101,26 @@ function byType(t) { return projects.filter(function (p) { return p.type === t; 
 function bySector(k) { return projects.filter(function (p) { return p.sector === k; }); }
 function sectionFor(p) { return sections[p.type] || sections.project; }
 
-module.exports = { sectors, sectorTiles, proof, steps, audiences, sections, projects, featured, byType, bySector, sectionFor };
+// Design work we want to be asked for (homepage "What You Can Bring Us")
+const services = [
+  { icon: 'chip', title: 'Electronics and PCB Design',
+    text: 'Schematics, component choice and PCB layout for low-power, connected boards, from a single sensor node to a multi-network gateway.',
+    proof: { label: 'Axino boards', href: '/products/axino' } },
+  { icon: 'code', title: 'Embedded Firmware',
+    text: 'Microcontroller and embedded Linux firmware: sensors, radios, power management, local logic and remote updates.',
+    proof: { label: 'In-vehicle trackers', href: '/products/itrack' } },
+  { icon: 'flask', title: 'Prototypes and Proof of Concept',
+    text: 'A working prototype to test an idea in the field, support a funding bid or show investors, built and tested in our Bristol lab.',
+    proof: { label: 'Parking sensor', href: '/research/parking-sensor' } },
+  { icon: 'box', title: 'Prototype to Product',
+    text: 'Turning a prototype into something you can make and sell: enclosure, design for manufacture, testing and small-batch builds.',
+    proof: { label: 'Sensor Magic', href: '/products/sensor-magic' } },
+  { icon: 'cloud', title: 'Cloud, Dashboards and Apps',
+    text: 'The software around the device: data platform, dashboards, alerts and mobile apps, on our Axino platform or your own stack.',
+    proof: { label: 'Axino platform', href: '/products/axino' } },
+  { icon: 'bolt', title: 'Monitor and Control Existing Equipment',
+    text: 'Retrofit sensors and controllers onto plant you already run, such as pumps, meters, lighting and air conditioning, to cut cost and see faults early.',
+    proof: { label: 'Electricity Saver', href: '/projects/electricity-saver' } }
+];
+
+module.exports = { services, sectors, sectorTiles, proof, steps, audiences, sections, projects, featured, byType, bySector, sectionFor };

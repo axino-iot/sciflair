@@ -46,8 +46,33 @@ function ph(label, cls) {
   </div>
 </section>
 
+<!-- 3. Design services -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Design Services</p>
+      <h2>What You Can Bring Us</h2>
+      <p>We design embedded systems end to end: the electronics, the firmware and the software around them. Bring us an idea, a half-finished design or a problem in the field, and we take it to a working prototype or a finished product.</p>
+    </div>
+    <div class="svc-grid">
+      <% site.services.forEach(function (s) { %>
+        <div class="svc">
+          <span class="svc-icon"><%- include('partials/icon', { name: s.icon }) %></span>
+          <h3><%= s.title %></h3>
+          <p><%= s.text %></p>
+          <a class="svc-proof" href="<%= s.proof.href %>">See it in: <%= s.proof.label %> <%- include('partials/icon', { name: 'arrow' }) %></a>
+        </div>
+      <% }) %>
+    </div>
+    <div class="svc-cta">
+      <p>Have a design brief, a sketch or just a problem to solve?</p>
+      <a class="btn btn-primary btn-lg" href="#contact">Send Us Your Brief <%- include('partials/icon', { name: 'arrow' }) %></a>
+    </div>
+  </div>
+</section>
+
 <!-- 4. Our products (first focus) -->
-<section class="section" id="products">
+<section class="section section-grey" id="products">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Our Products</p>
@@ -64,7 +89,7 @@ function ph(label, cls) {
 </section>
 
 <!-- 7. Research & leadership -->
-<section class="section section-grey" id="research">
+<section class="section" id="research">
   <div class="wrap founder">
     <div class="founder-photo"><img src="/images/company/founder-600.webp" alt="Dr M Fahim Tariq, Founder and Director of SciFlair" width="600" height="600" loading="lazy" /></div>
     <div class="founder-body">
