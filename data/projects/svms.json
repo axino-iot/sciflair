@@ -11,8 +11,8 @@
   "result": "Deployed",
   "featured": 0,
   "order": 104,
-  "photo": "/images/projects/svms/svms-architecture-800.webp",
-  "photoAlt": "Diagram of the SVMS modules connected to the Database Server",
+  "photo": "/images/projects/svms/control-room-video-wall-800.webp",
+  "photoAlt": "SVMS running on a control-room video wall",
   "hero": "/images/projects/svms/tower-ptz-camera-1600.webp",
   "stages": [
     "Concept",
@@ -86,7 +86,8 @@
     {
       "src": "/images/projects/svms/svms-architecture-800.webp",
       "alt": "Diagram of the SVMS modules connected to the Database Server",
-      "caption": "SVMS architecture"
+      "caption": "SVMS architecture",
+      "full": "/images/projects/svms/svms-architecture-full.webp"
     },
     {
       "src": "/images/projects/svms/control-room-video-wall-800.webp",

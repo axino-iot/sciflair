@@ -10,13 +10,13 @@
   "result": "4× more patients per hour",
   "featured": 0,
   "order": 5,
-  "photo": "/images/projects/surgical-workflow/workflow-diagram-light-800.webp",
-  "photoAlt": "Diagram: post-op emails and lab reports filed automatically into a patient record shown to the surgeon in Microsoft Teams",
+  "photo": "/images/projects/surgical-workflow/workflow-icons-800.webp",
+  "photoAlt": "Emails and lab reports read automatically and filed into a patient record",
   "type": "project",
   "status": "In daily use",
   "ai": false,
   "subtitle": "Every post-operative note and lab report filed automatically in date order and shown to the surgeon in Microsoft Teams, without data leaving Microsoft 365",
-  "hero": "/images/projects/surgical-workflow/workflow-diagram-1600.webp",
+  "hero": "/images/projects/surgical-workflow/workflow-icons-1600.webp",
   "stages": [
     "Concept",
     "Development",
@@ -91,7 +91,8 @@
     {
       "src": "/images/projects/surgical-workflow/workflow-diagram-light-800.webp",
       "alt": "Surgical workflow diagram",
-      "caption": "How it works: from email to the surgeon's screen, inside Microsoft 365"
+      "caption": "How it works: from email to the surgeon's screen, inside Microsoft 365",
+      "full": "/images/projects/surgical-workflow/workflow-diagram-full.webp"
     }
   ],
   "nextGen": {

@@ -24,7 +24,7 @@ const sectors = {
   health: { name: 'Digital Health', tag: 'blue', icon: 'pulse',
     blurb: 'Secure clinical workflows on Microsoft 365 that put the right information in front of clinicians.',
     intro: 'Automated clinical workflows that keep patient data inside the organisation and save clinicians time at the bedside.',
-    photo: '/images/projects/surgical-workflow/workflow-diagram-light-800.webp', hero: '/images/projects/surgical-workflow/workflow-diagram-1600.webp' },
+    photo: '/images/projects/surgical-workflow/workflow-icons-800.webp', hero: '/images/projects/surgical-workflow/workflow-icons-1600.webp' },
   fleet: { name: 'Fleet & Tracking', tag: 'yellow', icon: 'truck',
     blurb: 'Vehicle tracking, driver behaviour and anti-theft on our own trackers.',
     intro: 'Our own trackers and cloud platform for fleets, private vehicles and specialist assets.',
