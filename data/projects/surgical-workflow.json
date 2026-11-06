@@ -9,7 +9,7 @@
   "headline": "Post-op notes and lab reports compiled automatically into one chronological patient record in Microsoft Teams, letting surgeons see up to 20 patients an hour instead of 5",
   "result": "4× more patients per hour",
   "featured": 0,
-  "order": 6,
+  "order": 1,
   "photo": "/images/projects/surgical-workflow/workflow-icons-800.webp",
   "photoAlt": "Emails and lab reports read automatically and filed into a patient record",
   "type": "project",
