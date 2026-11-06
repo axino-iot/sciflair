@@ -136,6 +136,7 @@ p { margin: 0 0 1em; }
 .tag { display: inline-block; padding: 3px 10px; border-radius: 99px; font: 700 .72rem var(--head); text-transform: uppercase; letter-spacing: .06em; }
 .tag-blue { background: var(--blue); color: #fff; }
 .tag-green { background: var(--green); color: var(--navy); }
+.tag-teal { background: #0E7C7E; color: #fff; }
 .tag-yellow { background: var(--yellow); color: var(--navy); }
 .tag-slate { background: var(--navy-band); color: #fff; }
 

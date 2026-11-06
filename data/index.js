@@ -9,7 +9,7 @@ const sectors = {
     blurb: 'Energy management, smart metering and pump control for industry and utilities.',
     intro: 'Connected systems that cut energy use, keep water flowing and read meters remotely, from a 3,000-sensor industrial plant to well pumps 5 km apart.',
     photo: '/images/projects/water-control/wellhead-flow-meter-800.webp', hero: '/images/projects/electricity-saver/site-ac-sensor-1600.webp' },
-  agri: { name: 'AgriTech', tag: 'green', icon: 'leaf',
+  agri: { name: 'AgriTech', tag: 'teal', icon: 'leaf',
     blurb: 'Machine vision, IoT and AI for insect farming and aquaponic food production.',
     intro: 'Field units, datasets and AI models for sustainable food and feed production, developed with Bristol Robotics Lab and UWE.',
     photo: '/images/projects/insecto/insect-detection-800.webp', hero: '/images/projects/insecto/insect-detection-1600.webp' },
