@@ -101,7 +101,7 @@ function byType(t) { return projects.filter(function (p) { return p.type === t; 
 function bySector(k) { return projects.filter(function (p) { return p.sector === k; }); }
 function sectionFor(p) { return sections[p.type] || sections.project; }
 
-// Design work we want to be asked for (homepage "What You Can Bring Us")
+// Design work we want to be asked for (homepage "What We Can Design for You")
 const services = [
   { icon: 'chip', title: 'Electronics and PCB Design',
     text: 'Schematics, component choice and PCB layout for low-power, connected boards, from a single sensor node to a multi-network gateway.',
