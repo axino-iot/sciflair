@@ -90,7 +90,6 @@ var owned = p.stages || [];
     <div class="p-card">
       <h3>At a Glance</h3>
       <dl>
-        <% if (!isProduct) { %><dt>Client</dt><dd><%= p.client || 'Confidential' %></dd><% } %>
         <% if (p.region) { %><dt>Region</dt><dd><%= p.region %></dd><% } %>
         <% if (p.year) { %><dt>Year</dt><dd><%= p.year %></dd><% } %>
         <dt>Sector</dt><dd><%= s.name %></dd>

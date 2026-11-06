@@ -4,7 +4,7 @@ var s = site.sectors[p.sector] || site.sectors.all;
 var sec = site.sectionFor(p);
 var href = p.need ? '/' + sec.path + '/' + p.slug : (p.url || null);
 var external = !p.need && p.url;
-var meta = [p.client, p.region, p.year].filter(Boolean).join(' · ');
+var meta = [p.region, p.year].filter(Boolean).join(' · ');
 %>
 <article class="project-card">
   <div class="project-media">
