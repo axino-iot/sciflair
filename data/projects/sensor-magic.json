@@ -23,7 +23,7 @@
   ],
   "need": [
     "Axino makes it quick for engineers to build a connected prototype, but it still needs someone who can wire sensors and write code. Most people who want to monitor a room, a property or a piece of equipment simply want a sensor that works.",
-    "Sensor Magic takes what we proved on Axino and packages it for the end user: a finished sensor they can buy, take out of the box and install themselves."
+    "Sensor Magic takes what we proved on Axino and packages it for the end user: a finished sensor they can buy, take out of the box and install themselves. The aim is to cut installation time by around 80%, from months to days."
   ],
   "role": "SciFlair is designing Sensor Magic end to end: sensor node and hub hardware, low-power firmware, enclosures and the cloud connection, building on the Axino platform.",
   "built": [
