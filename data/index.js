@@ -58,7 +58,7 @@ const sections = {
   product: { path: 'products', title: 'Products', who: 'For investors',
     intro: 'Our own hardware and software platforms, built once and reused across deployments.',
     ask: 'Back a product to scale it, or deploy it in your organisation.',
-    cta: 'Request a Product Briefing' },
+    cta: 'Request Product Briefing' },
   project: { path: 'projects', title: 'Projects', who: 'For clients',
     intro: 'Systems we designed, delivered and supported for others, in operational use through their life cycle.',
     ask: 'Tell us about a system you need, from a feasibility study to a full rollout and support.',
