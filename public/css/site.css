@@ -395,3 +395,19 @@ body:not(.home):not(.project):not(.section-page) main { padding-top: 88px; min-h
 .svc-cta p { margin: 0; font: 700 1.1rem var(--head); color: var(--navy); }
 @media (max-width: 960px) { .svc-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .svc-grid { grid-template-columns: 1fr; } .svc-cta { flex-direction: column; gap: 14px; } }
+
+/* Hero: animated circuit board */
+.hero-pcb { background: var(--navy); }
+.hero-pcb::after { display: none; }
+.pcb { position: absolute; inset: 0; width: 100%; height: 100%; }
+.pcb-traces path { fill: none; stroke: #33445B; stroke-width: 3.5; stroke-linejoin: round; stroke-linecap: round; }
+.pcb-vias circle { fill: #1E2836; stroke: #4A5D77; stroke-width: 3; }
+.pcb-chip rect { fill: #151C27; stroke: #4A5D77; stroke-width: 2; }
+.pcb-chip rect.pin { fill: #6B7F99; stroke: none; }
+.pcb-chip .dot { fill: #33445B; }
+.pulse { fill: none; stroke: #F65438; stroke-width: 4; stroke-linecap: round; stroke-dasharray: 45 1000; stroke-dashoffset: 1045; animation: pcb-run 4s linear infinite; }
+.pulse.rev { animation-name: pcb-run-rev; }
+@keyframes pcb-run { from { stroke-dashoffset: 1045; } to { stroke-dashoffset: 0; } }
+@keyframes pcb-run-rev { from { stroke-dashoffset: 0; } to { stroke-dashoffset: 1045; } }
+@media (prefers-reduced-motion: reduce) { .pulse { animation: none; stroke-dashoffset: 600; } }
+@media (max-width: 760px) { .pcb { opacity: .28; } }
