@@ -123,4 +123,20 @@ const services = [
     proof: { label: 'Electricity Saver', href: '/projects/electricity-saver' } }
 ];
 
-module.exports = { services, sectors, sectorTiles, proof, steps, audiences, sections, projects, featured, byType, bySector, sectionFor };
+// How a client engages us (homepage "How We Work With You")
+const engagements = [
+  { title: 'Initial Call', text: 'A short call to understand what you need and whether we are the right fit, at no cost.', get: 'A clear next step' },
+  { title: 'Feasibility Study', text: 'Requirements, technical options, risks and a costed plan, at a fixed price agreed up front.', get: 'Report and costed plan' },
+  { title: 'Prototype', text: 'Working hardware, firmware and software, tested against the requirements you signed off.', get: 'Working prototype and test results' },
+  { title: 'Product Development', text: 'Staged design to a production-ready product, with a review at the end of each stage before you commit to the next.', get: 'Production-ready design files' },
+  { title: 'Production and Support', text: 'Small-batch builds, help moving to volume manufacture, then field support and upgrades.', get: 'Units in the field, supported' }
+];
+const promises = [
+  'Start at any stage: an idea, a half-finished design or a product that needs fixing',
+  'Fixed price for each stage once the scope is clear',
+  'A decision gate at the end of every stage, so you stay in control of cost',
+  'Regular progress reviews with the engineer leading your project',
+  'Design files handed over to you at the end of the project'
+];
+
+module.exports = { services, engagements, promises, sectors, sectorTiles, proof, steps, audiences, sections, projects, featured, byType, bySector, sectionFor };

@@ -411,3 +411,18 @@ body:not(.home):not(.project):not(.section-page) main { padding-top: 88px; min-h
 @keyframes pcb-run-rev { from { stroke-dashoffset: 0; } to { stroke-dashoffset: 1045; } }
 @media (prefers-reduced-motion: reduce) { .pulse { animation: none; stroke-dashoffset: 600; } }
 @media (max-width: 760px) { .pcb { opacity: .28; } }
+
+/* How we work with you */
+.eng { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.eng-step { position: relative; background: #fff; border-radius: var(--radius); padding: 24px 20px 20px; box-shadow: 0 1px 3px rgba(30,40,54,.08); display: flex; flex-direction: column; }
+.eng-step:not(:last-child)::after { content: ""; position: absolute; top: 40px; right: -13px; width: 10px; height: 10px; border-top: 2px solid var(--orange); border-right: 2px solid var(--orange); transform: rotate(45deg); z-index: 1; }
+.eng-num { display: inline-flex; width: 38px; height: 38px; align-items: center; justify-content: center; border-radius: 50%; background: var(--orange); color: #fff; font: 700 1rem var(--head); margin-bottom: 14px; }
+.eng-step h3 { font-size: 1.08rem; margin: 0 0 8px; color: var(--navy); }
+.eng-step p { margin: 0 0 14px; font-size: .96rem; flex: 1; }
+.eng-get { flex: none !important; margin: 0 !important; min-height: 4.1em; padding-top: 12px; border-top: 1px solid #E3E7EC; font: 700 .9rem var(--head); color: var(--navy); }
+.eng-get span { display: block; font: 700 .72rem var(--head); letter-spacing: .08em; text-transform: uppercase; color: #C93D22; margin-bottom: 3px; }
+.eng-promises { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 10px 28px; }
+.eng-promises li { position: relative; padding-left: 28px; color: var(--navy); }
+.eng-promises li::before { content: ""; position: absolute; left: 4px; top: 5px; width: 7px; height: 13px; border-right: 2.5px solid var(--orange); border-bottom: 2.5px solid var(--orange); transform: rotate(45deg); }
+@media (max-width: 1100px) { .eng { grid-template-columns: repeat(3, 1fr); } .eng-step::after { display: none; } }
+@media (max-width: 640px) { .eng { grid-template-columns: 1fr; } }

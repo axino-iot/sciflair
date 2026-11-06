@@ -70,8 +70,32 @@ function ph(label, cls) {
   </div>
 </section>
 
+<!-- 3b. How we work with you -->
+<section class="section section-grey" id="engage">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Working Together</p>
+      <h2>How We Work With You</h2>
+      <p>Five clear steps from first conversation to products in the field. Each one ends with something you can use, so you can stop, pause or carry on with full knowledge of cost and risk.</p>
+    </div>
+    <ol class="eng">
+      <% site.engagements.forEach(function (e, i) { %>
+        <li class="eng-step">
+          <span class="eng-num"><%= i + 1 %></span>
+          <h3><%= e.title %></h3>
+          <p><%= e.text %></p>
+          <p class="eng-get"><span>You get</span><%= e.get %></p>
+        </li>
+      <% }) %>
+    </ol>
+    <ul class="eng-promises">
+      <% site.promises.forEach(function (x) { %><li><%= x %></li><% }) %>
+    </ul>
+  </div>
+</section>
+
 <!-- 4. Our products (first focus) -->
-<section class="section section-grey" id="products">
+<section class="section" id="products">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Our Products</p>
@@ -88,7 +112,7 @@ function ph(label, cls) {
 </section>
 
 <!-- 7. Research & leadership -->
-<section class="section" id="research">
+<section class="section section-grey" id="research">
   <div class="wrap founder">
     <div class="founder-photo"><img src="/images/company/founder-600.webp" alt="Dr M Fahim Tariq, Founder and Director of SciFlair" width="600" height="600" loading="lazy" /></div>
     <div class="founder-body">
@@ -114,7 +138,7 @@ function ph(label, cls) {
 <section class="section section-navy">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">How We Work</p>
+      <p class="eyebrow">Our Engineering Process</p>
       <h2>The Whole System Life Cycle, Under One Roof</h2>
       <p>We follow INCOSE systems engineering practice (ISO/IEC/IEEE 15288) and run projects in PRINCE2 management stages, so every stage ends at a decision gate where you review progress, risk and the business case before committing to the next.</p>
     </div>
