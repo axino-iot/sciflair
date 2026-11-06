@@ -2,6 +2,14 @@ const express = require('express');
 const router = express.Router();
 const site = require('../data');
 
+// Search titles and descriptions
+const SEC_TITLES = { product: 'IoT Products and Platforms', project: 'Connected Systems Projects and Case Studies', prototype: 'IoT and AI Prototypes, Research and Development' };
+function clip(s, n) { s = String(s || '').replace(/\s+/g, ' ').trim(); if (s.length <= n) return s; s = s.slice(0, n - 1); return s.slice(0, s.lastIndexOf(' ')).replace(/[,;:–-]$/, '') + '…'; }
+function crumbs(list) {
+  return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: list.map(function (c, i) {
+    return { '@type': 'ListItem', position: i + 1, name: c[0], item: 'https://www.sciflair.com' + c[1] }; }) };
+}
+
 // Homepage
 router.get('/', function (req, res) {
   res.render('home', {
@@ -19,8 +27,9 @@ Object.keys(site.sections).forEach(function (type) {
     res.render('section', {
       layout: 'layout',
       bodyClass: 'section-page',
-      title: sec.title + ' | SciFlair',
-      description: sec.intro + ' ' + sec.ask,
+      title: SEC_TITLES[type] + ' | SciFlair',
+      description: clip(sec.intro + ' ' + sec.ask, 158),
+      jsonld: crumbs([['Home', '/'], [sec.title, '/' + sec.path]]),
       site: site,
       sec: sec,
       items: site.byType(type)
@@ -36,8 +45,9 @@ router.get('/sectors/:key', function (req, res, next) {
   res.render('sector', {
     layout: 'layout',
     bodyClass: 'section-page',
-    title: site.sectors[key].name + ' | SciFlair',
-    description: site.sectors[key].intro,
+    title: site.sectors[key].name + ' IoT Systems | SciFlair',
+    description: clip(site.sectors[key].intro, 158),
+    jsonld: crumbs([['Home', '/'], [site.sectors[key].name, '/sectors/' + key]]),
     ogImage: '/images/og-sciflair.jpg',
     site: site,
     key: key,
@@ -59,8 +69,9 @@ router.get('/:section(projects|products|research)/:slug', function (req, res, ne
   res.render('project', {
     layout: 'layout',
     bodyClass: 'project',
-    title: p.title + ' | SciFlair',
-    description: p.headline,
+    title: (p.seoTitle || p.title) + ' | SciFlair',
+    description: clip(p.headline, 158),
+    jsonld: crumbs([['Home', '/'], [site.sectionFor(p).title, '/' + site.sectionFor(p).path], [p.title, '/' + site.sectionFor(p).path + '/' + p.slug]]),
     ogImage: '/images/og/' + p.slug + '.jpg',
     site: site,
     p: p,
@@ -70,7 +81,7 @@ router.get('/:section(projects|products|research)/:slug', function (req, res, ne
 
 // Sitemap, generated from the data so new pages are listed automatically
 router.get('/privacy', function (req, res) {
-  res.render('privacy', { title: 'Privacy Notice | SciFlair', description: 'How SciFlair Ltd uses the information you give us through sciflair.com.' });
+  res.render('privacy', { title: 'Privacy Notice | SciFlair Ltd', description: 'How SciFlair Ltd uses the information you give us through sciflair.com.' });
 });
 
 router.get('/sitemap.xml', function (req, res) {
@@ -81,8 +92,17 @@ router.get('/sitemap.xml', function (req, res) {
     site.projects.filter(function (p) { return p.need; }).map(function (p) { return '/' + site.sectionFor(p).path + '/' + p.slug; }),
     ['/privacy']
   );
-  res.type('application/xml').send('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-    urls.map(function (u) { return '  <url><loc>' + base + u + '</loc></url>'; }).join('\n') + '\n</urlset>\n');
+  const imgs = {};
+  site.projects.forEach(function (p) {
+    if (!p.need) return;
+    const u = '/' + site.sectionFor(p).path + '/' + p.slug;
+    imgs[u] = [p.hero || p.photo].concat((p.gallery || []).map(function (g) { return g.full || g.src; }))
+      .filter(function (x, i, a) { return x && a.indexOf(x) === i; });
+  });
+  res.type('application/xml').send('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
+    urls.map(function (u) {
+      return '  <url><loc>' + base + u + '</loc>' + (imgs[u] || []).map(function (i) { return '<image:image><image:loc>' + base + i + '</image:loc></image:image>'; }).join('') + '</url>';
+    }).join('\n') + '\n</urlset>\n');
 });
 
 // Contact form: sent to CONTACT_TO through Microsoft 365 (lib/mailer.js).

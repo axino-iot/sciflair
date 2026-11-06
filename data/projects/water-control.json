@@ -147,5 +147,6 @@
   "partner": "A local partner company",
   "type": "project",
   "status": null,
-  "ai": false
+  "ai": false,
+  "seoTitle": "Well Pump and Reservoir Control System (IoT)"
 }

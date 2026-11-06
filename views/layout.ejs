@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <% var pageTitle = (typeof title !== 'undefined' && title) ? title : 'SciFlair | Connected Systems Engineering – IoT, Energy, Video & AI | Bristol, UK'; %>
-    <% var pageDesc = (typeof description !== 'undefined' && description) ? description : 'SciFlair designs, builds and supports connected systems – hardware, embedded firmware, cloud platforms and apps – across IoT, AI, energy, video and automation. Based in Bristol, UK.';
+    <% var pageTitle = (typeof title !== 'undefined' && title) ? title : 'Embedded Systems and IoT Design, Bristol UK | SciFlair'; %>
+    <% var pageDesc = (typeof description !== 'undefined' && description) ? description : 'SciFlair designs embedded electronics, firmware and cloud software for connected products, from first prototype to production and support. Bristol, UK.';
        var path = (typeof currentPath === 'string') ? currentPath : '/';
        var pageUrl = 'https://www.sciflair.com' + path;
        var pageImg = 'https://www.sciflair.com' + ((typeof ogImage !== 'undefined' && ogImage) ? ogImage : '/images/og-sciflair.jpg'); %>
     <meta name="description" content="<%= pageDesc %>" />
     <meta name="author" content="SciFlair Ltd" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="theme-color" content="#1E2836" />
     <title><%= pageTitle %></title>
     <link rel="canonical" href="<%= pageUrl %>" />
@@ -32,8 +33,9 @@
     <link rel="stylesheet" href="/css/site.css" />
     <!-- Organisation details for search engines -->
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Organization","name":"SciFlair Ltd","url":"https://www.sciflair.com","logo":"https://www.sciflair.com/images/sciflair.svg","email":"info@sciflair.com","telephone":"+44 117 313 7585","foundingDate":"2014","address":{"@type":"PostalAddress","streetAddress":"Unit 18, Apex Court, Woodlands","addressLocality":"Bradley Stoke, Bristol","postalCode":"BS32 4JT","addressCountry":"GB"},"sameAs":["https://www.linkedin.com/company/sciflair-limited/"]}
+    {"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://www.sciflair.com/#org","name":"SciFlair Ltd","alternateName":"SciFlair","url":"https://www.sciflair.com","logo":"https://www.sciflair.com/images/sciflair-logo-600.png","image":"https://www.sciflair.com/images/og-sciflair.jpg","description":"Embedded electronics, firmware, cloud and IoT systems design, prototyping and support.","email":"info@sciflair.com","telephone":"+44 117 313 7585","foundingDate":"2014","founder":{"@type":"Person","name":"Dr M Fahim Tariq"},"address":{"@type":"PostalAddress","streetAddress":"Unit 18, Apex Court, Woodlands","addressLocality":"Bradley Stoke, Bristol","postalCode":"BS32 4JT","addressCountry":"GB"},"areaServed":"GB","knowsAbout":["Embedded systems","PCB design","Firmware","Internet of Things","Machine vision","Video management software","Systems engineering"],"sameAs":["https://www.linkedin.com/company/sciflair-limited/"]}
     </script>
+    <% if (typeof jsonld !== 'undefined' && jsonld) { %><script type="application/ld+json"><%- JSON.stringify(jsonld) %></script><% } %>
   </head>
   <body class="<%= typeof bodyClass !== 'undefined' ? bodyClass : '' %>">
     <a class="skip" href="#main">Skip to content</a>

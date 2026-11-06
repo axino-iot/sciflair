@@ -145,5 +145,6 @@
   "partner": "A local partner company",
   "type": "project",
   "status": null,
-  "ai": false
+  "ai": false,
+  "seoTitle": "Electricity Saver: Wireless Energy Control"
 }
