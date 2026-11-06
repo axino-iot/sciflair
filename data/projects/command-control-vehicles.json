@@ -12,7 +12,7 @@
   "featured": 1,
   "order": 3,
   "photo": "/images/projects/command-control/command-truck-800.webp",
-  "photoAlt": "Converted command-and-control truck with slide-out operations room",
+  "photoAlt": "Converted command-and-control vehicle with slide-out operations room",
   "hero": "/images/projects/command-control/command-truck-1600.webp",
   "stages": [
     "Concept",
@@ -29,14 +29,14 @@
   ],
   "role": "XAD Communications was the prime contractor and design authority across the whole life cycle, from concept to final retirement. The Technical Director who later founded SciFlair led the programme, directing XAD's audio, video, data and RF engineering groups.",
   "built": [
-    "A convoy of eight specialist vehicles, each converted for a different operational role",
-    "A portable equivalent built into rugged Pelican cases",
+    "A fleet of eight specialist vehicles, each converted for a different operational role",
+    "A portable equivalent built into rugged cases that can be set up anywhere",
     "35 rapidly deployable camera and communication kits, including cameras on pneumatic masts",
-    "Vehicle conversions from vans to heavy trucks, with operator workstations, on-board power, air-conditioning and networking",
+    "Vehicle conversions from vans to heavy trucks, with operator workstations, meeting rooms, on-board power, air-conditioning and networking",
     "An end-to-end IP network across wired and wireless links, carrying live and recorded audio, video and data",
-    "XAD's XVMS video management software, later succeeded by SciFlair's SVMS"
+    "Video management software, later succeeded by SciFlair's SVMS"
   ],
-  "builtScope": "Eight specialist vehicles, a portable equivalent in Pelican cases and 35 deployable kits, all on one IP network.",
+  "builtScope": "Eight specialist vehicles, a portable equivalent in rugged cases and 35 deployable kits, all on one IP network.",
   "delivery": [
     {
       "title": "Concept and requirements",
@@ -83,8 +83,8 @@
     "Pneumatic masts",
     "Wireless links",
     "Vehicle conversion",
-    "Pelican-case integration",
-    "XVMS / SVMS"
+    "Rugged-case integration",
+    "Video management software"
   ],
   "nextGen": {
     "title": "What came next",
@@ -93,13 +93,13 @@
   "gallery": [
     {
       "src": "/images/projects/command-control/command-truck-800.webp",
-      "alt": "Converted command truck with its slide-out room extended",
-      "caption": "Command truck with slide-out room"
+      "alt": "Converted vehicle with its slide-out room extended",
+      "caption": "Large operations vehicle with slide-out room"
     },
     {
       "src": "/images/projects/command-control/camera-van-800.webp",
       "alt": "Converted van with roof-mounted camera, lights and mast",
-      "caption": "Camera van with roof-mounted PTZ camera"
+      "caption": "Vehicle with roof-mounted camera"
     },
     {
       "src": "/images/projects/command-control/pneumatic-masts-800.webp",
@@ -108,33 +108,32 @@
     },
     {
       "src": "/images/projects/command-control/vehicle-workstations-800.webp",
-      "alt": "Operator workstations with screens inside a converted vehicle",
+      "alt": "Operator workstations with screens and an equipment rack inside a converted vehicle",
       "caption": "Operator workstations"
     },
     {
       "src": "/images/projects/command-control/vehicle-control-room-800.webp",
-      "alt": "Control room inside the command truck with operator desks, phones and displays",
-      "caption": "Control room inside the command truck"
+      "alt": "Operations room inside a converted vehicle with desks, phones and a display",
+      "caption": "Operations room"
     },
     {
       "src": "/images/projects/command-control/vehicle-briefing-area-800.webp",
-      "alt": "Briefing table with phones inside a converted vehicle",
-      "caption": "Briefing area"
+      "alt": "Meeting room with a long table, phones and display screens inside a converted vehicle",
+      "caption": "Meeting room"
     },
     {
       "src": "/images/projects/command-control/portable-kit-and-mast-800.webp",
-      "alt": "Portable command kit in an open Pelican case beside a camera on a tripod mast",
-      "caption": "Portable kit and camera mast"
+      "alt": "Portable kit in an open rugged case beside a camera on a tripod mast",
+      "caption": "Portable camera kit and mast"
     },
     {
       "src": "/images/projects/command-control/portable-power-unit-800.webp",
       "alt": "Portable power unit in a rugged case with battery connectors, mains socket and solar panel",
-      "caption": "Portable power unit for the field kits"
+      "caption": "Portable power unit"
     }
   ],
   "related": [
     "svms",
-    "xvms",
     "satcom-on-the-move"
   ],
   "type": "project",
