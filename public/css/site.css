@@ -440,3 +440,4 @@ body:not(.home):not(.project):not(.section-page) main { padding-top: 88px; min-h
 .base-visit h4 { margin: 0 0 6px; color: var(--navy); font: 700 1.05rem var(--head); }
 .base-visit p { margin: 0 0 10px; }
 @media (max-width: 760px) { .base-grid { grid-template-columns: 1fr 1fr; } .base-main { grid-column: 1 / 3; grid-row: auto; } .base-visit { padding: 14px; } .base-visit p { font-size: .9rem; } .base-visit .link { font-size: .85rem; } .base-main img { aspect-ratio: 4 / 3; height: auto; } }
+.base-grid figure:not(.base-main) img { filter: grayscale(1) contrast(1.05); }
