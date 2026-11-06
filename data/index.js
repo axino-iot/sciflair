@@ -136,7 +136,7 @@ const promises = [
   'Fixed price for each stage once the scope is clear',
   'A decision gate at the end of every stage, so you stay in control of cost',
   'Regular progress reviews with the engineer leading your project',
-  'Design files handed over to you at the end of the project'
+  'Design files for your product handed over to you, while we keep the rights to our reusable platforms such as Axino'
 ];
 
 module.exports = { services, engagements, promises, sectors, sectorTiles, proof, steps, audiences, sections, projects, featured, byType, bySector, sectionFor };

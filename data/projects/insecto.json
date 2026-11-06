@@ -46,11 +46,11 @@
     },
     {
       "title": "Deployment",
-      "text": "Units went into use in the UK and in Africa, collecting images and environmental data from live insect habitats."
+      "text": "Units were shipped to the project in Africa. Further units ran for several months on a commercial insect farm in the UK, collecting the images and environmental data later used for AI analysis."
     },
     {
       "title": "Research",
-      "text": "The joint PhD built synthetic and real-farm datasets with a commercial insect farm, then developed and compared detection, segmentation and anomaly-detection models for mealworm beetles."
+      "text": "The joint PhD used the images collected by the Insecto units on the UK farm, together with synthetic datasets, to develop and compare detection, segmentation and anomaly-detection models for mealworm beetles."
     },
     {
       "title": "Edge deployment",
@@ -60,7 +60,7 @@
   "results": [
     {
       "value": "UK + Africa",
-      "label": "Insecto units deployed in live insect habitats"
+      "label": "Insecto units deployed in Africa and on a UK insect farm"
     },
     {
       "value": "F1 0.98",
