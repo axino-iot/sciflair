@@ -80,21 +80,36 @@ router.get('/sitemap.xml', function (req, res) {
     urls.map(function (u) { return '  <url><loc>' + base + u + '</loc></url>'; }).join('\n') + '\n</urlset>\n');
 });
 
-// Contact form.
-// Delivery (SMTP or a form service) is still to be decided, so for now the
-// message is validated and logged, and the visitor is asked to email us.
-// Replace the "not-connected" branch once delivery is chosen.
+// Contact form: sent to CONTACT_TO through Microsoft 365 (lib/mailer.js).
+// Until the M365 settings are in config/config.env, the message is logged and
+// the visitor is asked to email us as well.
+const mailer = require('../lib/mailer');
+const recent = {}; // simple per-IP limit: 5 messages an hour
+const ROLES = { client: 'Client with a project', investor: 'Investor or funder', recruiter: 'Recruiter or employer', partner: 'Partner or contractor', research: 'University or researcher', other: 'Something else' };
 router.post('/contact', function (req, res) {
   const b = req.body || {};
   if (b.website) return res.redirect('/?contact=sent#contact'); // honeypot: bots fill this
-  const name = (b.name || '').trim();
-  const email = (b.email || '').trim();
-  const message = (b.message || '').trim();
+  const name = (b.name || '').trim().slice(0, 120);
+  const email = (b.email || '').trim().slice(0, 200);
+  const organisation = (b.organisation || '').trim().slice(0, 160);
+  const message = (b.message || '').trim().slice(0, 5000);
+  const role = ROLES[b.role] || 'Not given';
   if (!name || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || !message) {
     return res.redirect('/?contact=invalid#contact');
   }
-  console.log('[contact] %s enquiry from %s <%s> (%s): %s', (b.role || 'unknown'), name, email, (b.organisation || '').trim(), message.slice(0, 500));
-  return res.redirect('/?contact=not-connected#contact');
+  const ip = req.ip || 'x'; const now = Date.now();
+  recent[ip] = (recent[ip] || []).filter(function (t) { return now - t < 3600000; });
+  if (recent[ip].length >= 5) return res.redirect('/?contact=sent#contact');
+  recent[ip].push(now);
+  console.log('[contact] %s enquiry from %s <%s> (%s)', role, name, email, organisation);
+  if (!mailer.configured()) return res.redirect('/?contact=not-connected#contact');
+  mailer.sendEnquiry({ name: name, email: email, organisation: organisation, role: role, message: message })
+    .then(function () { res.redirect('/?contact=sent#contact'); })
+    .catch(function (err) {
+      console.error('[contact] send failed: %s', err.message);
+      console.log('[contact] message from %s: %s', email, message.slice(0, 1000));
+      res.redirect('/?contact=not-connected#contact');
+    });
 });
 
 module.exports = router;
