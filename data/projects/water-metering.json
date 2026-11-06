@@ -95,9 +95,9 @@
       "caption": "Sealed reader, ready to fit in the chamber"
     },
     {
-      "src": "/images/projects/water-metering/reader-unit-open-800.webp",
-      "alt": "Reader enclosure open, showing the board and batteries",
-      "caption": "Inside: sensor node board and battery pack"
+      "src": "/images/projects/water-metering/reader-unit-wired-800.webp",
+      "alt": "Reader unit open with the meter cable connected",
+      "caption": "Reader unit wired to the meter cable"
     },
     {
       "src": "/images/projects/water-metering/sensor-node-board-800.webp",
