@@ -127,7 +127,8 @@ p { margin: 0 0 1em; }
 .project-card { background: var(--white); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 1px 3px rgba(30,40,54,.08); }
 .project-media { position: relative; aspect-ratio: 5 / 4; background: #DCE1E7; }
 .project-media img { width: 100%; height: 100%; object-fit: cover; }
-.project-result { position: absolute; left: 16px; bottom: 16px; background: var(--navy); color: #fff; font: 700 1rem var(--head); padding: 8px 12px; border-radius: 4px; border-left: 4px solid var(--orange); }
+.project-result { position: absolute; left: 14px; bottom: 14px; display: inline-flex; align-items: center; gap: 7px; background: rgba(255,255,255,.78); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); color: var(--navy); font: 700 .82rem var(--head); padding: 5px 12px 5px 10px; border-radius: 999px; box-shadow: 0 1px 6px rgba(0,0,0,.12); }
+.project-result::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--orange); flex: none; }
 .project-body { padding: 22px 24px 26px; }
 .project-body h3 { margin-top: 12px; }
 .project-body p { margin: 0; }
