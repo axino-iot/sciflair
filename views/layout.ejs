@@ -7,7 +7,7 @@
     <% var pageDesc = (typeof description !== 'undefined' && description) ? description : 'SciFlair designs, builds and supports connected systems – hardware, embedded firmware, cloud platforms and apps – across IoT, AI, energy, video and automation. Based in Bristol, UK.';
        var path = (typeof currentPath === 'string') ? currentPath : '/';
        var pageUrl = 'https://www.sciflair.com' + path;
-       var pageImg = 'https://www.sciflair.com' + ((typeof ogImage !== 'undefined' && ogImage) ? ogImage : '/images/og-sciflair.png'); %>
+       var pageImg = 'https://www.sciflair.com' + ((typeof ogImage !== 'undefined' && ogImage) ? ogImage : '/images/og-sciflair.jpg'); %>
     <meta name="description" content="<%= pageDesc %>" />
     <meta name="author" content="SciFlair Ltd" />
     <meta name="theme-color" content="#1E2836" />
@@ -20,6 +20,10 @@
     <meta property="og:description" content="<%= pageDesc %>" />
     <meta property="og:url" content="<%= pageUrl %>" />
     <meta property="og:image" content="<%= pageImg %>" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="<%= pageTitle %>" />
+    <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <!-- Self-hosted brand fonts: Montserrat (headings), Lato (body) -->

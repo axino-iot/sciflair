@@ -444,3 +444,12 @@ body:not(.home):not(.project):not(.section-page) main { padding-top: 88px; min-h
 @media (max-width: 520px) { .base-grid { gap: 10px; } .base-grid figcaption { font-size: .78rem; } }
 .base-grid figure:not(.base-main) img { filter: grayscale(1) contrast(1.05); }
 .field input, .field select { height: 52px; min-height: 0; }
+
+/* Legal page and form note */
+.legal { max-width: 780px; }
+.legal h2 { font-size: 1.3rem; margin: 32px 0 10px; color: var(--navy); }
+.legal ul { padding-left: 20px; }
+.legal li { margin-bottom: 8px; }
+.form-note { font-size: .85rem; color: #C9D2DE; margin: 0 0 16px; }
+.form-note a { color: #fff; }
+.footer-legal a { color: inherit; }

@@ -38,7 +38,7 @@ router.get('/sectors/:key', function (req, res, next) {
     bodyClass: 'section-page',
     title: site.sectors[key].name + ' | SciFlair',
     description: site.sectors[key].intro,
-    ogImage: site.sectors[key].hero,
+    ogImage: '/images/og-sciflair.jpg',
     site: site,
     key: key,
     s: site.sectors[key],
@@ -61,7 +61,7 @@ router.get('/:section(projects|products|research)/:slug', function (req, res, ne
     bodyClass: 'project',
     title: p.title + ' | SciFlair',
     description: p.headline,
-    ogImage: p.hero || p.photo,
+    ogImage: '/images/og/' + p.slug + '.jpg',
     site: site,
     p: p,
     related: related
@@ -69,12 +69,17 @@ router.get('/:section(projects|products|research)/:slug', function (req, res, ne
 });
 
 // Sitemap, generated from the data so new pages are listed automatically
+router.get('/privacy', function (req, res) {
+  res.render('privacy', { title: 'Privacy Notice | SciFlair', description: 'How SciFlair Ltd uses the information you give us through sciflair.com.' });
+});
+
 router.get('/sitemap.xml', function (req, res) {
   const base = 'https://www.sciflair.com';
   const urls = ['/'].concat(
     Object.keys(site.sections).map(function (k) { return '/' + site.sections[k].path; }),
     site.sectorTiles.map(function (k) { return '/sectors/' + k; }),
-    site.projects.filter(function (p) { return p.need; }).map(function (p) { return '/' + site.sectionFor(p).path + '/' + p.slug; })
+    site.projects.filter(function (p) { return p.need; }).map(function (p) { return '/' + site.sectionFor(p).path + '/' + p.slug; }),
+    ['/privacy']
   );
   res.type('application/xml').send('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     urls.map(function (u) { return '  <url><loc>' + base + u + '</loc></url>'; }).join('\n') + '\n</urlset>\n');
