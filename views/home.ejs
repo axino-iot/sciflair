@@ -14,7 +14,7 @@ function ph(label, cls) {
     <p class="hero-sectors">IoT · AI · Energy · Video · Automation</p>
     <p class="hero-lede">Electronics, embedded firmware, cloud platforms and apps – from a first prototype to products running for years in the field.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#services">See How We Can Help</a>
+      <a class="btn btn-primary" href="#services">See What We Do and How</a>
     </div>
   </div>
 </section>
@@ -49,7 +49,7 @@ function ph(label, cls) {
 <section class="section" id="services">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Design Services</p>
+      <p class="eyebrow">What We Do</p>
       <h2>What We Can Design for You</h2>
       <p>We design embedded systems end to end: the electronics, the firmware and the software around them. Bring us an idea, a half-finished design or a problem in the field, and we take it to a working prototype or a finished product.</p>
     </div>
@@ -74,7 +74,7 @@ function ph(label, cls) {
 <section class="section section-grey" id="engage">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Working Together</p>
+      <p class="eyebrow">How We Work</p>
       <h2>How We Work With You</h2>
       <p>Five clear steps from first conversation to products in the field. Each one ends with something you can use, so you can stop, pause or carry on with full knowledge of cost and risk.</p>
     </div>
@@ -91,6 +91,26 @@ function ph(label, cls) {
     <ul class="eng-promises">
       <% site.promises.forEach(function (x) { %><li><%= x %></li><% }) %>
     </ul>
+  </div>
+</section>
+
+<!-- 5. How we work -->
+<section class="section section-navy">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How We Deliver</p>
+      <h2>The Whole System Life Cycle, Under One Roof</h2>
+      <p>We follow INCOSE systems engineering practice (ISO/IEC/IEEE 15288) and run projects in PRINCE2 management stages, so every stage ends at a decision gate where you review progress, risk and the business case before committing to the next.</p>
+    </div>
+    <ol class="steps">
+      <% site.steps.forEach(function (st, i) { %>
+        <li class="step">
+          <span class="step-num"><%= ('0' + (i + 1)) %></span>
+          <h3><%= st.title %></h3>
+          <p><%= st.text %></p>
+        </li>
+      <% }) %>
+    </ol>
   </div>
 </section>
 
@@ -131,26 +151,6 @@ function ph(label, cls) {
       </ul>
       <a class="btn btn-dark" href="https://www.linkedin.com/company/sciflair-limited/"><%- include('partials/icon', { name: 'linkedin' }) %> Connect on LinkedIn</a>
     </div>
-  </div>
-</section>
-
-<!-- 5. How we work -->
-<section class="section section-navy">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Our Engineering Process</p>
-      <h2>The Whole System Life Cycle, Under One Roof</h2>
-      <p>We follow INCOSE systems engineering practice (ISO/IEC/IEEE 15288) and run projects in PRINCE2 management stages, so every stage ends at a decision gate where you review progress, risk and the business case before committing to the next.</p>
-    </div>
-    <ol class="steps">
-      <% site.steps.forEach(function (st, i) { %>
-        <li class="step">
-          <span class="step-num"><%= ('0' + (i + 1)) %></span>
-          <h3><%= st.title %></h3>
-          <p><%= st.text %></p>
-        </li>
-      <% }) %>
-    </ol>
   </div>
 </section>
 
