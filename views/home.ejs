@@ -170,10 +170,6 @@ function ph(label, cls) {
       <p class="eyebrow">Contact</p>
       <h2>Tell Us About Your Project</h2>
       <p>From a prototype to a full system rollout. We reply within one working day.</p>
-      <ul class="contact-list">
-        <li><%- include('partials/icon', { name: 'phone' }) %><a href="tel:+441173137585">+44 (0)117 313 7585</a></li>
-        <li><%- include('partials/icon', { name: 'mail' }) %><a href="mailto:info@sciflair.com">info@sciflair.com</a></li>
-      </ul>
     </div>
     <form class="contact-form" method="post" action="/contact">
       <% if (contactStatus === 'invalid') { %>
@@ -183,9 +179,9 @@ function ph(label, cls) {
       <% } else if (contactStatus === 'sent') { %>
         <p class="form-msg" role="status">Thank you – we'll be in touch within one working day.</p>
       <% } %>
-      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required /></div>
-      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required /></div>
-      <div class="field"><label for="f-org">Organisation</label><input id="f-org" name="organisation" autocomplete="organization" /></div>
+      <div class="field-row"><div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required /></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required /></div></div>
+      <div class="field-row"><div class="field"><label for="f-org">Organisation</label><input id="f-org" name="organisation" autocomplete="organization" /></div>
       <div class="field"><label for="f-role">I'm getting in touch as</label>
         <select id="f-role" name="role">
           <option value="client">A client with a project</option>
@@ -194,7 +190,7 @@ function ph(label, cls) {
           <option value="partner">A partner or contractor</option>
           <option value="research">A university or researcher</option>
         </select>
-      </div>
+      </div></div>
       <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="5" required></textarea></div>
       <div class="hp" aria-hidden="true"><label for="f-web">Website</label><input id="f-web" name="website" tabindex="-1" autocomplete="off" /></div>
       <button class="btn btn-primary" type="submit">Send Message</button>

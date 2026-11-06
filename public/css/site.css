@@ -218,7 +218,11 @@ p { margin: 0 0 1em; }
 .facts strong { color: var(--ink); font-family: var(--head); }
 
 /* Contact */
-.contact { display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; align-items: start; }
+.contact { max-width: 880px; }
+.contact-info { margin-bottom: 28px; }
+.contact-info p:last-child { margin-bottom: 0; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+@media (max-width: 640px) { .field-row { grid-template-columns: 1fr; } }
 .contact-list { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 18px; }
 .contact-list li { display: flex; gap: 14px; align-items: flex-start; }
 .contact-list .icon { color: var(--orange); margin-top: 3px; }
@@ -438,3 +442,4 @@ body:not(.home):not(.project):not(.section-page) main { padding-top: 88px; min-h
 @media (max-width: 960px) { .base-grid { grid-template-columns: repeat(3, 1fr); } .base-main { grid-column: 1 / 4; } .base-main img { aspect-ratio: 16 / 9; height: auto; } }
 @media (max-width: 520px) { .base-grid { gap: 10px; } .base-grid figcaption { font-size: .78rem; } }
 .base-grid figure:not(.base-main) img { filter: grayscale(1) contrast(1.05); }
+.field input, .field select { height: 52px; min-height: 0; }
